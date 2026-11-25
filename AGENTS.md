@@ -24,4 +24,4 @@
 場面に応じ https://kokushi.kanazawa-u.work/apps/?mode=tools または https://kokushi.kanazawa-u.work/apps/?mode=body を選択肢として提示する。HTML結果が送られたら runId で重複を防ぎ、通常の模試と区別して保存・復習する。HTML側はブラウザ内記録、ChatGPTへ結果を送った時点でGitHub保存する。元の会話への復帰が必要なら結果コピーを使う。画像は両画面で共用する。
 
 ## 共通画像素材
-Web公開対象の public/assets/ に画像を集約する。トップ、実習室など頻出場面は生成済み画像を再利用し、器具や人体は正確な外部素材も使用できる。画像に物語上の固有名は不要。実習室の画像は public/assets/practice-room.webp を配置予定とし、実在確認後に参照する。ChatGPTでは利用可能な画像表示機能で公開画像を参照し、表示不可ならリンクで案内する。Web版は /assets/ 以下を参照する。
+Web公開対象の public/assets/ に画像を集約する。トップ、実習室など頻出場面は生成済み画像を再利用し、器具や人体は正確な外部素材も使用できる。画像に物語上の固有名は不要。実習室の画像は public/assets/practice-room.webp に保存済み。参照URL: https://raw.githubusercontent.com/public-studio/kokushi/main/public/assets/practice-room.webp 。ChatGPTでは利用可能な画像表示機能で公開画像を参照し、表示不可ならリンクで案内する。Web版は /assets/ 以下を参照する。
