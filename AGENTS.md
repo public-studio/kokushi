@@ -4,7 +4,7 @@
 
 1. [game.md](https://github.com/public-studio/kokushi/blob/main/game.md) を取得しゲームルールを確認。
 2. [save.md](https://github.com/public-studio/kokushi/blob/main/save.md) と [data/save.json](https://github.com/public-studio/kokushi/blob/main/data/save.json) を取得し再開位置を確認。
-3. [ui.md](https://github.com/public-studio/kokushi/blob/main/ui.md) を取得し、相手の名前・性格・外見をAIが決め（再開時は既存の人物を維持）、外部背景・キャラクター画像を実際に検索・参照する。取得不能なら画像なしと明示。SVGや生成画像で代替しない。
+3. [ui.md](https://github.com/public-studio/kokushi/blob/main/ui.md) を取得し、相手の名前・性格・外見をAIが決め（再開時は既存の人物を維持）、GitHubの共通素材を優先して参照し、必要に応じ外部画像を検索・参照する。生成済み画像も使用できる。取得不能なら画像なしで進める。
 4. [questions/starter.json](https://github.com/public-studio/kokushi/blob/main/questions/starter.json) を取得し、game.md 指定の公式問題・正答を実際に照合する。未照合ならオリジナル練習問題を使う。
 5. 上記工程の結果を確認してから最初のインタラクティブ画面を表示する。呼び名やキャラクターの入力・選択・確認画面を挟まず、すぐ第1問を表示し、1問ずつ進める。
 6. 回答後は採点・解説・ハート更新を行い、save.md に従い自動保存し、実際の書き込み結果を確認する。
@@ -21,4 +21,7 @@
 ギャルゲー風は雰囲気の参考であり、恋愛やデートを全場面に強制しない。自然な専門学校生活を中心に、勉強、実習、雑談、放課後、友人や先生との会話を織り交ぜ、恋愛イベントは場面に合う時だけ自然に発生させる。毎セットをデートと呼ばず、毎回好意やハート付きのセリフを強制しない。3問セットとハートによる進捗は維持する。時間は試験対策のため実測して記録する。通常画面では時計アイコンと短い経過時間（例 1:24）を使い、デート時間・解答時間・目標時間などの堅いラベルは常設しない。未計測なら時計表示を省略し、架空の時間やペース評価は出さない。実測できた場合のみ、本番の1問約1分49秒、3問約5分27秒を裏側の目安として、必要に応じ自然な会話で伝える。制限時間は設けない。
 
 ## HTMLミニゲーム
-場面に応じ https://kokushi.kanazawa-u.work/apps/?mode=tools または https://kokushi.kanazawa-u.work/apps/?mode=body を選択肢として提示する。HTML結果が送られたら runId で重複を防ぎ、通常の模試と区別して保存・復習する。HTML側はブラウザ内記録、ChatGPTへ結果を送った時点でGitHub保存する。元の会話への復帰が必要なら結果コピーを使う。HTML側の生成グラフィックは今後追加可能。
+場面に応じ https://kokushi.kanazawa-u.work/apps/?mode=tools または https://kokushi.kanazawa-u.work/apps/?mode=body を選択肢として提示する。HTML結果が送られたら runId で重複を防ぎ、通常の模試と区別して保存・復習する。HTML側はブラウザ内記録、ChatGPTへ結果を送った時点でGitHub保存する。元の会話への復帰が必要なら結果コピーを使う。画像は両画面で共用する。
+
+## 共通画像素材
+Web公開対象の public/assets/ に画像を集約する。トップ、実習室など頻出場面は生成済み画像を再利用し、器具や人体は正確な外部素材も使用できる。画像に物語上の固有名は不要。実習室の画像は public/assets/practice-room.webp を配置予定とし、実在確認後に参照する。ChatGPTでは利用可能な画像表示機能で公開画像を参照し、表示不可ならリンクで案内する。Web版は /assets/ 以下を参照する。
