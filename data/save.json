@@ -5,7 +5,10 @@
   },
   "preferences": {
     "setSize": 3,
-    "character": null,
+    "character": {
+      "name": "ゆいちゃん",
+      "description": "8人クラスの唯一の女子。理容専門学校のクラスメイト。"
+    },
     "mode": "learning"
   },
   "level": null,
