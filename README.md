@@ -30,6 +30,11 @@
 
 ## 現在の状態（2026-11-26）
 
-初期構想の記録段階。過去問データ、セーブ機能、ゲーム起動用HTML、Cloudflare連携は未実装。公開済みのランチャーURLはまだ確認していない。プレイヤーの実データは未登録。
+- [ゲーム起動用HTML](public/index.html) と Cloudflare Workers Static Assets 用の設定を作成済み。
+- [練習用3問](questions/starter.json) と [初期セーブ](data/save.json) を作成済み。練習用問題はオリジナルであり、公式過去問ではない。
+- ChatGPTのゲーム進行・保存・再開・未接続モードのルールを実装仕様として記録済み。別アカウントでのセーブ・再開の実動作は未検証。
+- 公式過去問は [公式サイト](https://www.rbc.or.jp/exam/past_question/) を参照。第54回の参考問題一覧 https://www.kakomon-ai.jp/riyoshi/2026-second 。公式PDFの直接取得ができなかったため、正答照合済みの全問データは未収録。
+- CloudflareのGitHubリポジトリ接続は未完了。Git連携の再認可が必要。予定URLはまだ稼働未確認。
+- プレイヤーの実データは未登録。
 
-最初の目標は、ChatGPTで3問のプチデートを遊び、GitHub MCPで保存し、別チャットから再開すること。
+まずChatGPTに「public-studio/kokushi の AGENTS.md と game.md を読み、国試ゲームを開始して」と依頼する。MCP未接続でも体験モードで遊べるようにする。
