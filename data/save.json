@@ -12,16 +12,8 @@
     "mode": "learning"
   },
   "level": null,
-  "completedDates": 0,
-  "session": {
-    "questionIds": [
-      "practice-001",
-      "practice-002",
-      "practice-003"
-    ],
-    "nextIndex": 2,
-    "hearts": 2
-  },
+  "completedDates": 1,
+  "session": null,
   "history": [
     {
       "eventId": "20261126-set1-practice-001",
@@ -36,6 +28,15 @@
       "eventId": "20261126-set1-practice-002",
       "questionId": "practice-002",
       "answer": 3,
+      "correct": true,
+      "hintUsed": true,
+      "elapsedSeconds": null,
+      "date": "2026-11-26"
+    },
+    {
+      "eventId": "20261126-set1-practice-003",
+      "questionId": "practice-003",
+      "answer": 4,
       "correct": true,
       "hintUsed": true,
       "elapsedSeconds": null,
