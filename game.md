@@ -26,3 +26,6 @@
 
 ## 配信
 public/index.html はタイトルとスタートボタン。ChatGPTのq付きURLで起動。ゲーム仕様は毎回GitHubから取得。将来の補助部品は public/apps/。Cloudflare Workers Static Assets とGitHub連携で配信予定。URL https://kokushi.kanazawa-u.work/ 。専用DB・独自APIは作らない。
+
+## 固定方針
+本人専用ゲーム。公開GitHubを維持し、非公開化を再提案しない。保存許可の質問やセーブボタンは不要。毎回答後に自動保存し、次回は続きから自動再開する。詳細は save.md。
