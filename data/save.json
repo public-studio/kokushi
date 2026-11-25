@@ -19,14 +19,23 @@
       "practice-002",
       "practice-003"
     ],
-    "nextIndex": 1,
-    "hearts": 1
+    "nextIndex": 2,
+    "hearts": 2
   },
   "history": [
     {
       "eventId": "20261126-set1-practice-001",
       "questionId": "practice-001",
       "answer": 2,
+      "correct": true,
+      "hintUsed": true,
+      "elapsedSeconds": null,
+      "date": "2026-11-26"
+    },
+    {
+      "eventId": "20261126-set1-practice-002",
+      "questionId": "practice-002",
+      "answer": 3,
       "correct": true,
       "hintUsed": true,
       "elapsedSeconds": null,
