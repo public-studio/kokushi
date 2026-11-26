@@ -29,3 +29,6 @@
 
 ## 共通画像素材
 Web公開対象の public/assets/ に画像を集約する。トップ、実習室など頻出場面は生成済み画像を再利用し、器具や人体は正確な外部素材も使用できる。画像に物語上の固有名は不要。実習室の画像は public/assets/practice-room.webp に保存済み。参照URL: https://raw.githubusercontent.com/public-studio/kokushi/main/public/assets/practice-room.webp 。ChatGPTでは利用可能な画像表示機能で公開画像を参照し、表示不可ならリンクで案内する。Web版は /assets/ 以下を参照する。
+
+## 60秒タイムアタック
+https://kokushi.kanazawa-u.work/apps/time-attack.html を短時間の集中練習として提示できる。左右タップ・フリックの二択、60秒、正解+100点・誤答−150点、コンボは演出のみ。結果はブラウザに自動保存。ChatGPTに結果が送られたら game=time-attack と runId で重複を防ぎ、模試や通常の回答履歴とは区別して保存・復習する。スコアとランクはゲーム内指標であり実力Lv.とは別。
