@@ -42,5 +42,41 @@
       "elapsedSeconds": null,
       "date": "2026-11-26"
     }
+  ],
+  "miniGameRuns": [
+    {
+      "game": "time-attack",
+      "version": 4,
+      "runId": "b961e087-3c90-47af-97df-7721638bbd5c",
+      "startedAt": "2026-11-26T10:09:21.581Z",
+      "date": "2026-11-26T10:11:50.926Z",
+      "durationSeconds": 92.8,
+      "bonusSeconds": 0,
+      "feverCount": 0,
+      "feverCorrect": 0,
+      "points": -150,
+      "answered": 1,
+      "correct": 0,
+      "incorrect": 1,
+      "accuracy": 0,
+      "rank": "D",
+      "maxCombo": 0,
+      "comboRate": 0,
+      "records": [
+        {
+          "questionId": "ta-001",
+          "question": "理容師免許を与えるのは？",
+          "answer": "都道府県知事",
+          "correct": "厚生労働大臣",
+          "ok": false,
+          "seconds": 4.74,
+          "combo": 0,
+          "comboContinued": false,
+          "fever": false,
+          "points": -150
+        }
+      ],
+      "reason": "時間終了"
+    }
   ]
 }
