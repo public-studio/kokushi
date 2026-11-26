@@ -58,3 +58,6 @@ public/index.html はタイトルとスタートボタン。ChatGPTのq付きURL
 
 ### 全画面フィーバー演出（2026-11-26）
 生成した炎の鳥の画像から文字・UIを除いた範囲を切り出し、public/assets/fever-burst.webp として再利用。10コンボのフィーバー発動と同時に、約1.05秒の全画面光線・枠・カットインとFEVER文字を表示。通常時の5コンボごとにコンボ数が短く弾む。演出は操作を遮らず、既存の問題、左右二択、時間、得点、保存ルールv4を変更しない。上部の国試リンク・効果音切替・試聴は削除し、音は常時ON、音量は端末側で操作。NEXTは未実装。動きを減らす端末設定に対応。音声復旧は利用者のiPhoneで確認されたが、不具合原因は未確定。
+
+### BGM導入（2026-11-26）
+通常BGMは BenjaTheMaker「Upbeat Loop」(https://opengameart.org/content/upbeat-short-music-loop-vorbis-oog)、フィーバーBGMは ElectronicFreaker「Spacy Loop」(https://opengameart.org/content/spacyloop)。CC0 1.0。取得元のMP3およびライセンス表記は https://github.com/S3M1TR4SH/asset-library の catalog.json に基づく。public/assets/audio/rush-normal.mp3 と rush-fever.mp3 として同一バイト列を保存。開始時に通常曲をループし、フィーバー時は別曲に短くクロスフェード、終了時は通常曲に戻し、プレイ終了・画面非表示時に停止。効果音は独立して同時再生する。音源読み込みは非同期で問題や時計を止めない。曲調・音量の適合性は実機試聴後に調整。NEXT・採点・ルールv4は変更しない。
