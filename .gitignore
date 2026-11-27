@@ -1,0 +1,9 @@
+# 過去問のローカル取得物（問題本文・選択肢・公式PDF・HTMLキャッシュ）
+questions/past-exams/local/
+
+# 生成前の一時ファイル
+tmp/
+.tmp_*.txt
+__pycache__/
+scripts/__pycache__/
+

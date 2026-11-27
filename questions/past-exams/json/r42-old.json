@@ -1,0 +1,520 @@
+{
+  "schemaVersion": 1,
+  "publication": {
+    "status": "metadata-only",
+    "reason": "公式PDFと過去問サイトの問題本文・選択肢は、公開許諾を確認できるまでローカル管理する",
+    "localCanonical": "questions/past-exams/local/collection.json"
+  },
+  "exam": {
+    "number": 42,
+    "variant": "old",
+    "label": "第42回理容師筆記試験 （旧試験）"
+  },
+  "sources": {
+    "officialIndex": "https://www.rbc.or.jp/exam/past_question/",
+    "officialPdf": "https://www.rbc.or.jp/wp-content/uploads/2021/07/42rhikkio.pdf"
+  },
+  "questions": [
+    {
+      "id": "r42-old-q001",
+      "number": 1,
+      "subject": "関係法規・制度",
+      "correct": null,
+      "answerStatus": "unavailable",
+      "textStatus": "official-pdf-image-only",
+      "sourceUrl": null,
+      "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/42rhikkio.pdf"
+    },
+    {
+      "id": "r42-old-q002",
+      "number": 2,
+      "subject": "関係法規・制度",
+      "correct": null,
+      "answerStatus": "unavailable",
+      "textStatus": "official-pdf-image-only",
+      "sourceUrl": null,
+      "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/42rhikkio.pdf"
+    },
+    {
+      "id": "r42-old-q003",
+      "number": 3,
+      "subject": "関係法規・制度",
+      "correct": null,
+      "answerStatus": "unavailable",
+      "textStatus": "official-pdf-image-only",
+      "sourceUrl": null,
+      "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/42rhikkio.pdf"
+    },
+    {
+      "id": "r42-old-q004",
+      "number": 4,
+      "subject": "関係法規・制度",
+      "correct": null,
+      "answerStatus": "unavailable",
+      "textStatus": "official-pdf-image-only",
+      "sourceUrl": null,
+      "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/42rhikkio.pdf"
+    },
+    {
+      "id": "r42-old-q005",
+      "number": 5,
+      "subject": "関係法規・制度",
+      "correct": null,
+      "answerStatus": "unavailable",
+      "textStatus": "official-pdf-image-only",
+      "sourceUrl": null,
+      "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/42rhikkio.pdf"
+    },
+    {
+      "id": "r42-old-q006",
+      "number": 6,
+      "subject": "関係法規・制度",
+      "correct": null,
+      "answerStatus": "unavailable",
+      "textStatus": "official-pdf-image-only",
+      "sourceUrl": null,
+      "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/42rhikkio.pdf"
+    },
+    {
+      "id": "r42-old-q007",
+      "number": 7,
+      "subject": "関係法規・制度",
+      "correct": null,
+      "answerStatus": "unavailable",
+      "textStatus": "official-pdf-image-only",
+      "sourceUrl": null,
+      "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/42rhikkio.pdf"
+    },
+    {
+      "id": "r42-old-q008",
+      "number": 8,
+      "subject": "関係法規・制度",
+      "correct": null,
+      "answerStatus": "unavailable",
+      "textStatus": "official-pdf-image-only",
+      "sourceUrl": null,
+      "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/42rhikkio.pdf"
+    },
+    {
+      "id": "r42-old-q009",
+      "number": 9,
+      "subject": "関係法規・制度",
+      "correct": null,
+      "answerStatus": "unavailable",
+      "textStatus": "official-pdf-image-only",
+      "sourceUrl": null,
+      "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/42rhikkio.pdf"
+    },
+    {
+      "id": "r42-old-q010",
+      "number": 10,
+      "subject": "関係法規・制度",
+      "correct": null,
+      "answerStatus": "unavailable",
+      "textStatus": "official-pdf-image-only",
+      "sourceUrl": null,
+      "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/42rhikkio.pdf"
+    },
+    {
+      "id": "r42-old-q011",
+      "number": 11,
+      "subject": "公衆衛生・環境衛生",
+      "correct": null,
+      "answerStatus": "unavailable",
+      "textStatus": "official-pdf-image-only",
+      "sourceUrl": null,
+      "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/42rhikkio.pdf"
+    },
+    {
+      "id": "r42-old-q012",
+      "number": 12,
+      "subject": "公衆衛生・環境衛生",
+      "correct": null,
+      "answerStatus": "unavailable",
+      "textStatus": "official-pdf-image-only",
+      "sourceUrl": null,
+      "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/42rhikkio.pdf"
+    },
+    {
+      "id": "r42-old-q013",
+      "number": 13,
+      "subject": "公衆衛生・環境衛生",
+      "correct": null,
+      "answerStatus": "unavailable",
+      "textStatus": "official-pdf-image-only",
+      "sourceUrl": null,
+      "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/42rhikkio.pdf"
+    },
+    {
+      "id": "r42-old-q014",
+      "number": 14,
+      "subject": "公衆衛生・環境衛生",
+      "correct": null,
+      "answerStatus": "unavailable",
+      "textStatus": "official-pdf-image-only",
+      "sourceUrl": null,
+      "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/42rhikkio.pdf"
+    },
+    {
+      "id": "r42-old-q015",
+      "number": 15,
+      "subject": "公衆衛生・環境衛生",
+      "correct": null,
+      "answerStatus": "unavailable",
+      "textStatus": "official-pdf-image-only",
+      "sourceUrl": null,
+      "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/42rhikkio.pdf"
+    },
+    {
+      "id": "r42-old-q016",
+      "number": 16,
+      "subject": "感染症",
+      "correct": null,
+      "answerStatus": "unavailable",
+      "textStatus": "official-pdf-image-only",
+      "sourceUrl": null,
+      "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/42rhikkio.pdf"
+    },
+    {
+      "id": "r42-old-q017",
+      "number": 17,
+      "subject": "感染症",
+      "correct": null,
+      "answerStatus": "unavailable",
+      "textStatus": "official-pdf-image-only",
+      "sourceUrl": null,
+      "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/42rhikkio.pdf"
+    },
+    {
+      "id": "r42-old-q018",
+      "number": 18,
+      "subject": "感染症",
+      "correct": null,
+      "answerStatus": "unavailable",
+      "textStatus": "official-pdf-image-only",
+      "sourceUrl": null,
+      "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/42rhikkio.pdf"
+    },
+    {
+      "id": "r42-old-q019",
+      "number": 19,
+      "subject": "感染症",
+      "correct": null,
+      "answerStatus": "unavailable",
+      "textStatus": "official-pdf-image-only",
+      "sourceUrl": null,
+      "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/42rhikkio.pdf"
+    },
+    {
+      "id": "r42-old-q020",
+      "number": 20,
+      "subject": "感染症",
+      "correct": null,
+      "answerStatus": "unavailable",
+      "textStatus": "official-pdf-image-only",
+      "sourceUrl": null,
+      "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/42rhikkio.pdf"
+    },
+    {
+      "id": "r42-old-q021",
+      "number": 21,
+      "subject": "衛生管理技術",
+      "correct": null,
+      "answerStatus": "unavailable",
+      "textStatus": "official-pdf-image-only",
+      "sourceUrl": null,
+      "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/42rhikkio.pdf"
+    },
+    {
+      "id": "r42-old-q022",
+      "number": 22,
+      "subject": "衛生管理技術",
+      "correct": null,
+      "answerStatus": "unavailable",
+      "textStatus": "official-pdf-image-only",
+      "sourceUrl": null,
+      "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/42rhikkio.pdf"
+    },
+    {
+      "id": "r42-old-q023",
+      "number": 23,
+      "subject": "衛生管理技術",
+      "correct": null,
+      "answerStatus": "unavailable",
+      "textStatus": "official-pdf-image-only",
+      "sourceUrl": null,
+      "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/42rhikkio.pdf"
+    },
+    {
+      "id": "r42-old-q024",
+      "number": 24,
+      "subject": "衛生管理技術",
+      "correct": null,
+      "answerStatus": "unavailable",
+      "textStatus": "official-pdf-image-only",
+      "sourceUrl": null,
+      "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/42rhikkio.pdf"
+    },
+    {
+      "id": "r42-old-q025",
+      "number": 25,
+      "subject": "衛生管理技術",
+      "correct": null,
+      "answerStatus": "unavailable",
+      "textStatus": "official-pdf-image-only",
+      "sourceUrl": null,
+      "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/42rhikkio.pdf"
+    },
+    {
+      "id": "r42-old-q026",
+      "number": 26,
+      "subject": "人体の構造及び機能",
+      "correct": null,
+      "answerStatus": "unavailable",
+      "textStatus": "official-pdf-image-only",
+      "sourceUrl": null,
+      "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/42rhikkio.pdf"
+    },
+    {
+      "id": "r42-old-q027",
+      "number": 27,
+      "subject": "人体の構造及び機能",
+      "correct": null,
+      "answerStatus": "unavailable",
+      "textStatus": "official-pdf-image-only",
+      "sourceUrl": null,
+      "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/42rhikkio.pdf"
+    },
+    {
+      "id": "r42-old-q028",
+      "number": 28,
+      "subject": "人体の構造及び機能",
+      "correct": null,
+      "answerStatus": "unavailable",
+      "textStatus": "official-pdf-image-only",
+      "sourceUrl": null,
+      "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/42rhikkio.pdf"
+    },
+    {
+      "id": "r42-old-q029",
+      "number": 29,
+      "subject": "人体の構造及び機能",
+      "correct": null,
+      "answerStatus": "unavailable",
+      "textStatus": "official-pdf-image-only",
+      "sourceUrl": null,
+      "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/42rhikkio.pdf"
+    },
+    {
+      "id": "r42-old-q030",
+      "number": 30,
+      "subject": "人体の構造及び機能",
+      "correct": null,
+      "answerStatus": "unavailable",
+      "textStatus": "official-pdf-image-only",
+      "sourceUrl": null,
+      "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/42rhikkio.pdf"
+    },
+    {
+      "id": "r42-old-q031",
+      "number": 31,
+      "subject": "皮膚科学",
+      "correct": null,
+      "answerStatus": "unavailable",
+      "textStatus": "official-pdf-image-only",
+      "sourceUrl": null,
+      "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/42rhikkio.pdf"
+    },
+    {
+      "id": "r42-old-q032",
+      "number": 32,
+      "subject": "皮膚科学",
+      "correct": null,
+      "answerStatus": "unavailable",
+      "textStatus": "official-pdf-image-only",
+      "sourceUrl": null,
+      "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/42rhikkio.pdf"
+    },
+    {
+      "id": "r42-old-q033",
+      "number": 33,
+      "subject": "皮膚科学",
+      "correct": null,
+      "answerStatus": "unavailable",
+      "textStatus": "official-pdf-image-only",
+      "sourceUrl": null,
+      "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/42rhikkio.pdf"
+    },
+    {
+      "id": "r42-old-q034",
+      "number": 34,
+      "subject": "皮膚科学",
+      "correct": null,
+      "answerStatus": "unavailable",
+      "textStatus": "official-pdf-image-only",
+      "sourceUrl": null,
+      "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/42rhikkio.pdf"
+    },
+    {
+      "id": "r42-old-q035",
+      "number": 35,
+      "subject": "皮膚科学",
+      "correct": null,
+      "answerStatus": "unavailable",
+      "textStatus": "official-pdf-image-only",
+      "sourceUrl": null,
+      "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/42rhikkio.pdf"
+    },
+    {
+      "id": "r42-old-q036",
+      "number": 36,
+      "subject": "香粧品化学",
+      "correct": null,
+      "answerStatus": "unavailable",
+      "textStatus": "official-pdf-image-only",
+      "sourceUrl": null,
+      "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/42rhikkio.pdf"
+    },
+    {
+      "id": "r42-old-q037",
+      "number": 37,
+      "subject": "香粧品化学",
+      "correct": null,
+      "answerStatus": "unavailable",
+      "textStatus": "official-pdf-image-only",
+      "sourceUrl": null,
+      "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/42rhikkio.pdf"
+    },
+    {
+      "id": "r42-old-q038",
+      "number": 38,
+      "subject": "香粧品化学",
+      "correct": null,
+      "answerStatus": "unavailable",
+      "textStatus": "official-pdf-image-only",
+      "sourceUrl": null,
+      "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/42rhikkio.pdf"
+    },
+    {
+      "id": "r42-old-q039",
+      "number": 39,
+      "subject": "香粧品化学",
+      "correct": null,
+      "answerStatus": "unavailable",
+      "textStatus": "official-pdf-image-only",
+      "sourceUrl": null,
+      "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/42rhikkio.pdf"
+    },
+    {
+      "id": "r42-old-q040",
+      "number": 40,
+      "subject": "香粧品化学",
+      "correct": null,
+      "answerStatus": "unavailable",
+      "textStatus": "official-pdf-image-only",
+      "sourceUrl": null,
+      "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/42rhikkio.pdf"
+    },
+    {
+      "id": "r42-old-q041",
+      "number": 41,
+      "subject": "文化論及び理容技術理論",
+      "correct": null,
+      "answerStatus": "unavailable",
+      "textStatus": "official-pdf-image-only",
+      "sourceUrl": null,
+      "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/42rhikkio.pdf"
+    },
+    {
+      "id": "r42-old-q042",
+      "number": 42,
+      "subject": "文化論及び理容技術理論",
+      "correct": null,
+      "answerStatus": "unavailable",
+      "textStatus": "official-pdf-image-only",
+      "sourceUrl": null,
+      "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/42rhikkio.pdf"
+    },
+    {
+      "id": "r42-old-q043",
+      "number": 43,
+      "subject": "文化論及び理容技術理論",
+      "correct": null,
+      "answerStatus": "unavailable",
+      "textStatus": "official-pdf-image-only",
+      "sourceUrl": null,
+      "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/42rhikkio.pdf"
+    },
+    {
+      "id": "r42-old-q044",
+      "number": 44,
+      "subject": "文化論及び理容技術理論",
+      "correct": null,
+      "answerStatus": "unavailable",
+      "textStatus": "official-pdf-image-only",
+      "sourceUrl": null,
+      "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/42rhikkio.pdf"
+    },
+    {
+      "id": "r42-old-q045",
+      "number": 45,
+      "subject": "文化論及び理容技術理論",
+      "correct": null,
+      "answerStatus": "unavailable",
+      "textStatus": "official-pdf-image-only",
+      "sourceUrl": null,
+      "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/42rhikkio.pdf"
+    },
+    {
+      "id": "r42-old-q046",
+      "number": 46,
+      "subject": "文化論及び理容技術理論",
+      "correct": null,
+      "answerStatus": "unavailable",
+      "textStatus": "official-pdf-image-only",
+      "sourceUrl": null,
+      "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/42rhikkio.pdf"
+    },
+    {
+      "id": "r42-old-q047",
+      "number": 47,
+      "subject": "文化論及び理容技術理論",
+      "correct": null,
+      "answerStatus": "unavailable",
+      "textStatus": "official-pdf-image-only",
+      "sourceUrl": null,
+      "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/42rhikkio.pdf"
+    },
+    {
+      "id": "r42-old-q048",
+      "number": 48,
+      "subject": "文化論及び理容技術理論",
+      "correct": null,
+      "answerStatus": "unavailable",
+      "textStatus": "official-pdf-image-only",
+      "sourceUrl": null,
+      "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/42rhikkio.pdf"
+    },
+    {
+      "id": "r42-old-q049",
+      "number": 49,
+      "subject": "文化論及び理容技術理論",
+      "correct": null,
+      "answerStatus": "unavailable",
+      "textStatus": "official-pdf-image-only",
+      "sourceUrl": null,
+      "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/42rhikkio.pdf"
+    },
+    {
+      "id": "r42-old-q050",
+      "number": 50,
+      "subject": "文化論及び理容技術理論",
+      "correct": null,
+      "answerStatus": "unavailable",
+      "textStatus": "official-pdf-image-only",
+      "sourceUrl": null,
+      "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/42rhikkio.pdf"
+    }
+  ]
+}
+

@@ -1,0 +1,6260 @@
+{
+  "schemaVersion": 1,
+  "method": {
+    "name": "semantic-knowledge-normalization",
+    "version": "1.0",
+    "source": "questions/past-exams/local/collection.json",
+    "subject": "皮膚科学",
+    "slug": "dermatology",
+    "selection": {
+      "examRange": [
+        24,
+        54
+      ],
+      "variants": [
+        "standard",
+        "retake",
+        "new",
+        "old"
+      ],
+      "newSystemProblemNumbers": [
+        31,
+        32,
+        33,
+        34,
+        35
+      ],
+      "legacyProblemNumbers": [
+        26,
+        27,
+        28,
+        29,
+        30
+      ]
+    },
+    "principles": [
+      "文字列一致ではなく、正誤判定に必要な知識命題へ統合する。",
+      "正答選択肢と誤答選択肢を同じ知識IDの出典候補として扱う。",
+      "occurrenceCountは選択肢参照の延べ数、examCountは異なる試験回数である。",
+      "polarityはその選択肢が当該設問の正答か誤答かを示す。",
+      "問題文・選択肢の原文は出力せず、公開可能な要約ラベルと意味記述だけを保存する。"
+    ],
+    "rebuild": "python scripts/analyze_dermatology.py"
+  },
+  "coverage": {
+    "requestedExamRange": {
+      "from": 24,
+      "to": 54
+    },
+    "requestedSourceCount": 35,
+    "requestedQuestionSlots": 175,
+    "structuredQuestionCount": 144,
+    "analyzedChoiceCount": 576,
+    "excludedQuestionCount": 31,
+    "excludedPdfOnlyCount": 31,
+    "answerUnavailable": [
+      {
+        "exam": 24,
+        "variant": "standard",
+        "number": 26,
+        "reason": "pdf-only-or-missing-text",
+        "sourceUrl": null,
+        "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/hi24riyou.pdf"
+      },
+      {
+        "exam": 24,
+        "variant": "standard",
+        "number": 27,
+        "reason": "pdf-only-or-missing-text",
+        "sourceUrl": null,
+        "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/hi24riyou.pdf"
+      },
+      {
+        "exam": 24,
+        "variant": "standard",
+        "number": 28,
+        "reason": "pdf-only-or-missing-text",
+        "sourceUrl": null,
+        "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/hi24riyou.pdf"
+      },
+      {
+        "exam": 24,
+        "variant": "standard",
+        "number": 29,
+        "reason": "pdf-only-or-missing-text",
+        "sourceUrl": null,
+        "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/hi24riyou.pdf"
+      },
+      {
+        "exam": 24,
+        "variant": "standard",
+        "number": 30,
+        "reason": "pdf-only-or-missing-text",
+        "sourceUrl": null,
+        "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/hi24riyou.pdf"
+      },
+      {
+        "exam": 25,
+        "variant": "standard",
+        "number": 26,
+        "reason": "pdf-only-or-missing-text",
+        "sourceUrl": null,
+        "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/25rhikki.pdf"
+      },
+      {
+        "exam": 25,
+        "variant": "standard",
+        "number": 27,
+        "reason": "pdf-only-or-missing-text",
+        "sourceUrl": null,
+        "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/25rhikki.pdf"
+      },
+      {
+        "exam": 25,
+        "variant": "standard",
+        "number": 28,
+        "reason": "pdf-only-or-missing-text",
+        "sourceUrl": null,
+        "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/25rhikki.pdf"
+      },
+      {
+        "exam": 25,
+        "variant": "standard",
+        "number": 29,
+        "reason": "pdf-only-or-missing-text",
+        "sourceUrl": null,
+        "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/25rhikki.pdf"
+      },
+      {
+        "exam": 25,
+        "variant": "standard",
+        "number": 30,
+        "reason": "pdf-only-or-missing-text",
+        "sourceUrl": null,
+        "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/25rhikki.pdf"
+      },
+      {
+        "exam": 26,
+        "variant": "standard",
+        "number": 26,
+        "reason": "pdf-only-or-missing-text",
+        "sourceUrl": null,
+        "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/26rhikki.pdf"
+      },
+      {
+        "exam": 26,
+        "variant": "standard",
+        "number": 27,
+        "reason": "pdf-only-or-missing-text",
+        "sourceUrl": null,
+        "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/26rhikki.pdf"
+      },
+      {
+        "exam": 26,
+        "variant": "standard",
+        "number": 28,
+        "reason": "pdf-only-or-missing-text",
+        "sourceUrl": null,
+        "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/26rhikki.pdf"
+      },
+      {
+        "exam": 26,
+        "variant": "standard",
+        "number": 29,
+        "reason": "pdf-only-or-missing-text",
+        "sourceUrl": null,
+        "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/26rhikki.pdf"
+      },
+      {
+        "exam": 26,
+        "variant": "standard",
+        "number": 30,
+        "reason": "pdf-only-or-missing-text",
+        "sourceUrl": null,
+        "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/26rhikki.pdf"
+      },
+      {
+        "exam": 31,
+        "variant": "retake",
+        "number": 26,
+        "reason": "pdf-only-or-missing-text",
+        "sourceUrl": null,
+        "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/31-02rhikki.pdf"
+      },
+      {
+        "exam": 31,
+        "variant": "retake",
+        "number": 27,
+        "reason": "pdf-only-or-missing-text",
+        "sourceUrl": null,
+        "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/31-02rhikki.pdf"
+      },
+      {
+        "exam": 31,
+        "variant": "retake",
+        "number": 28,
+        "reason": "pdf-only-or-missing-text",
+        "sourceUrl": null,
+        "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/31-02rhikki.pdf"
+      },
+      {
+        "exam": 31,
+        "variant": "retake",
+        "number": 29,
+        "reason": "pdf-only-or-missing-text",
+        "sourceUrl": null,
+        "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/31-02rhikki.pdf"
+      },
+      {
+        "exam": 31,
+        "variant": "retake",
+        "number": 30,
+        "reason": "pdf-only-or-missing-text",
+        "sourceUrl": null,
+        "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/31-02rhikki.pdf"
+      },
+      {
+        "exam": 42,
+        "variant": "old",
+        "number": 26,
+        "reason": "pdf-only-or-missing-text",
+        "sourceUrl": null,
+        "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/42rhikkio.pdf"
+      },
+      {
+        "exam": 42,
+        "variant": "old",
+        "number": 27,
+        "reason": "pdf-only-or-missing-text",
+        "sourceUrl": null,
+        "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/42rhikkio.pdf"
+      },
+      {
+        "exam": 42,
+        "variant": "old",
+        "number": 28,
+        "reason": "pdf-only-or-missing-text",
+        "sourceUrl": null,
+        "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/42rhikkio.pdf"
+      },
+      {
+        "exam": 42,
+        "variant": "old",
+        "number": 29,
+        "reason": "pdf-only-or-missing-text",
+        "sourceUrl": null,
+        "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/42rhikkio.pdf"
+      },
+      {
+        "exam": 42,
+        "variant": "old",
+        "number": 30,
+        "reason": "pdf-only-or-missing-text",
+        "sourceUrl": null,
+        "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/42rhikkio.pdf"
+      },
+      {
+        "exam": 43,
+        "variant": "old",
+        "number": 26,
+        "reason": "pdf-only-or-missing-text",
+        "sourceUrl": null,
+        "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/43rhikkio.pdf"
+      },
+      {
+        "exam": 43,
+        "variant": "old",
+        "number": 27,
+        "reason": "pdf-only-or-missing-text",
+        "sourceUrl": null,
+        "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/43rhikkio.pdf"
+      },
+      {
+        "exam": 43,
+        "variant": "old",
+        "number": 28,
+        "reason": "pdf-only-or-missing-text",
+        "sourceUrl": null,
+        "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/43rhikkio.pdf"
+      },
+      {
+        "exam": 43,
+        "variant": "old",
+        "number": 29,
+        "reason": "pdf-only-or-missing-text",
+        "sourceUrl": null,
+        "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/43rhikkio.pdf"
+      },
+      {
+        "exam": 43,
+        "variant": "old",
+        "number": 30,
+        "reason": "pdf-only-or-missing-text",
+        "sourceUrl": null,
+        "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/43rhikkio.pdf"
+      },
+      {
+        "exam": 49,
+        "variant": "standard",
+        "number": 33,
+        "reason": "pdf-only-or-missing-text",
+        "sourceUrl": null,
+        "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2024/03/49rhikki.pdf"
+      }
+    ],
+    "excluded": [
+      {
+        "exam": 24,
+        "variant": "standard",
+        "number": 26,
+        "reason": "pdf-only-or-missing-text",
+        "sourceUrl": null,
+        "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/hi24riyou.pdf"
+      },
+      {
+        "exam": 24,
+        "variant": "standard",
+        "number": 27,
+        "reason": "pdf-only-or-missing-text",
+        "sourceUrl": null,
+        "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/hi24riyou.pdf"
+      },
+      {
+        "exam": 24,
+        "variant": "standard",
+        "number": 28,
+        "reason": "pdf-only-or-missing-text",
+        "sourceUrl": null,
+        "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/hi24riyou.pdf"
+      },
+      {
+        "exam": 24,
+        "variant": "standard",
+        "number": 29,
+        "reason": "pdf-only-or-missing-text",
+        "sourceUrl": null,
+        "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/hi24riyou.pdf"
+      },
+      {
+        "exam": 24,
+        "variant": "standard",
+        "number": 30,
+        "reason": "pdf-only-or-missing-text",
+        "sourceUrl": null,
+        "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/hi24riyou.pdf"
+      },
+      {
+        "exam": 25,
+        "variant": "standard",
+        "number": 26,
+        "reason": "pdf-only-or-missing-text",
+        "sourceUrl": null,
+        "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/25rhikki.pdf"
+      },
+      {
+        "exam": 25,
+        "variant": "standard",
+        "number": 27,
+        "reason": "pdf-only-or-missing-text",
+        "sourceUrl": null,
+        "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/25rhikki.pdf"
+      },
+      {
+        "exam": 25,
+        "variant": "standard",
+        "number": 28,
+        "reason": "pdf-only-or-missing-text",
+        "sourceUrl": null,
+        "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/25rhikki.pdf"
+      },
+      {
+        "exam": 25,
+        "variant": "standard",
+        "number": 29,
+        "reason": "pdf-only-or-missing-text",
+        "sourceUrl": null,
+        "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/25rhikki.pdf"
+      },
+      {
+        "exam": 25,
+        "variant": "standard",
+        "number": 30,
+        "reason": "pdf-only-or-missing-text",
+        "sourceUrl": null,
+        "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/25rhikki.pdf"
+      },
+      {
+        "exam": 26,
+        "variant": "standard",
+        "number": 26,
+        "reason": "pdf-only-or-missing-text",
+        "sourceUrl": null,
+        "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/26rhikki.pdf"
+      },
+      {
+        "exam": 26,
+        "variant": "standard",
+        "number": 27,
+        "reason": "pdf-only-or-missing-text",
+        "sourceUrl": null,
+        "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/26rhikki.pdf"
+      },
+      {
+        "exam": 26,
+        "variant": "standard",
+        "number": 28,
+        "reason": "pdf-only-or-missing-text",
+        "sourceUrl": null,
+        "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/26rhikki.pdf"
+      },
+      {
+        "exam": 26,
+        "variant": "standard",
+        "number": 29,
+        "reason": "pdf-only-or-missing-text",
+        "sourceUrl": null,
+        "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/26rhikki.pdf"
+      },
+      {
+        "exam": 26,
+        "variant": "standard",
+        "number": 30,
+        "reason": "pdf-only-or-missing-text",
+        "sourceUrl": null,
+        "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/26rhikki.pdf"
+      },
+      {
+        "exam": 31,
+        "variant": "retake",
+        "number": 26,
+        "reason": "pdf-only-or-missing-text",
+        "sourceUrl": null,
+        "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/31-02rhikki.pdf"
+      },
+      {
+        "exam": 31,
+        "variant": "retake",
+        "number": 27,
+        "reason": "pdf-only-or-missing-text",
+        "sourceUrl": null,
+        "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/31-02rhikki.pdf"
+      },
+      {
+        "exam": 31,
+        "variant": "retake",
+        "number": 28,
+        "reason": "pdf-only-or-missing-text",
+        "sourceUrl": null,
+        "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/31-02rhikki.pdf"
+      },
+      {
+        "exam": 31,
+        "variant": "retake",
+        "number": 29,
+        "reason": "pdf-only-or-missing-text",
+        "sourceUrl": null,
+        "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/31-02rhikki.pdf"
+      },
+      {
+        "exam": 31,
+        "variant": "retake",
+        "number": 30,
+        "reason": "pdf-only-or-missing-text",
+        "sourceUrl": null,
+        "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/31-02rhikki.pdf"
+      },
+      {
+        "exam": 42,
+        "variant": "old",
+        "number": 26,
+        "reason": "pdf-only-or-missing-text",
+        "sourceUrl": null,
+        "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/42rhikkio.pdf"
+      },
+      {
+        "exam": 42,
+        "variant": "old",
+        "number": 27,
+        "reason": "pdf-only-or-missing-text",
+        "sourceUrl": null,
+        "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/42rhikkio.pdf"
+      },
+      {
+        "exam": 42,
+        "variant": "old",
+        "number": 28,
+        "reason": "pdf-only-or-missing-text",
+        "sourceUrl": null,
+        "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/42rhikkio.pdf"
+      },
+      {
+        "exam": 42,
+        "variant": "old",
+        "number": 29,
+        "reason": "pdf-only-or-missing-text",
+        "sourceUrl": null,
+        "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/42rhikkio.pdf"
+      },
+      {
+        "exam": 42,
+        "variant": "old",
+        "number": 30,
+        "reason": "pdf-only-or-missing-text",
+        "sourceUrl": null,
+        "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/42rhikkio.pdf"
+      },
+      {
+        "exam": 43,
+        "variant": "old",
+        "number": 26,
+        "reason": "pdf-only-or-missing-text",
+        "sourceUrl": null,
+        "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/43rhikkio.pdf"
+      },
+      {
+        "exam": 43,
+        "variant": "old",
+        "number": 27,
+        "reason": "pdf-only-or-missing-text",
+        "sourceUrl": null,
+        "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/43rhikkio.pdf"
+      },
+      {
+        "exam": 43,
+        "variant": "old",
+        "number": 28,
+        "reason": "pdf-only-or-missing-text",
+        "sourceUrl": null,
+        "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/43rhikkio.pdf"
+      },
+      {
+        "exam": 43,
+        "variant": "old",
+        "number": 29,
+        "reason": "pdf-only-or-missing-text",
+        "sourceUrl": null,
+        "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/43rhikkio.pdf"
+      },
+      {
+        "exam": 43,
+        "variant": "old",
+        "number": 30,
+        "reason": "pdf-only-or-missing-text",
+        "sourceUrl": null,
+        "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/43rhikkio.pdf"
+      },
+      {
+        "exam": 49,
+        "variant": "standard",
+        "number": 33,
+        "reason": "pdf-only-or-missing-text",
+        "sourceUrl": null,
+        "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2024/03/49rhikki.pdf"
+      }
+    ],
+    "byExamVariant": [
+      {
+        "exam": 24,
+        "variant": "standard",
+        "targetNumbers": [
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "structuredQuestionCount": 0,
+        "excludedQuestionCount": 5,
+        "sourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/hi24riyou.pdf"
+      },
+      {
+        "exam": 25,
+        "variant": "standard",
+        "targetNumbers": [
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "structuredQuestionCount": 0,
+        "excludedQuestionCount": 5,
+        "sourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/25rhikki.pdf"
+      },
+      {
+        "exam": 26,
+        "variant": "standard",
+        "targetNumbers": [
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "structuredQuestionCount": 0,
+        "excludedQuestionCount": 5,
+        "sourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/26rhikki.pdf"
+      },
+      {
+        "exam": 27,
+        "variant": "standard",
+        "targetNumbers": [
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "structuredQuestionCount": 5,
+        "excludedQuestionCount": 0,
+        "sourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/27rhikki.pdf"
+      },
+      {
+        "exam": 28,
+        "variant": "standard",
+        "targetNumbers": [
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "structuredQuestionCount": 5,
+        "excludedQuestionCount": 0,
+        "sourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/28rhikki.pdf"
+      },
+      {
+        "exam": 29,
+        "variant": "standard",
+        "targetNumbers": [
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "structuredQuestionCount": 5,
+        "excludedQuestionCount": 0,
+        "sourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/29rhikki.pdf"
+      },
+      {
+        "exam": 30,
+        "variant": "standard",
+        "targetNumbers": [
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "structuredQuestionCount": 5,
+        "excludedQuestionCount": 0,
+        "sourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/30rhikki.pdf"
+      },
+      {
+        "exam": 31,
+        "variant": "retake",
+        "targetNumbers": [
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "structuredQuestionCount": 0,
+        "excludedQuestionCount": 5,
+        "sourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/31-02rhikki.pdf"
+      },
+      {
+        "exam": 31,
+        "variant": "standard",
+        "targetNumbers": [
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "structuredQuestionCount": 5,
+        "excludedQuestionCount": 0,
+        "sourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/31rhikki.pdf"
+      },
+      {
+        "exam": 32,
+        "variant": "standard",
+        "targetNumbers": [
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "structuredQuestionCount": 5,
+        "excludedQuestionCount": 0,
+        "sourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/32rhikki.pdf"
+      },
+      {
+        "exam": 33,
+        "variant": "standard",
+        "targetNumbers": [
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "structuredQuestionCount": 5,
+        "excludedQuestionCount": 0,
+        "sourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/33rhikki.pdf"
+      },
+      {
+        "exam": 34,
+        "variant": "standard",
+        "targetNumbers": [
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "structuredQuestionCount": 5,
+        "excludedQuestionCount": 0,
+        "sourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/34rhikki.pdf"
+      },
+      {
+        "exam": 35,
+        "variant": "standard",
+        "targetNumbers": [
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "structuredQuestionCount": 5,
+        "excludedQuestionCount": 0,
+        "sourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/35rhikki.pdf"
+      },
+      {
+        "exam": 36,
+        "variant": "standard",
+        "targetNumbers": [
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "structuredQuestionCount": 5,
+        "excludedQuestionCount": 0,
+        "sourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/36rhikki.pdf"
+      },
+      {
+        "exam": 37,
+        "variant": "standard",
+        "targetNumbers": [
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "structuredQuestionCount": 5,
+        "excludedQuestionCount": 0,
+        "sourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/37rhikki.pdf"
+      },
+      {
+        "exam": 38,
+        "variant": "standard",
+        "targetNumbers": [
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "structuredQuestionCount": 5,
+        "excludedQuestionCount": 0,
+        "sourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/38rhikki.pdf"
+      },
+      {
+        "exam": 39,
+        "variant": "standard",
+        "targetNumbers": [
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "structuredQuestionCount": 5,
+        "excludedQuestionCount": 0,
+        "sourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/39rhikki.pdf"
+      },
+      {
+        "exam": 40,
+        "variant": "standard",
+        "targetNumbers": [
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "structuredQuestionCount": 5,
+        "excludedQuestionCount": 0,
+        "sourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/40rhikki.pdf"
+      },
+      {
+        "exam": 41,
+        "variant": "new",
+        "targetNumbers": [
+          31,
+          32,
+          33,
+          34,
+          35
+        ],
+        "structuredQuestionCount": 5,
+        "excludedQuestionCount": 0,
+        "sourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/41rhikkin.pdf"
+      },
+      {
+        "exam": 41,
+        "variant": "old",
+        "targetNumbers": [
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "structuredQuestionCount": 5,
+        "excludedQuestionCount": 0,
+        "sourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/41rhikkio.pdf"
+      },
+      {
+        "exam": 42,
+        "variant": "new",
+        "targetNumbers": [
+          31,
+          32,
+          33,
+          34,
+          35
+        ],
+        "structuredQuestionCount": 5,
+        "excludedQuestionCount": 0,
+        "sourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/42rhikkin.pdf"
+      },
+      {
+        "exam": 42,
+        "variant": "old",
+        "targetNumbers": [
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "structuredQuestionCount": 0,
+        "excludedQuestionCount": 5,
+        "sourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/42rhikkio.pdf"
+      },
+      {
+        "exam": 43,
+        "variant": "new",
+        "targetNumbers": [
+          31,
+          32,
+          33,
+          34,
+          35
+        ],
+        "structuredQuestionCount": 5,
+        "excludedQuestionCount": 0,
+        "sourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/43rhikkin.pdf"
+      },
+      {
+        "exam": 43,
+        "variant": "old",
+        "targetNumbers": [
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "structuredQuestionCount": 0,
+        "excludedQuestionCount": 5,
+        "sourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/43rhikkio.pdf"
+      },
+      {
+        "exam": 44,
+        "variant": "standard",
+        "targetNumbers": [
+          31,
+          32,
+          33,
+          34,
+          35
+        ],
+        "structuredQuestionCount": 5,
+        "excludedQuestionCount": 0,
+        "sourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/10/44rhikki.pdf"
+      },
+      {
+        "exam": 45,
+        "variant": "standard",
+        "targetNumbers": [
+          31,
+          32,
+          33,
+          34,
+          35
+        ],
+        "structuredQuestionCount": 5,
+        "excludedQuestionCount": 0,
+        "sourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2022/03/45rhikki.pdf"
+      },
+      {
+        "exam": 46,
+        "variant": "standard",
+        "targetNumbers": [
+          31,
+          32,
+          33,
+          34,
+          35
+        ],
+        "structuredQuestionCount": 5,
+        "excludedQuestionCount": 0,
+        "sourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2022/09/46rhikki.pdf"
+      },
+      {
+        "exam": 47,
+        "variant": "standard",
+        "targetNumbers": [
+          31,
+          32,
+          33,
+          34,
+          35
+        ],
+        "structuredQuestionCount": 5,
+        "excludedQuestionCount": 0,
+        "sourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2023/03/47rhikki.pdf"
+      },
+      {
+        "exam": 48,
+        "variant": "standard",
+        "targetNumbers": [
+          31,
+          32,
+          33,
+          34,
+          35
+        ],
+        "structuredQuestionCount": 5,
+        "excludedQuestionCount": 0,
+        "sourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2023/09/48rhikki.pdf"
+      },
+      {
+        "exam": 49,
+        "variant": "standard",
+        "targetNumbers": [
+          31,
+          32,
+          33,
+          34,
+          35
+        ],
+        "structuredQuestionCount": 4,
+        "excludedQuestionCount": 1,
+        "sourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2024/03/49rhikki.pdf"
+      },
+      {
+        "exam": 50,
+        "variant": "standard",
+        "targetNumbers": [
+          31,
+          32,
+          33,
+          34,
+          35
+        ],
+        "structuredQuestionCount": 5,
+        "excludedQuestionCount": 0,
+        "sourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2024/09/50rhikki.pdf"
+      },
+      {
+        "exam": 51,
+        "variant": "standard",
+        "targetNumbers": [
+          31,
+          32,
+          33,
+          34,
+          35
+        ],
+        "structuredQuestionCount": 5,
+        "excludedQuestionCount": 0,
+        "sourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2025/03/51rhikki-.pdf"
+      },
+      {
+        "exam": 52,
+        "variant": "standard",
+        "targetNumbers": [
+          31,
+          32,
+          33,
+          34,
+          35
+        ],
+        "structuredQuestionCount": 5,
+        "excludedQuestionCount": 0,
+        "sourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2025/09/52rhikki.pdf"
+      },
+      {
+        "exam": 53,
+        "variant": "standard",
+        "targetNumbers": [
+          31,
+          32,
+          33,
+          34,
+          35
+        ],
+        "structuredQuestionCount": 5,
+        "excludedQuestionCount": 0,
+        "sourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2026/03/53rhikki-1.pdf"
+      },
+      {
+        "exam": 54,
+        "variant": "standard",
+        "targetNumbers": [
+          31,
+          32,
+          33,
+          34,
+          35
+        ],
+        "structuredQuestionCount": 5,
+        "excludedQuestionCount": 0,
+        "sourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2026/09/54rhikki.pdf"
+      }
+    ],
+    "notes": [
+      "旧制度（第40回以前および第41回旧試験）は皮膚科学が問題26〜30、新制度は問題31〜35のため、科目名と制度区分に基づいて対象番号を切り替えた。",
+      "本文または4選択肢が空欄の公式PDFのみレコードは意味分析から除外した。",
+      "正本に保存された原文・選択肢はこの分析JSONへ転載していない。"
+    ]
+  },
+  "knowledgeItems": [
+    {
+      "label": "脂腺の分布",
+      "description": "脂腺は部位差があり、頭毛のある部位、額、眉間などに多い。",
+      "occurrenceCount": 28,
+      "examCount": 18,
+      "references": [
+        {
+          "exam": 28,
+          "variant": "standard",
+          "number": 27,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18549"
+        },
+        {
+          "exam": 29,
+          "variant": "standard",
+          "number": 28,
+          "choice": 2,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18600"
+        },
+        {
+          "exam": 30,
+          "variant": "standard",
+          "number": 26,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18648"
+        },
+        {
+          "exam": 30,
+          "variant": "standard",
+          "number": 28,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18650"
+        },
+        {
+          "exam": 31,
+          "variant": "standard",
+          "number": 27,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18699"
+        },
+        {
+          "exam": 31,
+          "variant": "standard",
+          "number": 28,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18700"
+        },
+        {
+          "exam": 31,
+          "variant": "standard",
+          "number": 28,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18700"
+        },
+        {
+          "exam": 32,
+          "variant": "standard",
+          "number": 28,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24819"
+        },
+        {
+          "exam": 32,
+          "variant": "standard",
+          "number": 28,
+          "choice": 4,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24819"
+        },
+        {
+          "exam": 33,
+          "variant": "standard",
+          "number": 27,
+          "choice": 3,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24868"
+        },
+        {
+          "exam": 33,
+          "variant": "standard",
+          "number": 29,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24870"
+        },
+        {
+          "exam": 34,
+          "variant": "standard",
+          "number": 28,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24919"
+        },
+        {
+          "exam": 34,
+          "variant": "standard",
+          "number": 28,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24919"
+        },
+        {
+          "exam": 35,
+          "variant": "standard",
+          "number": 27,
+          "choice": 3,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/30825"
+        },
+        {
+          "exam": 35,
+          "variant": "standard",
+          "number": 28,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/30826"
+        },
+        {
+          "exam": 37,
+          "variant": "standard",
+          "number": 28,
+          "choice": 1,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/34190"
+        },
+        {
+          "exam": 38,
+          "variant": "standard",
+          "number": 26,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/37938"
+        },
+        {
+          "exam": 39,
+          "variant": "standard",
+          "number": 27,
+          "choice": 4,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/41722"
+        },
+        {
+          "exam": 40,
+          "variant": "standard",
+          "number": 27,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/46256"
+        },
+        {
+          "exam": 42,
+          "variant": "new",
+          "number": 32,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/52050"
+        },
+        {
+          "exam": 42,
+          "variant": "new",
+          "number": 33,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/52051"
+        },
+        {
+          "exam": 43,
+          "variant": "new",
+          "number": 33,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/55210"
+        },
+        {
+          "exam": 44,
+          "variant": "standard",
+          "number": 32,
+          "choice": 4,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/57897"
+        },
+        {
+          "exam": 44,
+          "variant": "standard",
+          "number": 33,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/57898"
+        },
+        {
+          "exam": 47,
+          "variant": "standard",
+          "number": 32,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/70227"
+        },
+        {
+          "exam": 51,
+          "variant": "standard",
+          "number": 31,
+          "choice": 1,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/83951"
+        },
+        {
+          "exam": 54,
+          "variant": "standard",
+          "number": 33,
+          "choice": 1,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/96782"
+        },
+        {
+          "exam": 54,
+          "variant": "standard",
+          "number": 33,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/96782"
+        }
+      ],
+      "knowledgeId": "dermatology-k024"
+    },
+    {
+      "label": "皮膚の加齢変化",
+      "description": "加齢で分泌・新陳代謝が低下し、乾燥、弾力低下、たるみ、しわが生じる。環境要因も関係する。",
+      "occurrenceCount": 26,
+      "examCount": 16,
+      "references": [
+        {
+          "exam": 30,
+          "variant": "standard",
+          "number": 29,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18651"
+        },
+        {
+          "exam": 30,
+          "variant": "standard",
+          "number": 29,
+          "choice": 4,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18651"
+        },
+        {
+          "exam": 32,
+          "variant": "standard",
+          "number": 29,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24820"
+        },
+        {
+          "exam": 32,
+          "variant": "standard",
+          "number": 29,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24820"
+        },
+        {
+          "exam": 34,
+          "variant": "standard",
+          "number": 29,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24920"
+        },
+        {
+          "exam": 34,
+          "variant": "standard",
+          "number": 29,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24920"
+        },
+        {
+          "exam": 35,
+          "variant": "standard",
+          "number": 29,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/30827"
+        },
+        {
+          "exam": 36,
+          "variant": "standard",
+          "number": 29,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/33498"
+        },
+        {
+          "exam": 37,
+          "variant": "standard",
+          "number": 29,
+          "choice": 1,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/34191"
+        },
+        {
+          "exam": 37,
+          "variant": "standard",
+          "number": 29,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/34191"
+        },
+        {
+          "exam": 37,
+          "variant": "standard",
+          "number": 29,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/34191"
+        },
+        {
+          "exam": 38,
+          "variant": "standard",
+          "number": 29,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/37941"
+        },
+        {
+          "exam": 40,
+          "variant": "standard",
+          "number": 30,
+          "choice": 2,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/46259"
+        },
+        {
+          "exam": 41,
+          "variant": "new",
+          "number": 34,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/49525"
+        },
+        {
+          "exam": 41,
+          "variant": "old",
+          "number": 29,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/49470"
+        },
+        {
+          "exam": 42,
+          "variant": "new",
+          "number": 34,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/52052"
+        },
+        {
+          "exam": 42,
+          "variant": "new",
+          "number": 34,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/52052"
+        },
+        {
+          "exam": 43,
+          "variant": "new",
+          "number": 34,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/55211"
+        },
+        {
+          "exam": 43,
+          "variant": "new",
+          "number": 34,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/55211"
+        },
+        {
+          "exam": 43,
+          "variant": "new",
+          "number": 34,
+          "choice": 4,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/55211"
+        },
+        {
+          "exam": 45,
+          "variant": "standard",
+          "number": 34,
+          "choice": 1,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/63171"
+        },
+        {
+          "exam": 45,
+          "variant": "standard",
+          "number": 34,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/63171"
+        },
+        {
+          "exam": 46,
+          "variant": "standard",
+          "number": 34,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/67609"
+        },
+        {
+          "exam": 51,
+          "variant": "standard",
+          "number": 34,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/83954"
+        },
+        {
+          "exam": 51,
+          "variant": "standard",
+          "number": 34,
+          "choice": 4,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/83954"
+        },
+        {
+          "exam": 52,
+          "variant": "standard",
+          "number": 34,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/90160"
+        }
+      ],
+      "knowledgeId": "dermatology-k045"
+    },
+    {
+      "label": "接触皮膚炎",
+      "description": "接触皮膚炎は接触物質で起こり、原因回避とパッチテストが重要で、再曝露で発症しうる。",
+      "occurrenceCount": 24,
+      "examCount": 15,
+      "references": [
+        {
+          "exam": 29,
+          "variant": "standard",
+          "number": 28,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18600"
+        },
+        {
+          "exam": 29,
+          "variant": "standard",
+          "number": 30,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18602"
+        },
+        {
+          "exam": 30,
+          "variant": "standard",
+          "number": 30,
+          "choice": 2,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18652"
+        },
+        {
+          "exam": 31,
+          "variant": "standard",
+          "number": 30,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18702"
+        },
+        {
+          "exam": 32,
+          "variant": "standard",
+          "number": 30,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24821"
+        },
+        {
+          "exam": 33,
+          "variant": "standard",
+          "number": 30,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24871"
+        },
+        {
+          "exam": 33,
+          "variant": "standard",
+          "number": 30,
+          "choice": 4,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24871"
+        },
+        {
+          "exam": 34,
+          "variant": "standard",
+          "number": 30,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24921"
+        },
+        {
+          "exam": 35,
+          "variant": "standard",
+          "number": 30,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/30828"
+        },
+        {
+          "exam": 37,
+          "variant": "standard",
+          "number": 30,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/34192"
+        },
+        {
+          "exam": 37,
+          "variant": "standard",
+          "number": 30,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/34192"
+        },
+        {
+          "exam": 38,
+          "variant": "standard",
+          "number": 30,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/37942"
+        },
+        {
+          "exam": 38,
+          "variant": "standard",
+          "number": 30,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/37942"
+        },
+        {
+          "exam": 39,
+          "variant": "standard",
+          "number": 30,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/41725"
+        },
+        {
+          "exam": 42,
+          "variant": "new",
+          "number": 35,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/52053"
+        },
+        {
+          "exam": 43,
+          "variant": "new",
+          "number": 35,
+          "choice": 1,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/55212"
+        },
+        {
+          "exam": 45,
+          "variant": "standard",
+          "number": 35,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/63172"
+        },
+        {
+          "exam": 45,
+          "variant": "standard",
+          "number": 35,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/63172"
+        },
+        {
+          "exam": 46,
+          "variant": "standard",
+          "number": 35,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/67610"
+        },
+        {
+          "exam": 52,
+          "variant": "standard",
+          "number": 34,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/90160"
+        },
+        {
+          "exam": 52,
+          "variant": "standard",
+          "number": 35,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/90161"
+        },
+        {
+          "exam": 52,
+          "variant": "standard",
+          "number": 35,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/90161"
+        },
+        {
+          "exam": 52,
+          "variant": "standard",
+          "number": 35,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/90161"
+        },
+        {
+          "exam": 52,
+          "variant": "standard",
+          "number": 35,
+          "choice": 4,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/90161"
+        }
+      ],
+      "knowledgeId": "dermatology-k055"
+    },
+    {
+      "label": "皮脂膜と弱酸性",
+      "description": "汗と皮脂の皮脂膜は弱酸性で、脂肪酸や常在菌などが微生物の増殖を抑える。",
+      "occurrenceCount": 21,
+      "examCount": 16,
+      "references": [
+        {
+          "exam": 27,
+          "variant": "standard",
+          "number": 28,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18500"
+        },
+        {
+          "exam": 28,
+          "variant": "standard",
+          "number": 28,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18550"
+        },
+        {
+          "exam": 29,
+          "variant": "standard",
+          "number": 29,
+          "choice": 1,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18601"
+        },
+        {
+          "exam": 34,
+          "variant": "standard",
+          "number": 29,
+          "choice": 2,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24920"
+        },
+        {
+          "exam": 36,
+          "variant": "standard",
+          "number": 28,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/33497"
+        },
+        {
+          "exam": 38,
+          "variant": "standard",
+          "number": 28,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/37940"
+        },
+        {
+          "exam": 41,
+          "variant": "new",
+          "number": 34,
+          "choice": 2,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/49525"
+        },
+        {
+          "exam": 41,
+          "variant": "old",
+          "number": 29,
+          "choice": 2,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/49470"
+        },
+        {
+          "exam": 42,
+          "variant": "new",
+          "number": 34,
+          "choice": 3,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/52052"
+        },
+        {
+          "exam": 43,
+          "variant": "new",
+          "number": 33,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/55210"
+        },
+        {
+          "exam": 43,
+          "variant": "new",
+          "number": 33,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/55210"
+        },
+        {
+          "exam": 45,
+          "variant": "standard",
+          "number": 33,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/63170"
+        },
+        {
+          "exam": 46,
+          "variant": "standard",
+          "number": 33,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/67608"
+        },
+        {
+          "exam": 46,
+          "variant": "standard",
+          "number": 33,
+          "choice": 3,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/67608"
+        },
+        {
+          "exam": 47,
+          "variant": "standard",
+          "number": 33,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/70228"
+        },
+        {
+          "exam": 48,
+          "variant": "standard",
+          "number": 33,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/72563"
+        },
+        {
+          "exam": 48,
+          "variant": "standard",
+          "number": 33,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/72563"
+        },
+        {
+          "exam": 48,
+          "variant": "standard",
+          "number": 33,
+          "choice": 4,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/72563"
+        },
+        {
+          "exam": 52,
+          "variant": "standard",
+          "number": 33,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/90159"
+        },
+        {
+          "exam": 52,
+          "variant": "standard",
+          "number": 33,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/90159"
+        },
+        {
+          "exam": 54,
+          "variant": "standard",
+          "number": 33,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/96782"
+        }
+      ],
+      "knowledgeId": "dermatology-k033"
+    },
+    {
+      "label": "ウイルス性皮膚疾患",
+      "description": "単純性疱疹、帯状疱疹、伝染性軟属腫、疣贅、水痘などはウイルス性疾患である。",
+      "occurrenceCount": 20,
+      "examCount": 15,
+      "references": [
+        {
+          "exam": 29,
+          "variant": "standard",
+          "number": 30,
+          "choice": 4,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18602"
+        },
+        {
+          "exam": 30,
+          "variant": "standard",
+          "number": 30,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18652"
+        },
+        {
+          "exam": 31,
+          "variant": "standard",
+          "number": 30,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18702"
+        },
+        {
+          "exam": 32,
+          "variant": "standard",
+          "number": 30,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24821"
+        },
+        {
+          "exam": 34,
+          "variant": "standard",
+          "number": 30,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24921"
+        },
+        {
+          "exam": 39,
+          "variant": "standard",
+          "number": 30,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/41725"
+        },
+        {
+          "exam": 40,
+          "variant": "standard",
+          "number": 29,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/46258"
+        },
+        {
+          "exam": 41,
+          "variant": "new",
+          "number": 35,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/49526"
+        },
+        {
+          "exam": 41,
+          "variant": "new",
+          "number": 35,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/49526"
+        },
+        {
+          "exam": 41,
+          "variant": "old",
+          "number": 30,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/49471"
+        },
+        {
+          "exam": 41,
+          "variant": "old",
+          "number": 30,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/49471"
+        },
+        {
+          "exam": 46,
+          "variant": "standard",
+          "number": 35,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/67610"
+        },
+        {
+          "exam": 47,
+          "variant": "standard",
+          "number": 35,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/70230"
+        },
+        {
+          "exam": 47,
+          "variant": "standard",
+          "number": 35,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/70230"
+        },
+        {
+          "exam": 47,
+          "variant": "standard",
+          "number": 35,
+          "choice": 4,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/70230"
+        },
+        {
+          "exam": 48,
+          "variant": "standard",
+          "number": 35,
+          "choice": 3,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/72565"
+        },
+        {
+          "exam": 50,
+          "variant": "standard",
+          "number": 35,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/79932"
+        },
+        {
+          "exam": 53,
+          "variant": "standard",
+          "number": 35,
+          "choice": 1,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/93105"
+        },
+        {
+          "exam": 53,
+          "variant": "standard",
+          "number": 35,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/93105"
+        },
+        {
+          "exam": 54,
+          "variant": "standard",
+          "number": 35,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/96784"
+        }
+      ],
+      "knowledgeId": "dermatology-k059"
+    },
+    {
+      "label": "表皮の角化",
+      "description": "基底細胞は分裂して表層へ移動し、角化して角質細胞になる。",
+      "occurrenceCount": 19,
+      "examCount": 19,
+      "references": [
+        {
+          "exam": 27,
+          "variant": "standard",
+          "number": 26,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18498"
+        },
+        {
+          "exam": 28,
+          "variant": "standard",
+          "number": 26,
+          "choice": 3,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18548"
+        },
+        {
+          "exam": 29,
+          "variant": "standard",
+          "number": 26,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18598"
+        },
+        {
+          "exam": 30,
+          "variant": "standard",
+          "number": 26,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18648"
+        },
+        {
+          "exam": 32,
+          "variant": "standard",
+          "number": 26,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24817"
+        },
+        {
+          "exam": 33,
+          "variant": "standard",
+          "number": 26,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24867"
+        },
+        {
+          "exam": 34,
+          "variant": "standard",
+          "number": 26,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24917"
+        },
+        {
+          "exam": 35,
+          "variant": "standard",
+          "number": 26,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/30824"
+        },
+        {
+          "exam": 38,
+          "variant": "standard",
+          "number": 26,
+          "choice": 1,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/37938"
+        },
+        {
+          "exam": 40,
+          "variant": "standard",
+          "number": 26,
+          "choice": 4,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/46255"
+        },
+        {
+          "exam": 41,
+          "variant": "new",
+          "number": 31,
+          "choice": 4,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/49522"
+        },
+        {
+          "exam": 41,
+          "variant": "old",
+          "number": 26,
+          "choice": 4,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/49467"
+        },
+        {
+          "exam": 42,
+          "variant": "new",
+          "number": 31,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/52049"
+        },
+        {
+          "exam": 43,
+          "variant": "new",
+          "number": 31,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/55208"
+        },
+        {
+          "exam": 44,
+          "variant": "standard",
+          "number": 31,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/57896"
+        },
+        {
+          "exam": 45,
+          "variant": "standard",
+          "number": 31,
+          "choice": 3,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/63168"
+        },
+        {
+          "exam": 46,
+          "variant": "standard",
+          "number": 31,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/67606"
+        },
+        {
+          "exam": 49,
+          "variant": "standard",
+          "number": 31,
+          "choice": 2,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/75567"
+        },
+        {
+          "exam": 52,
+          "variant": "standard",
+          "number": 31,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/90157"
+        }
+      ],
+      "knowledgeId": "dermatology-k004"
+    },
+    {
+      "label": "皮脂分泌と年齢・男性ホルモン",
+      "description": "皮脂分泌は男性ホルモンの影響を受け、加齢で単純に増加するものではない。",
+      "occurrenceCount": 18,
+      "examCount": 17,
+      "references": [
+        {
+          "exam": 27,
+          "variant": "standard",
+          "number": 28,
+          "choice": 1,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18500"
+        },
+        {
+          "exam": 30,
+          "variant": "standard",
+          "number": 28,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18650"
+        },
+        {
+          "exam": 31,
+          "variant": "standard",
+          "number": 28,
+          "choice": 3,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18700"
+        },
+        {
+          "exam": 33,
+          "variant": "standard",
+          "number": 28,
+          "choice": 2,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24869"
+        },
+        {
+          "exam": 33,
+          "variant": "standard",
+          "number": 29,
+          "choice": 2,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24870"
+        },
+        {
+          "exam": 35,
+          "variant": "standard",
+          "number": 29,
+          "choice": 2,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/30827"
+        },
+        {
+          "exam": 36,
+          "variant": "standard",
+          "number": 28,
+          "choice": 4,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/33497"
+        },
+        {
+          "exam": 38,
+          "variant": "standard",
+          "number": 28,
+          "choice": 2,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/37940"
+        },
+        {
+          "exam": 39,
+          "variant": "standard",
+          "number": 28,
+          "choice": 1,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/41723"
+        },
+        {
+          "exam": 40,
+          "variant": "standard",
+          "number": 28,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/46257"
+        },
+        {
+          "exam": 42,
+          "variant": "new",
+          "number": 33,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/52051"
+        },
+        {
+          "exam": 43,
+          "variant": "new",
+          "number": 34,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/55211"
+        },
+        {
+          "exam": 44,
+          "variant": "standard",
+          "number": 34,
+          "choice": 1,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/57899"
+        },
+        {
+          "exam": 47,
+          "variant": "standard",
+          "number": 33,
+          "choice": 2,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/70228"
+        },
+        {
+          "exam": 48,
+          "variant": "standard",
+          "number": 33,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/72563"
+        },
+        {
+          "exam": 50,
+          "variant": "standard",
+          "number": 33,
+          "choice": 2,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/79930"
+        },
+        {
+          "exam": 51,
+          "variant": "standard",
+          "number": 34,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/83954"
+        },
+        {
+          "exam": 54,
+          "variant": "standard",
+          "number": 34,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/96783"
+        }
+      ],
+      "knowledgeId": "dermatology-k042"
+    },
+    {
+      "label": "毛の三層構造",
+      "description": "毛は中心から毛髄質、毛皮質、毛小皮の三層で構成される。",
+      "occurrenceCount": 17,
+      "examCount": 13,
+      "references": [
+        {
+          "exam": 27,
+          "variant": "standard",
+          "number": 27,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18499"
+        },
+        {
+          "exam": 32,
+          "variant": "standard",
+          "number": 27,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24818"
+        },
+        {
+          "exam": 32,
+          "variant": "standard",
+          "number": 27,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24818"
+        },
+        {
+          "exam": 34,
+          "variant": "standard",
+          "number": 27,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24918"
+        },
+        {
+          "exam": 35,
+          "variant": "standard",
+          "number": 27,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/30825"
+        },
+        {
+          "exam": 38,
+          "variant": "standard",
+          "number": 27,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/37939"
+        },
+        {
+          "exam": 39,
+          "variant": "standard",
+          "number": 27,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/41722"
+        },
+        {
+          "exam": 43,
+          "variant": "new",
+          "number": 32,
+          "choice": 2,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/55209"
+        },
+        {
+          "exam": 43,
+          "variant": "new",
+          "number": 32,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/55209"
+        },
+        {
+          "exam": 45,
+          "variant": "standard",
+          "number": 32,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/63169"
+        },
+        {
+          "exam": 46,
+          "variant": "standard",
+          "number": 32,
+          "choice": 1,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/67607"
+        },
+        {
+          "exam": 48,
+          "variant": "standard",
+          "number": 32,
+          "choice": 1,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/72562"
+        },
+        {
+          "exam": 50,
+          "variant": "standard",
+          "number": 32,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/79929"
+        },
+        {
+          "exam": 50,
+          "variant": "standard",
+          "number": 32,
+          "choice": 3,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/79929"
+        },
+        {
+          "exam": 50,
+          "variant": "standard",
+          "number": 32,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/79929"
+        },
+        {
+          "exam": 51,
+          "variant": "standard",
+          "number": 32,
+          "choice": 1,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/83952"
+        },
+        {
+          "exam": 54,
+          "variant": "standard",
+          "number": 32,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/96781"
+        }
+      ],
+      "knowledgeId": "dermatology-k015"
+    },
+    {
+      "label": "ランゲルハンス細胞の免疫機能",
+      "description": "ランゲルハンス細胞は抗原を取り込み、リンパ球へ抗原情報を提示する。",
+      "occurrenceCount": 16,
+      "examCount": 16,
+      "references": [
+        {
+          "exam": 29,
+          "variant": "standard",
+          "number": 26,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18598"
+        },
+        {
+          "exam": 32,
+          "variant": "standard",
+          "number": 26,
+          "choice": 3,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24817"
+        },
+        {
+          "exam": 34,
+          "variant": "standard",
+          "number": 26,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24917"
+        },
+        {
+          "exam": 35,
+          "variant": "standard",
+          "number": 28,
+          "choice": 4,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/30826"
+        },
+        {
+          "exam": 36,
+          "variant": "standard",
+          "number": 26,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/33495"
+        },
+        {
+          "exam": 37,
+          "variant": "standard",
+          "number": 26,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/34188"
+        },
+        {
+          "exam": 38,
+          "variant": "standard",
+          "number": 26,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/37938"
+        },
+        {
+          "exam": 40,
+          "variant": "standard",
+          "number": 26,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/46255"
+        },
+        {
+          "exam": 41,
+          "variant": "new",
+          "number": 31,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/49522"
+        },
+        {
+          "exam": 41,
+          "variant": "old",
+          "number": 26,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/49467"
+        },
+        {
+          "exam": 42,
+          "variant": "new",
+          "number": 31,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/52049"
+        },
+        {
+          "exam": 44,
+          "variant": "standard",
+          "number": 31,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/57896"
+        },
+        {
+          "exam": 46,
+          "variant": "standard",
+          "number": 31,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/67606"
+        },
+        {
+          "exam": 49,
+          "variant": "standard",
+          "number": 31,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/75567"
+        },
+        {
+          "exam": 52,
+          "variant": "standard",
+          "number": 31,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/90157"
+        },
+        {
+          "exam": 53,
+          "variant": "standard",
+          "number": 31,
+          "choice": 3,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/93101"
+        }
+      ],
+      "knowledgeId": "dermatology-k006"
+    },
+    {
+      "label": "皮下組織の脂肪",
+      "description": "皮下組織の脂肪は外力へのクッションと断熱の役割を持つ。",
+      "occurrenceCount": 16,
+      "examCount": 14,
+      "references": [
+        {
+          "exam": 27,
+          "variant": "standard",
+          "number": 26,
+          "choice": 4,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18498"
+        },
+        {
+          "exam": 28,
+          "variant": "standard",
+          "number": 26,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18548"
+        },
+        {
+          "exam": 28,
+          "variant": "standard",
+          "number": 26,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18548"
+        },
+        {
+          "exam": 29,
+          "variant": "standard",
+          "number": 26,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18598"
+        },
+        {
+          "exam": 31,
+          "variant": "standard",
+          "number": 26,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18698"
+        },
+        {
+          "exam": 33,
+          "variant": "standard",
+          "number": 26,
+          "choice": 4,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24867"
+        },
+        {
+          "exam": 34,
+          "variant": "standard",
+          "number": 26,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24917"
+        },
+        {
+          "exam": 35,
+          "variant": "standard",
+          "number": 26,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/30824"
+        },
+        {
+          "exam": 36,
+          "variant": "standard",
+          "number": 26,
+          "choice": 1,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/33495"
+        },
+        {
+          "exam": 36,
+          "variant": "standard",
+          "number": 28,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/33497"
+        },
+        {
+          "exam": 37,
+          "variant": "standard",
+          "number": 26,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/34188"
+        },
+        {
+          "exam": 39,
+          "variant": "standard",
+          "number": 26,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/41721"
+        },
+        {
+          "exam": 44,
+          "variant": "standard",
+          "number": 31,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/57896"
+        },
+        {
+          "exam": 45,
+          "variant": "standard",
+          "number": 31,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/63168"
+        },
+        {
+          "exam": 47,
+          "variant": "standard",
+          "number": 31,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/70226"
+        },
+        {
+          "exam": 48,
+          "variant": "standard",
+          "number": 31,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/72561"
+        }
+      ],
+      "knowledgeId": "dermatology-k009"
+    },
+    {
+      "label": "色素細胞の位置とメラニン",
+      "description": "色素細胞は表皮基底層にあり、メラニンを産生して周囲の表皮細胞へ渡す。",
+      "occurrenceCount": 16,
+      "examCount": 12,
+      "references": [
+        {
+          "exam": 27,
+          "variant": "standard",
+          "number": 26,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18498"
+        },
+        {
+          "exam": 30,
+          "variant": "standard",
+          "number": 26,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18648"
+        },
+        {
+          "exam": 32,
+          "variant": "standard",
+          "number": 26,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24817"
+        },
+        {
+          "exam": 41,
+          "variant": "new",
+          "number": 32,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/49523"
+        },
+        {
+          "exam": 41,
+          "variant": "old",
+          "number": 27,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/49468"
+        },
+        {
+          "exam": 45,
+          "variant": "standard",
+          "number": 31,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/63168"
+        },
+        {
+          "exam": 46,
+          "variant": "standard",
+          "number": 34,
+          "choice": 4,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/67609"
+        },
+        {
+          "exam": 48,
+          "variant": "standard",
+          "number": 31,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/72561"
+        },
+        {
+          "exam": 49,
+          "variant": "standard",
+          "number": 31,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/75567"
+        },
+        {
+          "exam": 52,
+          "variant": "standard",
+          "number": 31,
+          "choice": 2,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/90157"
+        },
+        {
+          "exam": 53,
+          "variant": "standard",
+          "number": 31,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/93101"
+        },
+        {
+          "exam": 53,
+          "variant": "standard",
+          "number": 31,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/93101"
+        },
+        {
+          "exam": 53,
+          "variant": "standard",
+          "number": 31,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/93101"
+        },
+        {
+          "exam": 54,
+          "variant": "standard",
+          "number": 31,
+          "choice": 1,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/96780"
+        },
+        {
+          "exam": 54,
+          "variant": "standard",
+          "number": 31,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/96780"
+        },
+        {
+          "exam": 54,
+          "variant": "standard",
+          "number": 31,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/96780"
+        }
+      ],
+      "knowledgeId": "dermatology-k005"
+    },
+    {
+      "label": "細菌性皮膚疾患",
+      "description": "尋常性毛瘡、伝染性膿痂疹、丹毒などには化膿菌やレンサ球菌が関係する。",
+      "occurrenceCount": 15,
+      "examCount": 12,
+      "references": [
+        {
+          "exam": 31,
+          "variant": "standard",
+          "number": 30,
+          "choice": 1,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18702"
+        },
+        {
+          "exam": 32,
+          "variant": "standard",
+          "number": 30,
+          "choice": 2,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24821"
+        },
+        {
+          "exam": 34,
+          "variant": "standard",
+          "number": 29,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24920"
+        },
+        {
+          "exam": 34,
+          "variant": "standard",
+          "number": 30,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24921"
+        },
+        {
+          "exam": 35,
+          "variant": "standard",
+          "number": 30,
+          "choice": 4,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/30828"
+        },
+        {
+          "exam": 36,
+          "variant": "standard",
+          "number": 29,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/33498"
+        },
+        {
+          "exam": 36,
+          "variant": "standard",
+          "number": 30,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/33499"
+        },
+        {
+          "exam": 39,
+          "variant": "standard",
+          "number": 30,
+          "choice": 2,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/41725"
+        },
+        {
+          "exam": 43,
+          "variant": "new",
+          "number": 35,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/55212"
+        },
+        {
+          "exam": 44,
+          "variant": "standard",
+          "number": 34,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/57899"
+        },
+        {
+          "exam": 44,
+          "variant": "standard",
+          "number": 35,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/57900"
+        },
+        {
+          "exam": 47,
+          "variant": "standard",
+          "number": 35,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/70230"
+        },
+        {
+          "exam": 48,
+          "variant": "standard",
+          "number": 35,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/72565"
+        },
+        {
+          "exam": 50,
+          "variant": "standard",
+          "number": 35,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/79932"
+        },
+        {
+          "exam": 54,
+          "variant": "standard",
+          "number": 35,
+          "choice": 2,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/96784"
+        }
+      ],
+      "knowledgeId": "dermatology-k057"
+    },
+    {
+      "label": "全身疾患と皮膚所見",
+      "description": "肝障害は黄疸やかゆみ、腎疾患はむくみなど、全身疾患は皮膚所見に反映されることがある。",
+      "occurrenceCount": 15,
+      "examCount": 7,
+      "references": [
+        {
+          "exam": 28,
+          "variant": "standard",
+          "number": 29,
+          "choice": 2,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18551"
+        },
+        {
+          "exam": 28,
+          "variant": "standard",
+          "number": 29,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18551"
+        },
+        {
+          "exam": 44,
+          "variant": "standard",
+          "number": 34,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/57899"
+        },
+        {
+          "exam": 45,
+          "variant": "standard",
+          "number": 34,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/63171"
+        },
+        {
+          "exam": 47,
+          "variant": "standard",
+          "number": 34,
+          "choice": 1,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/70229"
+        },
+        {
+          "exam": 49,
+          "variant": "standard",
+          "number": 34,
+          "choice": 1,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/75570"
+        },
+        {
+          "exam": 49,
+          "variant": "standard",
+          "number": 34,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/75570"
+        },
+        {
+          "exam": 49,
+          "variant": "standard",
+          "number": 34,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/75570"
+        },
+        {
+          "exam": 49,
+          "variant": "standard",
+          "number": 34,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/75570"
+        },
+        {
+          "exam": 50,
+          "variant": "standard",
+          "number": 34,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/79931"
+        },
+        {
+          "exam": 50,
+          "variant": "standard",
+          "number": 34,
+          "choice": 4,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/79931"
+        },
+        {
+          "exam": 53,
+          "variant": "standard",
+          "number": 34,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/93104"
+        },
+        {
+          "exam": 53,
+          "variant": "standard",
+          "number": 34,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/93104"
+        },
+        {
+          "exam": 53,
+          "variant": "standard",
+          "number": 34,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/93104"
+        },
+        {
+          "exam": 53,
+          "variant": "standard",
+          "number": 34,
+          "choice": 4,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/93104"
+        }
+      ],
+      "knowledgeId": "dermatology-k050"
+    },
+    {
+      "label": "真菌性皮膚疾患",
+      "description": "頭部白癬、爪白癬、癜風などは真菌による感染症である。",
+      "occurrenceCount": 13,
+      "examCount": 13,
+      "references": [
+        {
+          "exam": 28,
+          "variant": "standard",
+          "number": 30,
+          "choice": 2,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18552"
+        },
+        {
+          "exam": 29,
+          "variant": "standard",
+          "number": 30,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18602"
+        },
+        {
+          "exam": 31,
+          "variant": "standard",
+          "number": 30,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18702"
+        },
+        {
+          "exam": 35,
+          "variant": "standard",
+          "number": 30,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/30828"
+        },
+        {
+          "exam": 36,
+          "variant": "standard",
+          "number": 30,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/33499"
+        },
+        {
+          "exam": 37,
+          "variant": "standard",
+          "number": 30,
+          "choice": 4,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/34192"
+        },
+        {
+          "exam": 38,
+          "variant": "standard",
+          "number": 30,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/37942"
+        },
+        {
+          "exam": 42,
+          "variant": "new",
+          "number": 35,
+          "choice": 4,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/52053"
+        },
+        {
+          "exam": 44,
+          "variant": "standard",
+          "number": 35,
+          "choice": 1,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/57900"
+        },
+        {
+          "exam": 48,
+          "variant": "standard",
+          "number": 35,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/72565"
+        },
+        {
+          "exam": 49,
+          "variant": "standard",
+          "number": 35,
+          "choice": 4,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/75571"
+        },
+        {
+          "exam": 50,
+          "variant": "standard",
+          "number": 35,
+          "choice": 1,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/79932"
+        },
+        {
+          "exam": 54,
+          "variant": "standard",
+          "number": 35,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/96784"
+        }
+      ],
+      "knowledgeId": "dermatology-k058"
+    },
+    {
+      "label": "爪母と爪の再生",
+      "description": "爪は爪母でつくられ、爪母が保たれていれば再生し、毛のような成長周期はない。",
+      "occurrenceCount": 13,
+      "examCount": 12,
+      "references": [
+        {
+          "exam": 27,
+          "variant": "standard",
+          "number": 27,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18499"
+        },
+        {
+          "exam": 28,
+          "variant": "standard",
+          "number": 28,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18550"
+        },
+        {
+          "exam": 29,
+          "variant": "standard",
+          "number": 27,
+          "choice": 4,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18599"
+        },
+        {
+          "exam": 31,
+          "variant": "standard",
+          "number": 28,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18700"
+        },
+        {
+          "exam": 33,
+          "variant": "standard",
+          "number": 27,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24868"
+        },
+        {
+          "exam": 33,
+          "variant": "standard",
+          "number": 28,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24869"
+        },
+        {
+          "exam": 34,
+          "variant": "standard",
+          "number": 28,
+          "choice": 2,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24919"
+        },
+        {
+          "exam": 39,
+          "variant": "standard",
+          "number": 28,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/41723"
+        },
+        {
+          "exam": 40,
+          "variant": "standard",
+          "number": 27,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/46256"
+        },
+        {
+          "exam": 41,
+          "variant": "new",
+          "number": 32,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/49523"
+        },
+        {
+          "exam": 41,
+          "variant": "old",
+          "number": 27,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/49468"
+        },
+        {
+          "exam": 42,
+          "variant": "new",
+          "number": 32,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/52050"
+        },
+        {
+          "exam": 50,
+          "variant": "standard",
+          "number": 33,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/79930"
+        }
+      ],
+      "knowledgeId": "dermatology-k028"
+    },
+    {
+      "label": "尋常性痤瘡",
+      "description": "ニキビは毛包の角化・皮脂・男性ホルモンなどが関係し、ウイルス感染症ではない。",
+      "occurrenceCount": 13,
+      "examCount": 11,
+      "references": [
+        {
+          "exam": 32,
+          "variant": "standard",
+          "number": 29,
+          "choice": 4,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24820"
+        },
+        {
+          "exam": 35,
+          "variant": "standard",
+          "number": 30,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/30828"
+        },
+        {
+          "exam": 37,
+          "variant": "standard",
+          "number": 30,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/34192"
+        },
+        {
+          "exam": 39,
+          "variant": "standard",
+          "number": 30,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/41725"
+        },
+        {
+          "exam": 40,
+          "variant": "standard",
+          "number": 29,
+          "choice": 4,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/46258"
+        },
+        {
+          "exam": 40,
+          "variant": "standard",
+          "number": 30,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/46259"
+        },
+        {
+          "exam": 42,
+          "variant": "new",
+          "number": 35,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/52053"
+        },
+        {
+          "exam": 44,
+          "variant": "standard",
+          "number": 35,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/57900"
+        },
+        {
+          "exam": 45,
+          "variant": "standard",
+          "number": 35,
+          "choice": 4,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/63172"
+        },
+        {
+          "exam": 46,
+          "variant": "standard",
+          "number": 34,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/67609"
+        },
+        {
+          "exam": 46,
+          "variant": "standard",
+          "number": 34,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/67609"
+        },
+        {
+          "exam": 47,
+          "variant": "standard",
+          "number": 34,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/70229"
+        },
+        {
+          "exam": 51,
+          "variant": "standard",
+          "number": 35,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/83955"
+        }
+      ],
+      "knowledgeId": "dermatology-k052"
+    },
+    {
+      "label": "頭毛の成長期割合",
+      "description": "健康な成人の頭毛は大部分が成長期で、休止期が大部分ではない。",
+      "occurrenceCount": 12,
+      "examCount": 11,
+      "references": [
+        {
+          "exam": 27,
+          "variant": "standard",
+          "number": 27,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18499"
+        },
+        {
+          "exam": 28,
+          "variant": "standard",
+          "number": 27,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18549"
+        },
+        {
+          "exam": 29,
+          "variant": "standard",
+          "number": 27,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18599"
+        },
+        {
+          "exam": 30,
+          "variant": "standard",
+          "number": 27,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18649"
+        },
+        {
+          "exam": 32,
+          "variant": "standard",
+          "number": 27,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24818"
+        },
+        {
+          "exam": 32,
+          "variant": "standard",
+          "number": 27,
+          "choice": 3,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24818"
+        },
+        {
+          "exam": 33,
+          "variant": "standard",
+          "number": 27,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24868"
+        },
+        {
+          "exam": 35,
+          "variant": "standard",
+          "number": 27,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/30825"
+        },
+        {
+          "exam": 36,
+          "variant": "standard",
+          "number": 27,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/33496"
+        },
+        {
+          "exam": 37,
+          "variant": "standard",
+          "number": 27,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/34189"
+        },
+        {
+          "exam": 45,
+          "variant": "standard",
+          "number": 32,
+          "choice": 2,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/63169"
+        },
+        {
+          "exam": 54,
+          "variant": "standard",
+          "number": 32,
+          "choice": 4,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/96781"
+        }
+      ],
+      "knowledgeId": "dermatology-k019"
+    },
+    {
+      "label": "メラニンと皮膚色",
+      "description": "皮膚色の濃淡は色素細胞の数だけでなく、メラニン産生量や分布に左右される。",
+      "occurrenceCount": 10,
+      "examCount": 10,
+      "references": [
+        {
+          "exam": 28,
+          "variant": "standard",
+          "number": 26,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18548"
+        },
+        {
+          "exam": 31,
+          "variant": "standard",
+          "number": 26,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18698"
+        },
+        {
+          "exam": 35,
+          "variant": "standard",
+          "number": 26,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/30824"
+        },
+        {
+          "exam": 36,
+          "variant": "standard",
+          "number": 26,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/33495"
+        },
+        {
+          "exam": 39,
+          "variant": "standard",
+          "number": 26,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/41721"
+        },
+        {
+          "exam": 40,
+          "variant": "standard",
+          "number": 26,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/46255"
+        },
+        {
+          "exam": 42,
+          "variant": "new",
+          "number": 31,
+          "choice": 1,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/52049"
+        },
+        {
+          "exam": 43,
+          "variant": "new",
+          "number": 31,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/55208"
+        },
+        {
+          "exam": 46,
+          "variant": "standard",
+          "number": 31,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/67606"
+        },
+        {
+          "exam": 54,
+          "variant": "standard",
+          "number": 31,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/96780"
+        }
+      ],
+      "knowledgeId": "dermatology-k013"
+    },
+    {
+      "label": "毛母と毛の形成",
+      "description": "毛母では細胞分裂が盛んで、毛の細胞がつくられる。",
+      "occurrenceCount": 10,
+      "examCount": 10,
+      "references": [
+        {
+          "exam": 31,
+          "variant": "standard",
+          "number": 27,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18699"
+        },
+        {
+          "exam": 34,
+          "variant": "standard",
+          "number": 27,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24918"
+        },
+        {
+          "exam": 37,
+          "variant": "standard",
+          "number": 27,
+          "choice": 2,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/34189"
+        },
+        {
+          "exam": 38,
+          "variant": "standard",
+          "number": 27,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/37939"
+        },
+        {
+          "exam": 44,
+          "variant": "standard",
+          "number": 32,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/57897"
+        },
+        {
+          "exam": 46,
+          "variant": "standard",
+          "number": 32,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/67607"
+        },
+        {
+          "exam": 48,
+          "variant": "standard",
+          "number": 32,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/72562"
+        },
+        {
+          "exam": 49,
+          "variant": "standard",
+          "number": 32,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/75568"
+        },
+        {
+          "exam": 52,
+          "variant": "standard",
+          "number": 32,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/90158"
+        },
+        {
+          "exam": 54,
+          "variant": "standard",
+          "number": 32,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/96781"
+        }
+      ],
+      "knowledgeId": "dermatology-k017"
+    },
+    {
+      "label": "ダニ・シラミによる疾患",
+      "description": "疥癬はヒゼンダニ、アタマジラミ症はシラミによる寄生性疾患である。",
+      "occurrenceCount": 10,
+      "examCount": 10,
+      "references": [
+        {
+          "exam": 28,
+          "variant": "standard",
+          "number": 30,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18552"
+        },
+        {
+          "exam": 30,
+          "variant": "standard",
+          "number": 30,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18652"
+        },
+        {
+          "exam": 36,
+          "variant": "standard",
+          "number": 30,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/33499"
+        },
+        {
+          "exam": 43,
+          "variant": "new",
+          "number": 35,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/55212"
+        },
+        {
+          "exam": 44,
+          "variant": "standard",
+          "number": 35,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/57900"
+        },
+        {
+          "exam": 48,
+          "variant": "standard",
+          "number": 35,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/72565"
+        },
+        {
+          "exam": 50,
+          "variant": "standard",
+          "number": 35,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/79932"
+        },
+        {
+          "exam": 51,
+          "variant": "standard",
+          "number": 35,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/83955"
+        },
+        {
+          "exam": 53,
+          "variant": "standard",
+          "number": 35,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/93105"
+        },
+        {
+          "exam": 54,
+          "variant": "standard",
+          "number": 35,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/96784"
+        }
+      ],
+      "knowledgeId": "dermatology-k060"
+    },
+    {
+      "label": "毛幹と毛根",
+      "description": "皮膚表面に出た部分が毛幹、皮膚内部の部分が毛根である。",
+      "occurrenceCount": 10,
+      "examCount": 10,
+      "references": [
+        {
+          "exam": 34,
+          "variant": "standard",
+          "number": 27,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24918"
+        },
+        {
+          "exam": 35,
+          "variant": "standard",
+          "number": 27,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/30825"
+        },
+        {
+          "exam": 41,
+          "variant": "new",
+          "number": 32,
+          "choice": 3,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/49523"
+        },
+        {
+          "exam": 41,
+          "variant": "old",
+          "number": 27,
+          "choice": 3,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/49468"
+        },
+        {
+          "exam": 42,
+          "variant": "new",
+          "number": 32,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/52050"
+        },
+        {
+          "exam": 43,
+          "variant": "new",
+          "number": 32,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/55209"
+        },
+        {
+          "exam": 46,
+          "variant": "standard",
+          "number": 32,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/67607"
+        },
+        {
+          "exam": 47,
+          "variant": "standard",
+          "number": 32,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/70227"
+        },
+        {
+          "exam": 50,
+          "variant": "standard",
+          "number": 32,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/79929"
+        },
+        {
+          "exam": 51,
+          "variant": "standard",
+          "number": 32,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/83952"
+        }
+      ],
+      "knowledgeId": "dermatology-k016"
+    },
+    {
+      "label": "真皮の膠原線維",
+      "description": "真皮の線維成分はコラーゲンからなる膠原線維が大部分を占める。",
+      "occurrenceCount": 9,
+      "examCount": 9,
+      "references": [
+        {
+          "exam": 30,
+          "variant": "standard",
+          "number": 26,
+          "choice": 3,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18648"
+        },
+        {
+          "exam": 31,
+          "variant": "standard",
+          "number": 26,
+          "choice": 4,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18698"
+        },
+        {
+          "exam": 33,
+          "variant": "standard",
+          "number": 26,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24867"
+        },
+        {
+          "exam": 34,
+          "variant": "standard",
+          "number": 26,
+          "choice": 4,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24917"
+        },
+        {
+          "exam": 35,
+          "variant": "standard",
+          "number": 26,
+          "choice": 3,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/30824"
+        },
+        {
+          "exam": 39,
+          "variant": "standard",
+          "number": 26,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/41721"
+        },
+        {
+          "exam": 40,
+          "variant": "standard",
+          "number": 26,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/46255"
+        },
+        {
+          "exam": 42,
+          "variant": "new",
+          "number": 31,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/52049"
+        },
+        {
+          "exam": 48,
+          "variant": "standard",
+          "number": 31,
+          "choice": 4,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/72561"
+        }
+      ],
+      "knowledgeId": "dermatology-k007"
+    },
+    {
+      "label": "立毛筋",
+      "description": "立毛筋は平滑筋で自律神経に支配され、毛隆起に付着する。",
+      "occurrenceCount": 9,
+      "examCount": 9,
+      "references": [
+        {
+          "exam": 29,
+          "variant": "standard",
+          "number": 27,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18599"
+        },
+        {
+          "exam": 30,
+          "variant": "standard",
+          "number": 27,
+          "choice": 1,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18649"
+        },
+        {
+          "exam": 40,
+          "variant": "standard",
+          "number": 28,
+          "choice": 2,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/46257"
+        },
+        {
+          "exam": 47,
+          "variant": "standard",
+          "number": 33,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/70228"
+        },
+        {
+          "exam": 48,
+          "variant": "standard",
+          "number": 32,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/72562"
+        },
+        {
+          "exam": 49,
+          "variant": "standard",
+          "number": 32,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/75568"
+        },
+        {
+          "exam": 51,
+          "variant": "standard",
+          "number": 32,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/83952"
+        },
+        {
+          "exam": 52,
+          "variant": "standard",
+          "number": 32,
+          "choice": 2,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/90158"
+        },
+        {
+          "exam": 54,
+          "variant": "standard",
+          "number": 32,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/96781"
+        }
+      ],
+      "knowledgeId": "dermatology-k026"
+    },
+    {
+      "label": "フケ症の手入れ",
+      "description": "乾性フケでは洗髪しすぎず、脂性フケでは適切に洗浄して清潔を保つ。",
+      "occurrenceCount": 9,
+      "examCount": 9,
+      "references": [
+        {
+          "exam": 28,
+          "variant": "standard",
+          "number": 29,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18551"
+        },
+        {
+          "exam": 29,
+          "variant": "standard",
+          "number": 29,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18601"
+        },
+        {
+          "exam": 30,
+          "variant": "standard",
+          "number": 29,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18651"
+        },
+        {
+          "exam": 31,
+          "variant": "standard",
+          "number": 29,
+          "choice": 4,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18701"
+        },
+        {
+          "exam": 32,
+          "variant": "standard",
+          "number": 29,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24820"
+        },
+        {
+          "exam": 35,
+          "variant": "standard",
+          "number": 29,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/30827"
+        },
+        {
+          "exam": 47,
+          "variant": "standard",
+          "number": 34,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/70229"
+        },
+        {
+          "exam": 50,
+          "variant": "standard",
+          "number": 34,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/79931"
+        },
+        {
+          "exam": 54,
+          "variant": "standard",
+          "number": 34,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/96783"
+        }
+      ],
+      "knowledgeId": "dermatology-k047"
+    },
+    {
+      "label": "円形脱毛症",
+      "description": "円形脱毛症は免疫異常などが関係する非感染性疾患で、精神的ストレスが関係することもある。",
+      "occurrenceCount": 9,
+      "examCount": 9,
+      "references": [
+        {
+          "exam": 28,
+          "variant": "standard",
+          "number": 30,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18552"
+        },
+        {
+          "exam": 29,
+          "variant": "standard",
+          "number": 29,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18601"
+        },
+        {
+          "exam": 30,
+          "variant": "standard",
+          "number": 30,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18652"
+        },
+        {
+          "exam": 33,
+          "variant": "standard",
+          "number": 30,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24871"
+        },
+        {
+          "exam": 34,
+          "variant": "standard",
+          "number": 30,
+          "choice": 3,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24921"
+        },
+        {
+          "exam": 36,
+          "variant": "standard",
+          "number": 30,
+          "choice": 2,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/33499"
+        },
+        {
+          "exam": 38,
+          "variant": "standard",
+          "number": 29,
+          "choice": 4,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/37941"
+        },
+        {
+          "exam": 39,
+          "variant": "standard",
+          "number": 29,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/41724"
+        },
+        {
+          "exam": 43,
+          "variant": "new",
+          "number": 35,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/55212"
+        }
+      ],
+      "knowledgeId": "dermatology-k053"
+    },
+    {
+      "label": "皮膚の層構造",
+      "description": "皮膚は表皮・真皮・皮下組織からなり、表皮が最外側にある。",
+      "occurrenceCount": 9,
+      "examCount": 9,
+      "references": [
+        {
+          "exam": 31,
+          "variant": "standard",
+          "number": 26,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18698"
+        },
+        {
+          "exam": 40,
+          "variant": "standard",
+          "number": 28,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/46257"
+        },
+        {
+          "exam": 41,
+          "variant": "new",
+          "number": 31,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/49522"
+        },
+        {
+          "exam": 41,
+          "variant": "old",
+          "number": 26,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/49467"
+        },
+        {
+          "exam": 43,
+          "variant": "new",
+          "number": 31,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/55208"
+        },
+        {
+          "exam": 46,
+          "variant": "standard",
+          "number": 31,
+          "choice": 1,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/67606"
+        },
+        {
+          "exam": 48,
+          "variant": "standard",
+          "number": 31,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/72561"
+        },
+        {
+          "exam": 49,
+          "variant": "standard",
+          "number": 31,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/75567"
+        },
+        {
+          "exam": 52,
+          "variant": "standard",
+          "number": 31,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/90157"
+        }
+      ],
+      "knowledgeId": "dermatology-k001"
+    },
+    {
+      "label": "アポクリン腺の分布",
+      "description": "アポクリン腺は腋窩などに多く、手掌・足底に多い腺ではない。",
+      "occurrenceCount": 9,
+      "examCount": 9,
+      "references": [
+        {
+          "exam": 27,
+          "variant": "standard",
+          "number": 27,
+          "choice": 3,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18499"
+        },
+        {
+          "exam": 28,
+          "variant": "standard",
+          "number": 27,
+          "choice": 4,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18549"
+        },
+        {
+          "exam": 29,
+          "variant": "standard",
+          "number": 27,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18599"
+        },
+        {
+          "exam": 33,
+          "variant": "standard",
+          "number": 27,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24868"
+        },
+        {
+          "exam": 39,
+          "variant": "standard",
+          "number": 27,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/41722"
+        },
+        {
+          "exam": 40,
+          "variant": "standard",
+          "number": 27,
+          "choice": 1,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/46256"
+        },
+        {
+          "exam": 41,
+          "variant": "new",
+          "number": 32,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/49523"
+        },
+        {
+          "exam": 41,
+          "variant": "old",
+          "number": 27,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/49468"
+        },
+        {
+          "exam": 51,
+          "variant": "standard",
+          "number": 35,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/83955"
+        }
+      ],
+      "knowledgeId": "dermatology-k023"
+    },
+    {
+      "label": "非感染性皮膚疾患",
+      "description": "アトピー性皮膚炎、乾癬、白斑、蕁麻疹などは病原体感染だけで説明されない皮膚疾患である。",
+      "occurrenceCount": 9,
+      "examCount": 7,
+      "references": [
+        {
+          "exam": 32,
+          "variant": "standard",
+          "number": 30,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24821"
+        },
+        {
+          "exam": 41,
+          "variant": "new",
+          "number": 35,
+          "choice": 1,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/49526"
+        },
+        {
+          "exam": 41,
+          "variant": "old",
+          "number": 30,
+          "choice": 1,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/49471"
+        },
+        {
+          "exam": 46,
+          "variant": "standard",
+          "number": 35,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/67610"
+        },
+        {
+          "exam": 49,
+          "variant": "standard",
+          "number": 35,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/75571"
+        },
+        {
+          "exam": 49,
+          "variant": "standard",
+          "number": 35,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/75571"
+        },
+        {
+          "exam": 49,
+          "variant": "standard",
+          "number": 35,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/75571"
+        },
+        {
+          "exam": 51,
+          "variant": "standard",
+          "number": 35,
+          "choice": 3,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/83955"
+        },
+        {
+          "exam": 53,
+          "variant": "standard",
+          "number": 35,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/93105"
+        }
+      ],
+      "knowledgeId": "dermatology-k061"
+    },
+    {
+      "label": "部位による皮膚の厚さ",
+      "description": "皮膚の厚さは部位により異なり、顔面や体幹、手掌・足底などに特徴がある。",
+      "occurrenceCount": 9,
+      "examCount": 4,
+      "references": [
+        {
+          "exam": 43,
+          "variant": "new",
+          "number": 31,
+          "choice": 3,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/55208"
+        },
+        {
+          "exam": 46,
+          "variant": "standard",
+          "number": 33,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/67608"
+        },
+        {
+          "exam": 47,
+          "variant": "standard",
+          "number": 31,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/70226"
+        },
+        {
+          "exam": 47,
+          "variant": "standard",
+          "number": 31,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/70226"
+        },
+        {
+          "exam": 47,
+          "variant": "standard",
+          "number": 31,
+          "choice": 3,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/70226"
+        },
+        {
+          "exam": 47,
+          "variant": "standard",
+          "number": 33,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/70228"
+        },
+        {
+          "exam": 51,
+          "variant": "standard",
+          "number": 31,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/83951"
+        },
+        {
+          "exam": 51,
+          "variant": "standard",
+          "number": 31,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/83951"
+        },
+        {
+          "exam": 51,
+          "variant": "standard",
+          "number": 31,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/83951"
+        }
+      ],
+      "knowledgeId": "dermatology-k012"
+    },
+    {
+      "label": "エクリン腺の分布",
+      "description": "エクリン腺は全身に広く分布し、手掌・足底に多い。",
+      "occurrenceCount": 8,
+      "examCount": 8,
+      "references": [
+        {
+          "exam": 30,
+          "variant": "standard",
+          "number": 27,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18649"
+        },
+        {
+          "exam": 31,
+          "variant": "standard",
+          "number": 27,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18699"
+        },
+        {
+          "exam": 36,
+          "variant": "standard",
+          "number": 27,
+          "choice": 3,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/33496"
+        },
+        {
+          "exam": 37,
+          "variant": "standard",
+          "number": 27,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/34189"
+        },
+        {
+          "exam": 38,
+          "variant": "standard",
+          "number": 27,
+          "choice": 3,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/37939"
+        },
+        {
+          "exam": 47,
+          "variant": "standard",
+          "number": 32,
+          "choice": 3,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/70227"
+        },
+        {
+          "exam": 49,
+          "variant": "standard",
+          "number": 32,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/75568"
+        },
+        {
+          "exam": 52,
+          "variant": "standard",
+          "number": 32,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/90158"
+        }
+      ],
+      "knowledgeId": "dermatology-k022"
+    },
+    {
+      "label": "経皮吸収の経路",
+      "description": "経皮吸収には表皮経路と皮膚付属器官経路がある。",
+      "occurrenceCount": 8,
+      "examCount": 8,
+      "references": [
+        {
+          "exam": 27,
+          "variant": "standard",
+          "number": 28,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18500"
+        },
+        {
+          "exam": 29,
+          "variant": "standard",
+          "number": 28,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18600"
+        },
+        {
+          "exam": 32,
+          "variant": "standard",
+          "number": 28,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24819"
+        },
+        {
+          "exam": 36,
+          "variant": "standard",
+          "number": 28,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/33497"
+        },
+        {
+          "exam": 40,
+          "variant": "standard",
+          "number": 28,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/46257"
+        },
+        {
+          "exam": 41,
+          "variant": "new",
+          "number": 33,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/49524"
+        },
+        {
+          "exam": 41,
+          "variant": "old",
+          "number": 28,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/49469"
+        },
+        {
+          "exam": 43,
+          "variant": "new",
+          "number": 33,
+          "choice": 2,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/55210"
+        }
+      ],
+      "knowledgeId": "dermatology-k034"
+    },
+    {
+      "label": "サンスクリーン剤",
+      "description": "サンスクリーン剤には紫外線を吸収するものと反射・散乱するものがある。",
+      "occurrenceCount": 8,
+      "examCount": 8,
+      "references": [
+        {
+          "exam": 28,
+          "variant": "standard",
+          "number": 28,
+          "choice": 1,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18550"
+        },
+        {
+          "exam": 29,
+          "variant": "standard",
+          "number": 29,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18601"
+        },
+        {
+          "exam": 30,
+          "variant": "standard",
+          "number": 29,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18651"
+        },
+        {
+          "exam": 31,
+          "variant": "standard",
+          "number": 29,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18701"
+        },
+        {
+          "exam": 37,
+          "variant": "standard",
+          "number": 28,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/34190"
+        },
+        {
+          "exam": 38,
+          "variant": "standard",
+          "number": 28,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/37940"
+        },
+        {
+          "exam": 41,
+          "variant": "new",
+          "number": 33,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/49524"
+        },
+        {
+          "exam": 41,
+          "variant": "old",
+          "number": 28,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/49469"
+        }
+      ],
+      "knowledgeId": "dermatology-k048"
+    },
+    {
+      "label": "糖尿病と皮膚感染",
+      "description": "糖尿病では皮膚の抵抗力が低下し、細菌・真菌感染が起こりやすい。",
+      "occurrenceCount": 8,
+      "examCount": 8,
+      "references": [
+        {
+          "exam": 31,
+          "variant": "standard",
+          "number": 29,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18701"
+        },
+        {
+          "exam": 33,
+          "variant": "standard",
+          "number": 29,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24870"
+        },
+        {
+          "exam": 38,
+          "variant": "standard",
+          "number": 29,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/37941"
+        },
+        {
+          "exam": 41,
+          "variant": "new",
+          "number": 34,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/49525"
+        },
+        {
+          "exam": 41,
+          "variant": "old",
+          "number": 29,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/49470"
+        },
+        {
+          "exam": 44,
+          "variant": "standard",
+          "number": 34,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/57899"
+        },
+        {
+          "exam": 45,
+          "variant": "standard",
+          "number": 34,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/63171"
+        },
+        {
+          "exam": 50,
+          "variant": "standard",
+          "number": 34,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/79931"
+        }
+      ],
+      "knowledgeId": "dermatology-k049"
+    },
+    {
+      "label": "皮膚感覚点",
+      "description": "皮膚には痛点・触点・温点・冷点があり、その分布数には違いがある。",
+      "occurrenceCount": 8,
+      "examCount": 5,
+      "references": [
+        {
+          "exam": 42,
+          "variant": "new",
+          "number": 33,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/52051"
+        },
+        {
+          "exam": 44,
+          "variant": "standard",
+          "number": 33,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/57898"
+        },
+        {
+          "exam": 45,
+          "variant": "standard",
+          "number": 33,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/63170"
+        },
+        {
+          "exam": 50,
+          "variant": "standard",
+          "number": 33,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/79930"
+        },
+        {
+          "exam": 51,
+          "variant": "standard",
+          "number": 33,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/83953"
+        },
+        {
+          "exam": 51,
+          "variant": "standard",
+          "number": 33,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/83953"
+        },
+        {
+          "exam": 51,
+          "variant": "standard",
+          "number": 33,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/83953"
+        },
+        {
+          "exam": 51,
+          "variant": "standard",
+          "number": 33,
+          "choice": 4,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/83953"
+        }
+      ],
+      "knowledgeId": "dermatology-k036"
+    },
+    {
+      "label": "紫外線の作用",
+      "description": "UVBはサンバーンを起こし、UVAは真皮に達して光老化に関係し、メラニン増加はサンタンである。",
+      "occurrenceCount": 8,
+      "examCount": 5,
+      "references": [
+        {
+          "exam": 30,
+          "variant": "standard",
+          "number": 28,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18650"
+        },
+        {
+          "exam": 34,
+          "variant": "standard",
+          "number": 28,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24919"
+        },
+        {
+          "exam": 47,
+          "variant": "standard",
+          "number": 34,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/70229"
+        },
+        {
+          "exam": 48,
+          "variant": "standard",
+          "number": 34,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/72564"
+        },
+        {
+          "exam": 48,
+          "variant": "standard",
+          "number": 34,
+          "choice": 2,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/72564"
+        },
+        {
+          "exam": 48,
+          "variant": "standard",
+          "number": 34,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/72564"
+        },
+        {
+          "exam": 48,
+          "variant": "standard",
+          "number": 34,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/72564"
+        },
+        {
+          "exam": 52,
+          "variant": "standard",
+          "number": 34,
+          "choice": 3,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/90160"
+        }
+      ],
+      "knowledgeId": "dermatology-k041"
+    },
+    {
+      "label": "皮脂と毛の保護",
+      "description": "皮脂は毛の水分喪失を防ぎ、光沢としなやかさを保つ。",
+      "occurrenceCount": 7,
+      "examCount": 7,
+      "references": [
+        {
+          "exam": 35,
+          "variant": "standard",
+          "number": 29,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/30827"
+        },
+        {
+          "exam": 36,
+          "variant": "standard",
+          "number": 29,
+          "choice": 2,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/33498"
+        },
+        {
+          "exam": 37,
+          "variant": "standard",
+          "number": 29,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/34191"
+        },
+        {
+          "exam": 41,
+          "variant": "new",
+          "number": 33,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/49524"
+        },
+        {
+          "exam": 41,
+          "variant": "old",
+          "number": 28,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/49469"
+        },
+        {
+          "exam": 42,
+          "variant": "new",
+          "number": 34,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/52052"
+        },
+        {
+          "exam": 45,
+          "variant": "standard",
+          "number": 33,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/63170"
+        }
+      ],
+      "knowledgeId": "dermatology-k030"
+    },
+    {
+      "label": "脂漏性皮膚炎",
+      "description": "脂漏性皮膚炎はフケ症・脂性肌に多く、頭部や顔面に紅斑・落屑を生じる。",
+      "occurrenceCount": 7,
+      "examCount": 7,
+      "references": [
+        {
+          "exam": 28,
+          "variant": "standard",
+          "number": 30,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18552"
+        },
+        {
+          "exam": 33,
+          "variant": "standard",
+          "number": 30,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24871"
+        },
+        {
+          "exam": 38,
+          "variant": "standard",
+          "number": 30,
+          "choice": 2,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/37942"
+        },
+        {
+          "exam": 40,
+          "variant": "standard",
+          "number": 29,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/46258"
+        },
+        {
+          "exam": 41,
+          "variant": "new",
+          "number": 35,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/49526"
+        },
+        {
+          "exam": 41,
+          "variant": "old",
+          "number": 30,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/49471"
+        },
+        {
+          "exam": 46,
+          "variant": "standard",
+          "number": 35,
+          "choice": 1,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/67610"
+        }
+      ],
+      "knowledgeId": "dermatology-k056"
+    },
+    {
+      "label": "真皮の弾性線維",
+      "description": "真皮にはエラスチンからなる弾性線維があり、弾力に関係するが大部分ではない。",
+      "occurrenceCount": 6,
+      "examCount": 6,
+      "references": [
+        {
+          "exam": 27,
+          "variant": "standard",
+          "number": 26,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18498"
+        },
+        {
+          "exam": 29,
+          "variant": "standard",
+          "number": 26,
+          "choice": 3,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18598"
+        },
+        {
+          "exam": 32,
+          "variant": "standard",
+          "number": 26,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24817"
+        },
+        {
+          "exam": 36,
+          "variant": "standard",
+          "number": 26,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/33495"
+        },
+        {
+          "exam": 37,
+          "variant": "standard",
+          "number": 26,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/34188"
+        },
+        {
+          "exam": 38,
+          "variant": "standard",
+          "number": 26,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/37938"
+        }
+      ],
+      "knowledgeId": "dermatology-k008"
+    },
+    {
+      "label": "爪の構造",
+      "description": "爪は表皮の角質層が変形したもので、主成分はケラチンである。",
+      "occurrenceCount": 6,
+      "examCount": 6,
+      "references": [
+        {
+          "exam": 31,
+          "variant": "standard",
+          "number": 27,
+          "choice": 2,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18699"
+        },
+        {
+          "exam": 36,
+          "variant": "standard",
+          "number": 27,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/33496"
+        },
+        {
+          "exam": 37,
+          "variant": "standard",
+          "number": 27,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/34189"
+        },
+        {
+          "exam": 38,
+          "variant": "standard",
+          "number": 27,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/37939"
+        },
+        {
+          "exam": 44,
+          "variant": "standard",
+          "number": 32,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/57897"
+        },
+        {
+          "exam": 47,
+          "variant": "standard",
+          "number": 32,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/70227"
+        }
+      ],
+      "knowledgeId": "dermatology-k027"
+    },
+    {
+      "label": "皮膚の体温調節",
+      "description": "体温調節を積極的に担うのは主に皮膚血管と汗腺である。",
+      "occurrenceCount": 6,
+      "examCount": 6,
+      "references": [
+        {
+          "exam": 27,
+          "variant": "standard",
+          "number": 28,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18500"
+        },
+        {
+          "exam": 29,
+          "variant": "standard",
+          "number": 28,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18600"
+        },
+        {
+          "exam": 30,
+          "variant": "standard",
+          "number": 28,
+          "choice": 3,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18650"
+        },
+        {
+          "exam": 33,
+          "variant": "standard",
+          "number": 28,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24869"
+        },
+        {
+          "exam": 37,
+          "variant": "standard",
+          "number": 28,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/34190"
+        },
+        {
+          "exam": 38,
+          "variant": "standard",
+          "number": 28,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/37940"
+        }
+      ],
+      "knowledgeId": "dermatology-k035"
+    },
+    {
+      "label": "機械的外力への保護",
+      "description": "角質層、膠原線維、弾性線維、皮下脂肪などが機械的外力から皮膚を守る。",
+      "occurrenceCount": 6,
+      "examCount": 3,
+      "references": [
+        {
+          "exam": 44,
+          "variant": "standard",
+          "number": 33,
+          "choice": 2,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/57898"
+        },
+        {
+          "exam": 52,
+          "variant": "standard",
+          "number": 33,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/90159"
+        },
+        {
+          "exam": 53,
+          "variant": "standard",
+          "number": 33,
+          "choice": 1,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/93103"
+        },
+        {
+          "exam": 53,
+          "variant": "standard",
+          "number": 33,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/93103"
+        },
+        {
+          "exam": 53,
+          "variant": "standard",
+          "number": 33,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/93103"
+        },
+        {
+          "exam": 53,
+          "variant": "standard",
+          "number": 33,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/93103"
+        }
+      ],
+      "knowledgeId": "dermatology-k039"
+    },
+    {
+      "label": "毛・爪のケラチン",
+      "description": "毛や爪の主成分は硫黄を含むタンパク質であるケラチンである。",
+      "occurrenceCount": 5,
+      "examCount": 5,
+      "references": [
+        {
+          "exam": 40,
+          "variant": "standard",
+          "number": 27,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/46256"
+        },
+        {
+          "exam": 42,
+          "variant": "new",
+          "number": 32,
+          "choice": 2,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/52050"
+        },
+        {
+          "exam": 43,
+          "variant": "new",
+          "number": 32,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/55209"
+        },
+        {
+          "exam": 46,
+          "variant": "standard",
+          "number": 32,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/67607"
+        },
+        {
+          "exam": 48,
+          "variant": "standard",
+          "number": 32,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/72562"
+        }
+      ],
+      "knowledgeId": "dermatology-k014"
+    },
+    {
+      "label": "皮膚への栄養供給",
+      "description": "皮膚の健康に必要な栄養は血液などを介して体内から供給される。",
+      "occurrenceCount": 5,
+      "examCount": 5,
+      "references": [
+        {
+          "exam": 28,
+          "variant": "standard",
+          "number": 29,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18551"
+        },
+        {
+          "exam": 31,
+          "variant": "standard",
+          "number": 29,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18701"
+        },
+        {
+          "exam": 37,
+          "variant": "standard",
+          "number": 28,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/34190"
+        },
+        {
+          "exam": 39,
+          "variant": "standard",
+          "number": 29,
+          "choice": 1,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/41724"
+        },
+        {
+          "exam": 40,
+          "variant": "standard",
+          "number": 30,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/46259"
+        }
+      ],
+      "knowledgeId": "dermatology-k044"
+    },
+    {
+      "label": "保湿剤の使用",
+      "description": "保湿剤は入浴後など皮膚に水分が残る間に塗布すると効果的である。",
+      "occurrenceCount": 5,
+      "examCount": 5,
+      "references": [
+        {
+          "exam": 36,
+          "variant": "standard",
+          "number": 29,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/33498"
+        },
+        {
+          "exam": 38,
+          "variant": "standard",
+          "number": 29,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/37941"
+        },
+        {
+          "exam": 39,
+          "variant": "standard",
+          "number": 29,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/41724"
+        },
+        {
+          "exam": 40,
+          "variant": "standard",
+          "number": 30,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/46259"
+        },
+        {
+          "exam": 52,
+          "variant": "standard",
+          "number": 34,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/90160"
+        }
+      ],
+      "knowledgeId": "dermatology-k046"
+    },
+    {
+      "label": "角化細胞の構成比",
+      "description": "表皮細胞の大部分、約95％は角化細胞である。",
+      "occurrenceCount": 5,
+      "examCount": 5,
+      "references": [
+        {
+          "exam": 37,
+          "variant": "standard",
+          "number": 26,
+          "choice": 2,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/34188"
+        },
+        {
+          "exam": 41,
+          "variant": "new",
+          "number": 31,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/49522"
+        },
+        {
+          "exam": 41,
+          "variant": "old",
+          "number": 26,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/49467"
+        },
+        {
+          "exam": 44,
+          "variant": "standard",
+          "number": 31,
+          "choice": 3,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/57896"
+        },
+        {
+          "exam": 45,
+          "variant": "standard",
+          "number": 31,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/63168"
+        }
+      ],
+      "knowledgeId": "dermatology-k002"
+    },
+    {
+      "label": "男性型脱毛症",
+      "description": "男性型脱毛症には男性ホルモン、遺伝的要因、加齢が関係する。",
+      "occurrenceCount": 5,
+      "examCount": 5,
+      "references": [
+        {
+          "exam": 29,
+          "variant": "standard",
+          "number": 30,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18602"
+        },
+        {
+          "exam": 40,
+          "variant": "standard",
+          "number": 29,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/46258"
+        },
+        {
+          "exam": 41,
+          "variant": "new",
+          "number": 34,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/49525"
+        },
+        {
+          "exam": 41,
+          "variant": "old",
+          "number": 29,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/49470"
+        },
+        {
+          "exam": 54,
+          "variant": "standard",
+          "number": 34,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/96783"
+        }
+      ],
+      "knowledgeId": "dermatology-k054"
+    },
+    {
+      "label": "頭毛の本数",
+      "description": "成人の頭毛はおよそ10万本程度である。",
+      "occurrenceCount": 4,
+      "examCount": 4,
+      "references": [
+        {
+          "exam": 30,
+          "variant": "standard",
+          "number": 27,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18649"
+        },
+        {
+          "exam": 34,
+          "variant": "standard",
+          "number": 27,
+          "choice": 1,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24918"
+        },
+        {
+          "exam": 36,
+          "variant": "standard",
+          "number": 27,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/33496"
+        },
+        {
+          "exam": 39,
+          "variant": "standard",
+          "number": 27,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/41722"
+        }
+      ],
+      "knowledgeId": "dermatology-k020"
+    },
+    {
+      "label": "皮膚の紫外線防御",
+      "description": "皮膚は紫外線を吸収・散乱し、メラニンなどにより身体を保護する。",
+      "occurrenceCount": 4,
+      "examCount": 4,
+      "references": [
+        {
+          "exam": 42,
+          "variant": "new",
+          "number": 33,
+          "choice": 2,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/52051"
+        },
+        {
+          "exam": 44,
+          "variant": "standard",
+          "number": 33,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/57898"
+        },
+        {
+          "exam": 45,
+          "variant": "standard",
+          "number": 33,
+          "choice": 1,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/63170"
+        },
+        {
+          "exam": 52,
+          "variant": "standard",
+          "number": 33,
+          "choice": 3,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/90159"
+        }
+      ],
+      "knowledgeId": "dermatology-k032"
+    },
+    {
+      "label": "皮膚の再生と瘢痕",
+      "description": "表皮の浅い欠損は再生するが、真皮の深い損傷では瘢痕が残りうる。",
+      "occurrenceCount": 4,
+      "examCount": 4,
+      "references": [
+        {
+          "exam": 28,
+          "variant": "standard",
+          "number": 28,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18550"
+        },
+        {
+          "exam": 33,
+          "variant": "standard",
+          "number": 28,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24869"
+        },
+        {
+          "exam": 41,
+          "variant": "new",
+          "number": 33,
+          "choice": 4,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/49524"
+        },
+        {
+          "exam": 41,
+          "variant": "old",
+          "number": 28,
+          "choice": 4,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/49469"
+        }
+      ],
+      "knowledgeId": "dermatology-k040"
+    },
+    {
+      "label": "皮膚保健の複合判定",
+      "description": "紫外線疾患、保湿、フケ症、内臓疾患と皮膚変化を組み合わせて判定する知識。",
+      "occurrenceCount": 4,
+      "examCount": 1,
+      "references": [
+        {
+          "exam": 27,
+          "variant": "standard",
+          "number": 29,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18501"
+        },
+        {
+          "exam": 27,
+          "variant": "standard",
+          "number": 29,
+          "choice": 2,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18501"
+        },
+        {
+          "exam": 27,
+          "variant": "standard",
+          "number": 29,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18501"
+        },
+        {
+          "exam": 27,
+          "variant": "standard",
+          "number": 29,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18501"
+        }
+      ],
+      "knowledgeId": "dermatology-k101"
+    },
+    {
+      "label": "接触皮膚炎の複合判定",
+      "description": "酸化染料、再曝露、病変境界、パッチテストを組み合わせて判定する知識。",
+      "occurrenceCount": 4,
+      "examCount": 1,
+      "references": [
+        {
+          "exam": 27,
+          "variant": "standard",
+          "number": 30,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18502"
+        },
+        {
+          "exam": 27,
+          "variant": "standard",
+          "number": 30,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18502"
+        },
+        {
+          "exam": 27,
+          "variant": "standard",
+          "number": 30,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18502"
+        },
+        {
+          "exam": 27,
+          "variant": "standard",
+          "number": 30,
+          "choice": 4,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18502"
+        }
+      ],
+      "knowledgeId": "dermatology-k102"
+    },
+    {
+      "label": "皮膚構造の複合判定",
+      "description": "皮膚の厚さ、表皮細胞、表皮真皮境界、皮下組織を組み合わせて判定する知識。",
+      "occurrenceCount": 4,
+      "examCount": 1,
+      "references": [
+        {
+          "exam": 50,
+          "variant": "standard",
+          "number": 31,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/79928"
+        },
+        {
+          "exam": 50,
+          "variant": "standard",
+          "number": 31,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/79928"
+        },
+        {
+          "exam": 50,
+          "variant": "standard",
+          "number": 31,
+          "choice": 3,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/79928"
+        },
+        {
+          "exam": 50,
+          "variant": "standard",
+          "number": 31,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/79928"
+        }
+      ],
+      "knowledgeId": "dermatology-k103"
+    },
+    {
+      "label": "皮膚付属器の複合判定",
+      "description": "脂腺孔、毛髄質、加齢による毛成長、性毛を組み合わせて判定する知識。",
+      "occurrenceCount": 4,
+      "examCount": 1,
+      "references": [
+        {
+          "exam": 53,
+          "variant": "standard",
+          "number": 32,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/93102"
+        },
+        {
+          "exam": 53,
+          "variant": "standard",
+          "number": 32,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/93102"
+        },
+        {
+          "exam": 53,
+          "variant": "standard",
+          "number": 32,
+          "choice": 3,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/93102"
+        },
+        {
+          "exam": 53,
+          "variant": "standard",
+          "number": 32,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/93102"
+        }
+      ],
+      "knowledgeId": "dermatology-k104"
+    },
+    {
+      "label": "皮膚小溝・皮膚小稜",
+      "description": "皮膚表面には皮膚小溝と皮膚小稜があり、指紋などの形態をつくる。",
+      "occurrenceCount": 3,
+      "examCount": 3,
+      "references": [
+        {
+          "exam": 33,
+          "variant": "standard",
+          "number": 26,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24867"
+        },
+        {
+          "exam": 39,
+          "variant": "standard",
+          "number": 26,
+          "choice": 1,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/41721"
+        },
+        {
+          "exam": 45,
+          "variant": "standard",
+          "number": 35,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/63172"
+        }
+      ],
+      "knowledgeId": "dermatology-k010"
+    },
+    {
+      "label": "毛の成長周期",
+      "description": "毛は成長期・退行期・休止期を繰り返し、頭毛は成長期が長い。",
+      "occurrenceCount": 3,
+      "examCount": 3,
+      "references": [
+        {
+          "exam": 44,
+          "variant": "standard",
+          "number": 32,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/57897"
+        },
+        {
+          "exam": 45,
+          "variant": "standard",
+          "number": 32,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/63169"
+        },
+        {
+          "exam": 51,
+          "variant": "standard",
+          "number": 32,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/83952"
+        }
+      ],
+      "knowledgeId": "dermatology-k018"
+    },
+    {
+      "label": "独立脂腺",
+      "description": "独立脂腺は口唇、口腔粘膜、眼瞼、乳輪などにみられる。",
+      "occurrenceCount": 2,
+      "examCount": 2,
+      "references": [
+        {
+          "exam": 49,
+          "variant": "standard",
+          "number": 32,
+          "choice": 3,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/75568"
+        },
+        {
+          "exam": 52,
+          "variant": "standard",
+          "number": 32,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/90158"
+        }
+      ],
+      "knowledgeId": "dermatology-k025"
+    },
+    {
+      "label": "爪の加齢変化",
+      "description": "爪の縦溝は加齢に伴って目立ちやすくなる。",
+      "occurrenceCount": 2,
+      "examCount": 2,
+      "references": [
+        {
+          "exam": 28,
+          "variant": "standard",
+          "number": 27,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18549"
+        },
+        {
+          "exam": 33,
+          "variant": "standard",
+          "number": 29,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24870"
+        }
+      ],
+      "knowledgeId": "dermatology-k029"
+    },
+    {
+      "label": "毛の保護機能",
+      "description": "頭毛・眉毛・睫毛・鼻毛は機械的刺激やごみから身体を保護する。",
+      "occurrenceCount": 2,
+      "examCount": 2,
+      "references": [
+        {
+          "exam": 35,
+          "variant": "standard",
+          "number": 28,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/30826"
+        },
+        {
+          "exam": 39,
+          "variant": "standard",
+          "number": 28,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/41723"
+        }
+      ],
+      "knowledgeId": "dermatology-k031"
+    },
+    {
+      "label": "紫外線とビタミンD",
+      "description": "皮膚では紫外線の作用によりビタミンDがつくられる。",
+      "occurrenceCount": 2,
+      "examCount": 2,
+      "references": [
+        {
+          "exam": 35,
+          "variant": "standard",
+          "number": 28,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/30826"
+        },
+        {
+          "exam": 39,
+          "variant": "standard",
+          "number": 28,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/41723"
+        }
+      ],
+      "knowledgeId": "dermatology-k038"
+    },
+    {
+      "label": "ホルモンと皮膚付属器",
+      "description": "性ホルモンや更年期の変化は皮脂、毛、ひげなど皮膚付属器に影響する。",
+      "occurrenceCount": 2,
+      "examCount": 2,
+      "references": [
+        {
+          "exam": 51,
+          "variant": "standard",
+          "number": 34,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/83954"
+        },
+        {
+          "exam": 54,
+          "variant": "standard",
+          "number": 34,
+          "choice": 3,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/96783"
+        }
+      ],
+      "knowledgeId": "dermatology-k051"
+    },
+    {
+      "label": "蕁麻疹の誘因",
+      "description": "蕁麻疹には食物・薬物のほか、花粉、ダニ、寒冷、温熱、日光などが関係することがある。",
+      "occurrenceCount": 2,
+      "examCount": 2,
+      "references": [
+        {
+          "exam": 32,
+          "variant": "standard",
+          "number": 28,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24819"
+        },
+        {
+          "exam": 42,
+          "variant": "new",
+          "number": 35,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/52053"
+        }
+      ],
+      "knowledgeId": "dermatology-k062"
+    },
+    {
+      "label": "加齢と性毛の成長",
+      "description": "眉毛・鼻毛などは加齢で成長期が長くなることがあり、性ホルモンで変化する毛を性毛という。",
+      "occurrenceCount": 1,
+      "examCount": 1,
+      "references": [
+        {
+          "exam": 45,
+          "variant": "standard",
+          "number": 32,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/63169"
+        }
+      ],
+      "knowledgeId": "dermatology-k021"
+    },
+    {
+      "label": "皮膚呼吸",
+      "description": "ヒトの皮膚呼吸はほとんど行われない。",
+      "occurrenceCount": 1,
+      "examCount": 1,
+      "references": [
+        {
+          "exam": 46,
+          "variant": "standard",
+          "number": 33,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/67608"
+        }
+      ],
+      "knowledgeId": "dermatology-k037"
+    },
+    {
+      "label": "皮膚常在菌の防御",
+      "description": "非病原性の皮膚常在菌や脂肪酸は病原微生物の増殖を抑える。",
+      "occurrenceCount": 1,
+      "examCount": 1,
+      "references": [
+        {
+          "exam": 54,
+          "variant": "standard",
+          "number": 33,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/96782"
+        }
+      ],
+      "knowledgeId": "dermatology-k043"
+    },
+    {
+      "label": "爪の手入れ",
+      "description": "爪は深く切りすぎず、爪床や指先の炎症を避ける。",
+      "occurrenceCount": 1,
+      "examCount": 1,
+      "references": [
+        {
+          "exam": 39,
+          "variant": "standard",
+          "number": 29,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/41724"
+        }
+      ],
+      "knowledgeId": "dermatology-k064"
+    },
+    {
+      "label": "精神状態と皮膚疾患",
+      "description": "蕁麻疹、円形脱毛症、多汗症などでは精神状態が経過に影響することがある。",
+      "occurrenceCount": 1,
+      "examCount": 1,
+      "references": [
+        {
+          "exam": 50,
+          "variant": "standard",
+          "number": 33,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/79930"
+        }
+      ],
+      "knowledgeId": "dermatology-k065"
+    }
+  ],
+  "subject": "皮膚科学",
+  "subjectSlug": "dermatology"
+}
+

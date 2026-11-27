@@ -1,0 +1,520 @@
+{
+  "schemaVersion": 1,
+  "publication": {
+    "status": "metadata-only",
+    "reason": "公式PDFと過去問サイトの問題本文・選択肢は、公開許諾を確認できるまでローカル管理する",
+    "localCanonical": "questions/past-exams/local/collection.json"
+  },
+  "exam": {
+    "number": 29,
+    "variant": "standard",
+    "label": "第29回理容師筆記試験"
+  },
+  "sources": {
+    "officialIndex": "https://www.rbc.or.jp/exam/past_question/",
+    "officialPdf": "https://www.rbc.or.jp/wp-content/uploads/2021/07/29rhikki.pdf"
+  },
+  "questions": [
+    {
+      "id": "r29-q001",
+      "number": 1,
+      "subject": "（旧）関係法規・制度",
+      "correct": 1,
+      "answerStatus": "official-pdf-candidate",
+      "textStatus": "available-locally",
+      "sourceUrl": "https://riyoushi.kakomonn.com/questions/18573",
+      "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/29rhikki.pdf"
+    },
+    {
+      "id": "r29-q002",
+      "number": 2,
+      "subject": "（旧）関係法規・制度",
+      "correct": 3,
+      "answerStatus": "official-pdf-candidate",
+      "textStatus": "available-locally",
+      "sourceUrl": "https://riyoushi.kakomonn.com/questions/18574",
+      "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/29rhikki.pdf"
+    },
+    {
+      "id": "r29-q003",
+      "number": 3,
+      "subject": "（旧）関係法規・制度",
+      "correct": 2,
+      "answerStatus": "official-pdf-candidate",
+      "textStatus": "available-locally",
+      "sourceUrl": "https://riyoushi.kakomonn.com/questions/18575",
+      "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/29rhikki.pdf"
+    },
+    {
+      "id": "r29-q004",
+      "number": 4,
+      "subject": "（旧）関係法規・制度",
+      "correct": 2,
+      "answerStatus": "official-pdf-candidate",
+      "textStatus": "available-locally",
+      "sourceUrl": "https://riyoushi.kakomonn.com/questions/18576",
+      "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/29rhikki.pdf"
+    },
+    {
+      "id": "r29-q005",
+      "number": 5,
+      "subject": "（旧）関係法規・制度",
+      "correct": 3,
+      "answerStatus": "official-pdf-candidate",
+      "textStatus": "available-locally",
+      "sourceUrl": "https://riyoushi.kakomonn.com/questions/18577",
+      "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/29rhikki.pdf"
+    },
+    {
+      "id": "r29-q006",
+      "number": 6,
+      "subject": "公衆衛生・環境衛生",
+      "correct": 2,
+      "answerStatus": "official-pdf-candidate",
+      "textStatus": "available-locally",
+      "sourceUrl": "https://riyoushi.kakomonn.com/questions/18578",
+      "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/29rhikki.pdf"
+    },
+    {
+      "id": "r29-q007",
+      "number": 7,
+      "subject": "公衆衛生・環境衛生",
+      "correct": 1,
+      "answerStatus": "official-pdf-candidate",
+      "textStatus": "available-locally",
+      "sourceUrl": "https://riyoushi.kakomonn.com/questions/18579",
+      "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/29rhikki.pdf"
+    },
+    {
+      "id": "r29-q008",
+      "number": 8,
+      "subject": "公衆衛生・環境衛生",
+      "correct": null,
+      "answerStatus": "unavailable",
+      "textStatus": "available-locally",
+      "sourceUrl": "https://riyoushi.kakomonn.com/questions/18580",
+      "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/29rhikki.pdf"
+    },
+    {
+      "id": "r29-q009",
+      "number": 9,
+      "subject": "公衆衛生・環境衛生",
+      "correct": 4,
+      "answerStatus": "official-pdf-candidate",
+      "textStatus": "available-locally",
+      "sourceUrl": "https://riyoushi.kakomonn.com/questions/18581",
+      "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/29rhikki.pdf"
+    },
+    {
+      "id": "r29-q010",
+      "number": 10,
+      "subject": "公衆衛生・環境衛生",
+      "correct": 3,
+      "answerStatus": "official-pdf-candidate",
+      "textStatus": "available-locally",
+      "sourceUrl": "https://riyoushi.kakomonn.com/questions/18582",
+      "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/29rhikki.pdf"
+    },
+    {
+      "id": "r29-q011",
+      "number": 11,
+      "subject": "感染症",
+      "correct": 2,
+      "answerStatus": "official-pdf-candidate",
+      "textStatus": "available-locally",
+      "sourceUrl": "https://riyoushi.kakomonn.com/questions/18583",
+      "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/29rhikki.pdf"
+    },
+    {
+      "id": "r29-q012",
+      "number": 12,
+      "subject": "感染症",
+      "correct": 4,
+      "answerStatus": "official-pdf-candidate",
+      "textStatus": "available-locally",
+      "sourceUrl": "https://riyoushi.kakomonn.com/questions/18584",
+      "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/29rhikki.pdf"
+    },
+    {
+      "id": "r29-q013",
+      "number": 13,
+      "subject": "感染症",
+      "correct": 2,
+      "answerStatus": "official-pdf-candidate",
+      "textStatus": "available-locally",
+      "sourceUrl": "https://riyoushi.kakomonn.com/questions/18585",
+      "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/29rhikki.pdf"
+    },
+    {
+      "id": "r29-q014",
+      "number": 14,
+      "subject": "感染症",
+      "correct": 2,
+      "answerStatus": "official-pdf-candidate",
+      "textStatus": "available-locally",
+      "sourceUrl": "https://riyoushi.kakomonn.com/questions/18586",
+      "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/29rhikki.pdf"
+    },
+    {
+      "id": "r29-q015",
+      "number": 15,
+      "subject": "感染症",
+      "correct": 1,
+      "answerStatus": "official-pdf-candidate",
+      "textStatus": "available-locally",
+      "sourceUrl": "https://riyoushi.kakomonn.com/questions/18587",
+      "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/29rhikki.pdf"
+    },
+    {
+      "id": "r29-q016",
+      "number": 16,
+      "subject": "衛生管理技術",
+      "correct": 3,
+      "answerStatus": "official-pdf-candidate",
+      "textStatus": "available-locally",
+      "sourceUrl": "https://riyoushi.kakomonn.com/questions/18588",
+      "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/29rhikki.pdf"
+    },
+    {
+      "id": "r29-q017",
+      "number": 17,
+      "subject": "衛生管理技術",
+      "correct": 4,
+      "answerStatus": "official-pdf-candidate",
+      "textStatus": "available-locally",
+      "sourceUrl": "https://riyoushi.kakomonn.com/questions/18589",
+      "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/29rhikki.pdf"
+    },
+    {
+      "id": "r29-q018",
+      "number": 18,
+      "subject": "衛生管理技術",
+      "correct": 3,
+      "answerStatus": "official-pdf-candidate",
+      "textStatus": "available-locally",
+      "sourceUrl": "https://riyoushi.kakomonn.com/questions/18590",
+      "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/29rhikki.pdf"
+    },
+    {
+      "id": "r29-q019",
+      "number": 19,
+      "subject": "衛生管理技術",
+      "correct": 1,
+      "answerStatus": "official-pdf-candidate",
+      "textStatus": "available-locally",
+      "sourceUrl": "https://riyoushi.kakomonn.com/questions/18591",
+      "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/29rhikki.pdf"
+    },
+    {
+      "id": "r29-q020",
+      "number": 20,
+      "subject": "衛生管理技術",
+      "correct": 4,
+      "answerStatus": "official-pdf-candidate",
+      "textStatus": "available-locally",
+      "sourceUrl": "https://riyoushi.kakomonn.com/questions/18592",
+      "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/29rhikki.pdf"
+    },
+    {
+      "id": "r29-q021",
+      "number": 21,
+      "subject": "人体の構造及び機能",
+      "correct": 3,
+      "answerStatus": "official-pdf-candidate",
+      "textStatus": "available-locally",
+      "sourceUrl": "https://riyoushi.kakomonn.com/questions/18593",
+      "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/29rhikki.pdf"
+    },
+    {
+      "id": "r29-q022",
+      "number": 22,
+      "subject": "人体の構造及び機能",
+      "correct": 2,
+      "answerStatus": "official-pdf-candidate",
+      "textStatus": "available-locally",
+      "sourceUrl": "https://riyoushi.kakomonn.com/questions/18594",
+      "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/29rhikki.pdf"
+    },
+    {
+      "id": "r29-q023",
+      "number": 23,
+      "subject": "人体の構造及び機能",
+      "correct": 4,
+      "answerStatus": "official-pdf-candidate",
+      "textStatus": "available-locally",
+      "sourceUrl": "https://riyoushi.kakomonn.com/questions/18595",
+      "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/29rhikki.pdf"
+    },
+    {
+      "id": "r29-q024",
+      "number": 24,
+      "subject": "人体の構造及び機能",
+      "correct": null,
+      "answerStatus": "unavailable",
+      "textStatus": "available-locally",
+      "sourceUrl": "https://riyoushi.kakomonn.com/questions/18596",
+      "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/29rhikki.pdf"
+    },
+    {
+      "id": "r29-q025",
+      "number": 25,
+      "subject": "人体の構造及び機能",
+      "correct": 2,
+      "answerStatus": "official-pdf-candidate",
+      "textStatus": "available-locally",
+      "sourceUrl": "https://riyoushi.kakomonn.com/questions/18597",
+      "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/29rhikki.pdf"
+    },
+    {
+      "id": "r29-q026",
+      "number": 26,
+      "subject": "皮膚科学",
+      "correct": 4,
+      "answerStatus": "official-pdf-candidate",
+      "textStatus": "available-locally",
+      "sourceUrl": "https://riyoushi.kakomonn.com/questions/18598",
+      "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/29rhikki.pdf"
+    },
+    {
+      "id": "r29-q027",
+      "number": 27,
+      "subject": "皮膚科学",
+      "correct": 4,
+      "answerStatus": "official-pdf-candidate",
+      "textStatus": "available-locally",
+      "sourceUrl": "https://riyoushi.kakomonn.com/questions/18599",
+      "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/29rhikki.pdf"
+    },
+    {
+      "id": "r29-q028",
+      "number": 28,
+      "subject": "皮膚科学",
+      "correct": 2,
+      "answerStatus": "official-pdf-candidate",
+      "textStatus": "available-locally",
+      "sourceUrl": "https://riyoushi.kakomonn.com/questions/18600",
+      "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/29rhikki.pdf"
+    },
+    {
+      "id": "r29-q029",
+      "number": 29,
+      "subject": "皮膚科学",
+      "correct": null,
+      "answerStatus": "unavailable",
+      "textStatus": "available-locally",
+      "sourceUrl": "https://riyoushi.kakomonn.com/questions/18601",
+      "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/29rhikki.pdf"
+    },
+    {
+      "id": "r29-q030",
+      "number": 30,
+      "subject": "皮膚科学",
+      "correct": 4,
+      "answerStatus": "official-pdf-candidate",
+      "textStatus": "available-locally",
+      "sourceUrl": "https://riyoushi.kakomonn.com/questions/18602",
+      "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/29rhikki.pdf"
+    },
+    {
+      "id": "r29-q031",
+      "number": 31,
+      "subject": "（旧）理容の物理・化学",
+      "correct": 2,
+      "answerStatus": "official-pdf-candidate",
+      "textStatus": "available-locally",
+      "sourceUrl": "https://riyoushi.kakomonn.com/questions/18603",
+      "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/29rhikki.pdf"
+    },
+    {
+      "id": "r29-q032",
+      "number": 32,
+      "subject": "（旧）理容の物理・化学",
+      "correct": 4,
+      "answerStatus": "official-pdf-candidate",
+      "textStatus": "available-locally",
+      "sourceUrl": "https://riyoushi.kakomonn.com/questions/18604",
+      "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/29rhikki.pdf"
+    },
+    {
+      "id": "r29-q033",
+      "number": 33,
+      "subject": "（旧）理容の物理・化学",
+      "correct": 2,
+      "answerStatus": "official-pdf-candidate",
+      "textStatus": "available-locally",
+      "sourceUrl": "https://riyoushi.kakomonn.com/questions/18605",
+      "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/29rhikki.pdf"
+    },
+    {
+      "id": "r29-q034",
+      "number": 34,
+      "subject": "（旧）理容の物理・化学",
+      "correct": 2,
+      "answerStatus": "official-pdf-candidate",
+      "textStatus": "available-locally",
+      "sourceUrl": "https://riyoushi.kakomonn.com/questions/18606",
+      "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/29rhikki.pdf"
+    },
+    {
+      "id": "r29-q035",
+      "number": 35,
+      "subject": "（旧）理容の物理・化学",
+      "correct": null,
+      "answerStatus": "unavailable",
+      "textStatus": "available-locally",
+      "sourceUrl": "https://riyoushi.kakomonn.com/questions/18607",
+      "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/29rhikki.pdf"
+    },
+    {
+      "id": "r29-q036",
+      "number": 36,
+      "subject": "（旧）理容の物理・化学",
+      "correct": 3,
+      "answerStatus": "official-pdf-candidate",
+      "textStatus": "available-locally",
+      "sourceUrl": "https://riyoushi.kakomonn.com/questions/18608",
+      "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/29rhikki.pdf"
+    },
+    {
+      "id": "r29-q037",
+      "number": 37,
+      "subject": "（旧）理容の物理・化学",
+      "correct": 2,
+      "answerStatus": "official-pdf-candidate",
+      "textStatus": "available-locally",
+      "sourceUrl": "https://riyoushi.kakomonn.com/questions/18609",
+      "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/29rhikki.pdf"
+    },
+    {
+      "id": "r29-q038",
+      "number": 38,
+      "subject": "（旧）理容の物理・化学",
+      "correct": 2,
+      "answerStatus": "official-pdf-candidate",
+      "textStatus": "available-locally",
+      "sourceUrl": "https://riyoushi.kakomonn.com/questions/18610",
+      "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/29rhikki.pdf"
+    },
+    {
+      "id": "r29-q039",
+      "number": 39,
+      "subject": "（旧）理容の物理・化学",
+      "correct": null,
+      "answerStatus": "unavailable",
+      "textStatus": "available-locally",
+      "sourceUrl": "https://riyoushi.kakomonn.com/questions/18611",
+      "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/29rhikki.pdf"
+    },
+    {
+      "id": "r29-q040",
+      "number": 40,
+      "subject": "（旧）理容の物理・化学",
+      "correct": null,
+      "answerStatus": "unavailable",
+      "textStatus": "available-locally",
+      "sourceUrl": "https://riyoushi.kakomonn.com/questions/18612",
+      "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/29rhikki.pdf"
+    },
+    {
+      "id": "r29-q041",
+      "number": 41,
+      "subject": "（旧）理容理論",
+      "correct": 4,
+      "answerStatus": "official-pdf-candidate",
+      "textStatus": "available-locally",
+      "sourceUrl": "https://riyoushi.kakomonn.com/questions/18613",
+      "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/29rhikki.pdf"
+    },
+    {
+      "id": "r29-q042",
+      "number": 42,
+      "subject": "（旧）理容理論",
+      "correct": 2,
+      "answerStatus": "official-pdf-candidate",
+      "textStatus": "available-locally",
+      "sourceUrl": "https://riyoushi.kakomonn.com/questions/18614",
+      "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/29rhikki.pdf"
+    },
+    {
+      "id": "r29-q043",
+      "number": 43,
+      "subject": "（旧）理容理論",
+      "correct": 2,
+      "answerStatus": "official-pdf-candidate",
+      "textStatus": "available-locally",
+      "sourceUrl": "https://riyoushi.kakomonn.com/questions/18615",
+      "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/29rhikki.pdf"
+    },
+    {
+      "id": "r29-q044",
+      "number": 44,
+      "subject": "（旧）理容理論",
+      "correct": 2,
+      "answerStatus": "official-pdf-candidate",
+      "textStatus": "available-locally",
+      "sourceUrl": "https://riyoushi.kakomonn.com/questions/18616",
+      "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/29rhikki.pdf"
+    },
+    {
+      "id": "r29-q045",
+      "number": 45,
+      "subject": "（旧）理容理論",
+      "correct": null,
+      "answerStatus": "unavailable",
+      "textStatus": "available-locally",
+      "sourceUrl": "https://riyoushi.kakomonn.com/questions/18617",
+      "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/29rhikki.pdf"
+    },
+    {
+      "id": "r29-q046",
+      "number": 46,
+      "subject": "（旧）理容理論",
+      "correct": 3,
+      "answerStatus": "official-pdf-candidate",
+      "textStatus": "available-locally",
+      "sourceUrl": "https://riyoushi.kakomonn.com/questions/18618",
+      "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/29rhikki.pdf"
+    },
+    {
+      "id": "r29-q047",
+      "number": 47,
+      "subject": "（旧）理容理論",
+      "correct": 1,
+      "answerStatus": "kakomonn-html-candidate",
+      "textStatus": "available-locally",
+      "sourceUrl": "https://riyoushi.kakomonn.com/questions/18619",
+      "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/29rhikki.pdf"
+    },
+    {
+      "id": "r29-q048",
+      "number": 48,
+      "subject": "（旧）理容理論",
+      "correct": 2,
+      "answerStatus": "official-pdf-candidate",
+      "textStatus": "available-locally",
+      "sourceUrl": "https://riyoushi.kakomonn.com/questions/18620",
+      "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/29rhikki.pdf"
+    },
+    {
+      "id": "r29-q049",
+      "number": 49,
+      "subject": "（旧）理容理論",
+      "correct": 2,
+      "answerStatus": "official-pdf-candidate",
+      "textStatus": "available-locally",
+      "sourceUrl": "https://riyoushi.kakomonn.com/questions/18621",
+      "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/29rhikki.pdf"
+    },
+    {
+      "id": "r29-q050",
+      "number": 50,
+      "subject": "（旧）理容理論",
+      "correct": 3,
+      "answerStatus": "official-pdf-candidate",
+      "textStatus": "available-locally",
+      "sourceUrl": "https://riyoushi.kakomonn.com/questions/18622",
+      "officialSourceUrl": "https://www.rbc.or.jp/wp-content/uploads/2021/07/29rhikki.pdf"
+    }
+  ]
+}
+

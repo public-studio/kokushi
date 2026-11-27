@@ -1,0 +1,5856 @@
+{
+  "schemaVersion": "1.0.0",
+  "subjectSlug": "anatomy",
+  "subject": "人体の構造及び機能",
+  "questionNumberRange": [
+    21,
+    30
+  ],
+  "method": {
+    "unit": "正誤判定に必要な知識命題",
+    "integration": "問題文・選択肢の表記一致ではなく、解剖・生理の知識命題を意味分類し、既存の知識IDを優先して同一知識へ統合。",
+    "choices": "各4択を正答・誤答の両方とも少なくとも1つの知識項目の参照に登録。",
+    "polarity": "設問の正答選択肢をcorrect、その他の選択肢をincorrectとする。複数正答問題は正答集合をcorrectとする。",
+    "rawTextPolicy": "公開分析JSONには問題文・選択肢本文を転載せず、公開可能な要約ラベルと意味記述だけを保存。",
+    "sourcePolicy": "sourceUrlはlocal/collection.jsonのHTML出典URLをそのまま参照し、PDF-onlyレコードは本文分析から除外。",
+    "answerPolicy": "collection.jsonのcorrect候補を照合し、欠落または意味上不一致の候補は問題文・選択肢の知識内容から補正。原本は変更しない。",
+    "version": "anatomy-semantic-v2",
+    "canonicalSource": "questions/past-exams/local/collection.json",
+    "rerun": "node scripts/analyze-subject-anatomy.js"
+  },
+  "coverage": {
+    "requestedExamRange": [
+      24,
+      54
+    ],
+    "subject": "人体の構造及び機能",
+    "questionNumberRange": [
+      21,
+      30
+    ],
+    "candidateRecordCount": 175,
+    "structuredRecordCount": 145,
+    "excludedPdfOnlyRecordCount": 30,
+    "excluded": [
+      {
+        "id": "r24-standard-q026",
+        "exam": 24,
+        "variant": "standard",
+        "number": 26,
+        "reason": "pdf-only-record-empty"
+      },
+      {
+        "id": "r24-standard-q027",
+        "exam": 24,
+        "variant": "standard",
+        "number": 27,
+        "reason": "pdf-only-record-empty"
+      },
+      {
+        "id": "r24-standard-q028",
+        "exam": 24,
+        "variant": "standard",
+        "number": 28,
+        "reason": "pdf-only-record-empty"
+      },
+      {
+        "id": "r24-standard-q029",
+        "exam": 24,
+        "variant": "standard",
+        "number": 29,
+        "reason": "pdf-only-record-empty"
+      },
+      {
+        "id": "r24-standard-q030",
+        "exam": 24,
+        "variant": "standard",
+        "number": 30,
+        "reason": "pdf-only-record-empty"
+      },
+      {
+        "id": "r25-standard-q026",
+        "exam": 25,
+        "variant": "standard",
+        "number": 26,
+        "reason": "pdf-only-record-empty"
+      },
+      {
+        "id": "r25-standard-q027",
+        "exam": 25,
+        "variant": "standard",
+        "number": 27,
+        "reason": "pdf-only-record-empty"
+      },
+      {
+        "id": "r25-standard-q028",
+        "exam": 25,
+        "variant": "standard",
+        "number": 28,
+        "reason": "pdf-only-record-empty"
+      },
+      {
+        "id": "r25-standard-q029",
+        "exam": 25,
+        "variant": "standard",
+        "number": 29,
+        "reason": "pdf-only-record-empty"
+      },
+      {
+        "id": "r25-standard-q030",
+        "exam": 25,
+        "variant": "standard",
+        "number": 30,
+        "reason": "pdf-only-record-empty"
+      },
+      {
+        "id": "r26-standard-q026",
+        "exam": 26,
+        "variant": "standard",
+        "number": 26,
+        "reason": "pdf-only-record-empty"
+      },
+      {
+        "id": "r26-standard-q027",
+        "exam": 26,
+        "variant": "standard",
+        "number": 27,
+        "reason": "pdf-only-record-empty"
+      },
+      {
+        "id": "r26-standard-q028",
+        "exam": 26,
+        "variant": "standard",
+        "number": 28,
+        "reason": "pdf-only-record-empty"
+      },
+      {
+        "id": "r26-standard-q029",
+        "exam": 26,
+        "variant": "standard",
+        "number": 29,
+        "reason": "pdf-only-record-empty"
+      },
+      {
+        "id": "r26-standard-q030",
+        "exam": 26,
+        "variant": "standard",
+        "number": 30,
+        "reason": "pdf-only-record-empty"
+      },
+      {
+        "id": "r31-retake-q026",
+        "exam": 31,
+        "variant": "retake",
+        "number": 26,
+        "reason": "pdf-only-record-empty"
+      },
+      {
+        "id": "r31-retake-q027",
+        "exam": 31,
+        "variant": "retake",
+        "number": 27,
+        "reason": "pdf-only-record-empty"
+      },
+      {
+        "id": "r31-retake-q028",
+        "exam": 31,
+        "variant": "retake",
+        "number": 28,
+        "reason": "pdf-only-record-empty"
+      },
+      {
+        "id": "r31-retake-q029",
+        "exam": 31,
+        "variant": "retake",
+        "number": 29,
+        "reason": "pdf-only-record-empty"
+      },
+      {
+        "id": "r31-retake-q030",
+        "exam": 31,
+        "variant": "retake",
+        "number": 30,
+        "reason": "pdf-only-record-empty"
+      },
+      {
+        "id": "r42-old-q026",
+        "exam": 42,
+        "variant": "old",
+        "number": 26,
+        "reason": "pdf-only-record-empty"
+      },
+      {
+        "id": "r42-old-q027",
+        "exam": 42,
+        "variant": "old",
+        "number": 27,
+        "reason": "pdf-only-record-empty"
+      },
+      {
+        "id": "r42-old-q028",
+        "exam": 42,
+        "variant": "old",
+        "number": 28,
+        "reason": "pdf-only-record-empty"
+      },
+      {
+        "id": "r42-old-q029",
+        "exam": 42,
+        "variant": "old",
+        "number": 29,
+        "reason": "pdf-only-record-empty"
+      },
+      {
+        "id": "r42-old-q030",
+        "exam": 42,
+        "variant": "old",
+        "number": 30,
+        "reason": "pdf-only-record-empty"
+      },
+      {
+        "id": "r43-old-q026",
+        "exam": 43,
+        "variant": "old",
+        "number": 26,
+        "reason": "pdf-only-record-empty"
+      },
+      {
+        "id": "r43-old-q027",
+        "exam": 43,
+        "variant": "old",
+        "number": 27,
+        "reason": "pdf-only-record-empty"
+      },
+      {
+        "id": "r43-old-q028",
+        "exam": 43,
+        "variant": "old",
+        "number": 28,
+        "reason": "pdf-only-record-empty"
+      },
+      {
+        "id": "r43-old-q029",
+        "exam": 43,
+        "variant": "old",
+        "number": 29,
+        "reason": "pdf-only-record-empty"
+      },
+      {
+        "id": "r43-old-q030",
+        "exam": 43,
+        "variant": "old",
+        "number": 30,
+        "reason": "pdf-only-record-empty"
+      }
+    ],
+    "answerUnavailable": {
+      "pdfOnlyRecordCount": 30,
+      "structuredRecordMissingCollectionCorrectCount": 54,
+      "unresolvedStructuredRecordCount": 0,
+      "records": [
+        {
+          "id": "r24-standard-q026",
+          "exam": 24,
+          "variant": "standard",
+          "number": 26,
+          "reason": "pdf-only-no-answer"
+        },
+        {
+          "id": "r24-standard-q027",
+          "exam": 24,
+          "variant": "standard",
+          "number": 27,
+          "reason": "pdf-only-no-answer"
+        },
+        {
+          "id": "r24-standard-q028",
+          "exam": 24,
+          "variant": "standard",
+          "number": 28,
+          "reason": "pdf-only-no-answer"
+        },
+        {
+          "id": "r24-standard-q029",
+          "exam": 24,
+          "variant": "standard",
+          "number": 29,
+          "reason": "pdf-only-no-answer"
+        },
+        {
+          "id": "r24-standard-q030",
+          "exam": 24,
+          "variant": "standard",
+          "number": 30,
+          "reason": "pdf-only-no-answer"
+        },
+        {
+          "id": "r25-standard-q026",
+          "exam": 25,
+          "variant": "standard",
+          "number": 26,
+          "reason": "pdf-only-no-answer"
+        },
+        {
+          "id": "r25-standard-q027",
+          "exam": 25,
+          "variant": "standard",
+          "number": 27,
+          "reason": "pdf-only-no-answer"
+        },
+        {
+          "id": "r25-standard-q028",
+          "exam": 25,
+          "variant": "standard",
+          "number": 28,
+          "reason": "pdf-only-no-answer"
+        },
+        {
+          "id": "r25-standard-q029",
+          "exam": 25,
+          "variant": "standard",
+          "number": 29,
+          "reason": "pdf-only-no-answer"
+        },
+        {
+          "id": "r25-standard-q030",
+          "exam": 25,
+          "variant": "standard",
+          "number": 30,
+          "reason": "pdf-only-no-answer"
+        },
+        {
+          "id": "r26-standard-q026",
+          "exam": 26,
+          "variant": "standard",
+          "number": 26,
+          "reason": "pdf-only-no-answer"
+        },
+        {
+          "id": "r26-standard-q027",
+          "exam": 26,
+          "variant": "standard",
+          "number": 27,
+          "reason": "pdf-only-no-answer"
+        },
+        {
+          "id": "r26-standard-q028",
+          "exam": 26,
+          "variant": "standard",
+          "number": 28,
+          "reason": "pdf-only-no-answer"
+        },
+        {
+          "id": "r26-standard-q029",
+          "exam": 26,
+          "variant": "standard",
+          "number": 29,
+          "reason": "pdf-only-no-answer"
+        },
+        {
+          "id": "r26-standard-q030",
+          "exam": 26,
+          "variant": "standard",
+          "number": 30,
+          "reason": "pdf-only-no-answer"
+        },
+        {
+          "id": "r31-retake-q026",
+          "exam": 31,
+          "variant": "retake",
+          "number": 26,
+          "reason": "pdf-only-no-answer"
+        },
+        {
+          "id": "r31-retake-q027",
+          "exam": 31,
+          "variant": "retake",
+          "number": 27,
+          "reason": "pdf-only-no-answer"
+        },
+        {
+          "id": "r31-retake-q028",
+          "exam": 31,
+          "variant": "retake",
+          "number": 28,
+          "reason": "pdf-only-no-answer"
+        },
+        {
+          "id": "r31-retake-q029",
+          "exam": 31,
+          "variant": "retake",
+          "number": 29,
+          "reason": "pdf-only-no-answer"
+        },
+        {
+          "id": "r31-retake-q030",
+          "exam": 31,
+          "variant": "retake",
+          "number": 30,
+          "reason": "pdf-only-no-answer"
+        },
+        {
+          "id": "r42-old-q026",
+          "exam": 42,
+          "variant": "old",
+          "number": 26,
+          "reason": "pdf-only-no-answer"
+        },
+        {
+          "id": "r42-old-q027",
+          "exam": 42,
+          "variant": "old",
+          "number": 27,
+          "reason": "pdf-only-no-answer"
+        },
+        {
+          "id": "r42-old-q028",
+          "exam": 42,
+          "variant": "old",
+          "number": 28,
+          "reason": "pdf-only-no-answer"
+        },
+        {
+          "id": "r42-old-q029",
+          "exam": 42,
+          "variant": "old",
+          "number": 29,
+          "reason": "pdf-only-no-answer"
+        },
+        {
+          "id": "r42-old-q030",
+          "exam": 42,
+          "variant": "old",
+          "number": 30,
+          "reason": "pdf-only-no-answer"
+        },
+        {
+          "id": "r43-old-q026",
+          "exam": 43,
+          "variant": "old",
+          "number": 26,
+          "reason": "pdf-only-no-answer"
+        },
+        {
+          "id": "r43-old-q027",
+          "exam": 43,
+          "variant": "old",
+          "number": 27,
+          "reason": "pdf-only-no-answer"
+        },
+        {
+          "id": "r43-old-q028",
+          "exam": 43,
+          "variant": "old",
+          "number": 28,
+          "reason": "pdf-only-no-answer"
+        },
+        {
+          "id": "r43-old-q029",
+          "exam": 43,
+          "variant": "old",
+          "number": 29,
+          "reason": "pdf-only-no-answer"
+        },
+        {
+          "id": "r43-old-q030",
+          "exam": 43,
+          "variant": "old",
+          "number": 30,
+          "reason": "pdf-only-no-answer"
+        }
+      ]
+    },
+    "allVariantCount": 35,
+    "includedVariantCount": 29,
+    "includedExamVariants": [
+      "27-standard",
+      "28-standard",
+      "29-standard",
+      "30-standard",
+      "31-standard",
+      "32-standard",
+      "33-standard",
+      "34-standard",
+      "35-standard",
+      "36-standard",
+      "37-standard",
+      "38-standard",
+      "39-standard",
+      "40-standard",
+      "41-new",
+      "41-old",
+      "42-new",
+      "43-new",
+      "44-standard",
+      "45-standard",
+      "46-standard",
+      "47-standard",
+      "48-standard",
+      "49-standard",
+      "50-standard",
+      "51-standard",
+      "52-standard",
+      "53-standard",
+      "54-standard"
+    ],
+    "excludedExamVariants": [
+      "24-standard",
+      "25-standard",
+      "26-standard",
+      "31-retake",
+      "42-old",
+      "43-old"
+    ],
+    "questionNumbersByVariant": {
+      "24-standard": [
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "25-standard": [
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "26-standard": [
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "27-standard": [
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "28-standard": [
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "29-standard": [
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "30-standard": [
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "31-retake": [
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "31-standard": [
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "32-standard": [
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "33-standard": [
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "34-standard": [
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "35-standard": [
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "36-standard": [
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "37-standard": [
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "38-standard": [
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "39-standard": [
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "40-standard": [
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "41-new": [
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "41-old": [
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "42-new": [
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "42-old": [
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "43-new": [
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "43-old": [
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "44-standard": [
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "45-standard": [
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "46-standard": [
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "47-standard": [
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "48-standard": [
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "49-standard": [
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "50-standard": [
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "51-standard": [
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "52-standard": [
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "53-standard": [
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "54-standard": [
+        26,
+        27,
+        28,
+        29,
+        30
+      ]
+    },
+    "questionCount": 145,
+    "choiceReferenceCount": 580,
+    "knowledgeItemCount": 50,
+    "previousCandidateRecordCount": 175,
+    "previousStructuredRecordCount": 145,
+    "addedStructuredRecordCount": 0,
+    "answerResolution": {
+      "existingAnalysisPreservedQuestionCount": 145,
+      "newRecordResolution": {}
+    },
+    "numberingNote": "第27〜40回では人体の構造及び機能がq21〜25で、q26〜30は皮膚科学。科目名を優先して取り込み、皮膚科学のq26〜30は人体分析へ混入させない。"
+  },
+  "knowledgeItems": [
+    {
+      "knowledgeId": "anatomy-k001",
+      "label": "顔面の主要部位",
+      "description": "内眼角・眉間・鼻尖・オトガイなど、顔面の表面部位の位置を区別する知識。",
+      "occurrenceCount": 21,
+      "examCount": 9,
+      "references": [
+        {
+          "exam": 28,
+          "variant": "standard",
+          "number": 22,
+          "choice": 2,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18544"
+        },
+        {
+          "exam": 29,
+          "variant": "standard",
+          "number": 21,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18593"
+        },
+        {
+          "exam": 29,
+          "variant": "standard",
+          "number": 23,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18595"
+        },
+        {
+          "exam": 29,
+          "variant": "standard",
+          "number": 23,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18595"
+        },
+        {
+          "exam": 29,
+          "variant": "standard",
+          "number": 23,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18595"
+        },
+        {
+          "exam": 29,
+          "variant": "standard",
+          "number": 23,
+          "choice": 4,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18595"
+        },
+        {
+          "exam": 30,
+          "variant": "standard",
+          "number": 21,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18643"
+        },
+        {
+          "exam": 30,
+          "variant": "standard",
+          "number": 21,
+          "choice": 2,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18643"
+        },
+        {
+          "exam": 30,
+          "variant": "standard",
+          "number": 21,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18643"
+        },
+        {
+          "exam": 30,
+          "variant": "standard",
+          "number": 21,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18643"
+        },
+        {
+          "exam": 31,
+          "variant": "standard",
+          "number": 23,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18695"
+        },
+        {
+          "exam": 32,
+          "variant": "standard",
+          "number": 22,
+          "choice": 1,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24813"
+        },
+        {
+          "exam": 32,
+          "variant": "standard",
+          "number": 22,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24813"
+        },
+        {
+          "exam": 32,
+          "variant": "standard",
+          "number": 22,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24813"
+        },
+        {
+          "exam": 32,
+          "variant": "standard",
+          "number": 22,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24813"
+        },
+        {
+          "exam": 35,
+          "variant": "standard",
+          "number": 21,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/30819"
+        },
+        {
+          "exam": 38,
+          "variant": "standard",
+          "number": 22,
+          "choice": 1,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/37934"
+        },
+        {
+          "exam": 40,
+          "variant": "standard",
+          "number": 23,
+          "choice": 2,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/46252"
+        },
+        {
+          "exam": 41,
+          "variant": "new",
+          "number": 26,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/49517"
+        },
+        {
+          "exam": 41,
+          "variant": "new",
+          "number": 26,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/49517"
+        },
+        {
+          "exam": 41,
+          "variant": "new",
+          "number": 26,
+          "choice": 4,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/49517"
+        }
+      ]
+    },
+    {
+      "knowledgeId": "anatomy-k002",
+      "label": "鼻部表面の位置関係",
+      "description": "鼻背・鼻根・鼻尖・鼻翼の位置関係を区別する知識。",
+      "occurrenceCount": 15,
+      "examCount": 5,
+      "references": [
+        {
+          "exam": 31,
+          "variant": "standard",
+          "number": 21,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18693"
+        },
+        {
+          "exam": 31,
+          "variant": "standard",
+          "number": 21,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18693"
+        },
+        {
+          "exam": 36,
+          "variant": "standard",
+          "number": 21,
+          "choice": 1,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/33490"
+        },
+        {
+          "exam": 36,
+          "variant": "standard",
+          "number": 21,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/33490"
+        },
+        {
+          "exam": 36,
+          "variant": "standard",
+          "number": 21,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/33490"
+        },
+        {
+          "exam": 36,
+          "variant": "standard",
+          "number": 21,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/33490"
+        },
+        {
+          "exam": 38,
+          "variant": "standard",
+          "number": 21,
+          "choice": 1,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/37933"
+        },
+        {
+          "exam": 38,
+          "variant": "standard",
+          "number": 21,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/37933"
+        },
+        {
+          "exam": 38,
+          "variant": "standard",
+          "number": 21,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/37933"
+        },
+        {
+          "exam": 38,
+          "variant": "standard",
+          "number": 21,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/37933"
+        },
+        {
+          "exam": 41,
+          "variant": "new",
+          "number": 26,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/49517"
+        },
+        {
+          "exam": 44,
+          "variant": "standard",
+          "number": 26,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/57891"
+        },
+        {
+          "exam": 44,
+          "variant": "standard",
+          "number": 26,
+          "choice": 2,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/57891"
+        },
+        {
+          "exam": 44,
+          "variant": "standard",
+          "number": 26,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/57891"
+        },
+        {
+          "exam": 44,
+          "variant": "standard",
+          "number": 26,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/57891"
+        }
+      ]
+    },
+    {
+      "knowledgeId": "anatomy-k003",
+      "label": "顔面正中線の指標",
+      "description": "人中など、顔面正中線上にある部位と左右にある部位を区別する知識。",
+      "occurrenceCount": 9,
+      "examCount": 4,
+      "references": [
+        {
+          "exam": 35,
+          "variant": "standard",
+          "number": 21,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/30819"
+        },
+        {
+          "exam": 41,
+          "variant": "old",
+          "number": 21,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/49462"
+        },
+        {
+          "exam": 41,
+          "variant": "old",
+          "number": 21,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/49462"
+        },
+        {
+          "exam": 41,
+          "variant": "old",
+          "number": 21,
+          "choice": 4,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/49462"
+        },
+        {
+          "exam": 45,
+          "variant": "standard",
+          "number": 26,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/63163"
+        },
+        {
+          "exam": 45,
+          "variant": "standard",
+          "number": 26,
+          "choice": 2,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/63163"
+        },
+        {
+          "exam": 45,
+          "variant": "standard",
+          "number": 26,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/63163"
+        },
+        {
+          "exam": 45,
+          "variant": "standard",
+          "number": 26,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/63163"
+        },
+        {
+          "exam": 48,
+          "variant": "standard",
+          "number": 26,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/72556"
+        }
+      ]
+    },
+    {
+      "knowledgeId": "anatomy-k004",
+      "label": "口周囲の溝と境界",
+      "description": "鼻唇溝・オトガイ唇溝・赤唇縁など、口周囲の溝・境界の位置を区別する知識。",
+      "occurrenceCount": 11,
+      "examCount": 4,
+      "references": [
+        {
+          "exam": 31,
+          "variant": "standard",
+          "number": 21,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18693"
+        },
+        {
+          "exam": 31,
+          "variant": "standard",
+          "number": 21,
+          "choice": 2,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18693"
+        },
+        {
+          "exam": 35,
+          "variant": "standard",
+          "number": 21,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/30819"
+        },
+        {
+          "exam": 35,
+          "variant": "standard",
+          "number": 21,
+          "choice": 3,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/30819"
+        },
+        {
+          "exam": 39,
+          "variant": "standard",
+          "number": 21,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/41716"
+        },
+        {
+          "exam": 39,
+          "variant": "standard",
+          "number": 21,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/41716"
+        },
+        {
+          "exam": 39,
+          "variant": "standard",
+          "number": 21,
+          "choice": 3,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/41716"
+        },
+        {
+          "exam": 39,
+          "variant": "standard",
+          "number": 21,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/41716"
+        },
+        {
+          "exam": 48,
+          "variant": "standard",
+          "number": 26,
+          "choice": 2,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/72556"
+        },
+        {
+          "exam": 48,
+          "variant": "standard",
+          "number": 26,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/72556"
+        },
+        {
+          "exam": 48,
+          "variant": "standard",
+          "number": 26,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/72556"
+        }
+      ]
+    },
+    {
+      "knowledgeId": "anatomy-k005",
+      "label": "頬骨部と眼窩部の隣接",
+      "description": "頬骨部に接する頭頸部の部位として眼窩部を識別する知識。",
+      "occurrenceCount": 4,
+      "examCount": 1,
+      "references": [
+        {
+          "exam": 46,
+          "variant": "standard",
+          "number": 26,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/67601"
+        },
+        {
+          "exam": 46,
+          "variant": "standard",
+          "number": 26,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/67601"
+        },
+        {
+          "exam": 46,
+          "variant": "standard",
+          "number": 26,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/67601"
+        },
+        {
+          "exam": 46,
+          "variant": "standard",
+          "number": 26,
+          "choice": 4,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/67601"
+        }
+      ]
+    },
+    {
+      "knowledgeId": "anatomy-k006",
+      "label": "骨髄と造血",
+      "description": "造血作用は主に赤色骨髄が担い、黄色骨髄・緻密質・海綿質・骨膜そのものではないという知識。",
+      "occurrenceCount": 20,
+      "examCount": 5,
+      "references": [
+        {
+          "exam": 41,
+          "variant": "new",
+          "number": 27,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/49518"
+        },
+        {
+          "exam": 41,
+          "variant": "new",
+          "number": 27,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/49518"
+        },
+        {
+          "exam": 41,
+          "variant": "new",
+          "number": 27,
+          "choice": 3,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/49518"
+        },
+        {
+          "exam": 41,
+          "variant": "new",
+          "number": 27,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/49518"
+        },
+        {
+          "exam": 41,
+          "variant": "old",
+          "number": 22,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/49463"
+        },
+        {
+          "exam": 41,
+          "variant": "old",
+          "number": 22,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/49463"
+        },
+        {
+          "exam": 41,
+          "variant": "old",
+          "number": 22,
+          "choice": 3,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/49463"
+        },
+        {
+          "exam": 41,
+          "variant": "old",
+          "number": 22,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/49463"
+        },
+        {
+          "exam": 46,
+          "variant": "standard",
+          "number": 27,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/67602"
+        },
+        {
+          "exam": 46,
+          "variant": "standard",
+          "number": 27,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/67602"
+        },
+        {
+          "exam": 46,
+          "variant": "standard",
+          "number": 27,
+          "choice": 3,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/67602"
+        },
+        {
+          "exam": 46,
+          "variant": "standard",
+          "number": 27,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/67602"
+        },
+        {
+          "exam": 48,
+          "variant": "standard",
+          "number": 27,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/72557"
+        },
+        {
+          "exam": 48,
+          "variant": "standard",
+          "number": 27,
+          "choice": 2,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/72557"
+        },
+        {
+          "exam": 48,
+          "variant": "standard",
+          "number": 27,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/72557"
+        },
+        {
+          "exam": 48,
+          "variant": "standard",
+          "number": 27,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/72557"
+        },
+        {
+          "exam": 52,
+          "variant": "standard",
+          "number": 27,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/90153"
+        },
+        {
+          "exam": 52,
+          "variant": "standard",
+          "number": 27,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/90153"
+        },
+        {
+          "exam": 52,
+          "variant": "standard",
+          "number": 27,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/90153"
+        },
+        {
+          "exam": 52,
+          "variant": "standard",
+          "number": 27,
+          "choice": 4,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/90153"
+        }
+      ]
+    },
+    {
+      "knowledgeId": "anatomy-k007",
+      "label": "骨の構造と軟骨の区別",
+      "description": "髄腔・緻密質・海綿質などの骨の構造と、骨の構造に含めない軟骨を区別する知識。",
+      "occurrenceCount": 12,
+      "examCount": 4,
+      "references": [
+        {
+          "exam": 29,
+          "variant": "standard",
+          "number": 21,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18593"
+        },
+        {
+          "exam": 29,
+          "variant": "standard",
+          "number": 21,
+          "choice": 3,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18593"
+        },
+        {
+          "exam": 29,
+          "variant": "standard",
+          "number": 21,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18593"
+        },
+        {
+          "exam": 34,
+          "variant": "standard",
+          "number": 22,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24913"
+        },
+        {
+          "exam": 34,
+          "variant": "standard",
+          "number": 22,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24913"
+        },
+        {
+          "exam": 34,
+          "variant": "standard",
+          "number": 22,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24913"
+        },
+        {
+          "exam": 34,
+          "variant": "standard",
+          "number": 22,
+          "choice": 4,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24913"
+        },
+        {
+          "exam": 39,
+          "variant": "standard",
+          "number": 22,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/41717"
+        },
+        {
+          "exam": 54,
+          "variant": "standard",
+          "number": 26,
+          "choice": 1,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/96775"
+        },
+        {
+          "exam": 54,
+          "variant": "standard",
+          "number": 26,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/96775"
+        },
+        {
+          "exam": 54,
+          "variant": "standard",
+          "number": 26,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/96775"
+        },
+        {
+          "exam": 54,
+          "variant": "standard",
+          "number": 26,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/96775"
+        }
+      ]
+    },
+    {
+      "knowledgeId": "anatomy-k008",
+      "label": "表情筋の作用",
+      "description": "頬筋・笑筋・眼輪筋・口輪筋などの表情筋と、唇・眼の運動との対応を区別する知識。",
+      "occurrenceCount": 17,
+      "examCount": 5,
+      "references": [
+        {
+          "exam": 28,
+          "variant": "standard",
+          "number": 22,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18544"
+        },
+        {
+          "exam": 41,
+          "variant": "new",
+          "number": 28,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/49519"
+        },
+        {
+          "exam": 41,
+          "variant": "new",
+          "number": 28,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/49519"
+        },
+        {
+          "exam": 41,
+          "variant": "new",
+          "number": 28,
+          "choice": 3,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/49519"
+        },
+        {
+          "exam": 41,
+          "variant": "new",
+          "number": 28,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/49519"
+        },
+        {
+          "exam": 41,
+          "variant": "old",
+          "number": 23,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/49464"
+        },
+        {
+          "exam": 41,
+          "variant": "old",
+          "number": 23,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/49464"
+        },
+        {
+          "exam": 41,
+          "variant": "old",
+          "number": 23,
+          "choice": 3,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/49464"
+        },
+        {
+          "exam": 41,
+          "variant": "old",
+          "number": 23,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/49464"
+        },
+        {
+          "exam": 46,
+          "variant": "standard",
+          "number": 28,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/67603"
+        },
+        {
+          "exam": 46,
+          "variant": "standard",
+          "number": 28,
+          "choice": 2,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/67603"
+        },
+        {
+          "exam": 46,
+          "variant": "standard",
+          "number": 28,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/67603"
+        },
+        {
+          "exam": 46,
+          "variant": "standard",
+          "number": 28,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/67603"
+        },
+        {
+          "exam": 52,
+          "variant": "standard",
+          "number": 28,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/90154"
+        },
+        {
+          "exam": 52,
+          "variant": "standard",
+          "number": 28,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/90154"
+        },
+        {
+          "exam": 52,
+          "variant": "standard",
+          "number": 28,
+          "choice": 3,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/90154"
+        },
+        {
+          "exam": 52,
+          "variant": "standard",
+          "number": 28,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/90154"
+        }
+      ]
+    },
+    {
+      "knowledgeId": "anatomy-k009",
+      "label": "表情筋と咀嚼筋の分類",
+      "description": "眼輪筋・口輪筋・前頭筋などの表情筋と、咬筋・側頭筋などの咀嚼筋を区別する知識。",
+      "occurrenceCount": 15,
+      "examCount": 4,
+      "references": [
+        {
+          "exam": 38,
+          "variant": "standard",
+          "number": 22,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/37934"
+        },
+        {
+          "exam": 38,
+          "variant": "standard",
+          "number": 22,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/37934"
+        },
+        {
+          "exam": 38,
+          "variant": "standard",
+          "number": 22,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/37934"
+        },
+        {
+          "exam": 42,
+          "variant": "new",
+          "number": 27,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/52045"
+        },
+        {
+          "exam": 42,
+          "variant": "new",
+          "number": 27,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/52045"
+        },
+        {
+          "exam": 42,
+          "variant": "new",
+          "number": 27,
+          "choice": 3,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/52045"
+        },
+        {
+          "exam": 42,
+          "variant": "new",
+          "number": 27,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/52045"
+        },
+        {
+          "exam": 47,
+          "variant": "standard",
+          "number": 27,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/70222"
+        },
+        {
+          "exam": 47,
+          "variant": "standard",
+          "number": 27,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/70222"
+        },
+        {
+          "exam": 47,
+          "variant": "standard",
+          "number": 27,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/70222"
+        },
+        {
+          "exam": 47,
+          "variant": "standard",
+          "number": 27,
+          "choice": 4,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/70222"
+        },
+        {
+          "exam": 53,
+          "variant": "standard",
+          "number": 27,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/93097"
+        },
+        {
+          "exam": 53,
+          "variant": "standard",
+          "number": 27,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/93097"
+        },
+        {
+          "exam": 53,
+          "variant": "standard",
+          "number": 27,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/93097"
+        },
+        {
+          "exam": 53,
+          "variant": "standard",
+          "number": 27,
+          "choice": 4,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/93097"
+        }
+      ]
+    },
+    {
+      "knowledgeId": "anatomy-k010",
+      "label": "頸部の筋",
+      "description": "胸鎖乳突筋を頸部の筋として識別する知識。",
+      "occurrenceCount": 15,
+      "examCount": 4,
+      "references": [
+        {
+          "exam": 31,
+          "variant": "standard",
+          "number": 23,
+          "choice": 1,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18695"
+        },
+        {
+          "exam": 31,
+          "variant": "standard",
+          "number": 23,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18695"
+        },
+        {
+          "exam": 31,
+          "variant": "standard",
+          "number": 23,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18695"
+        },
+        {
+          "exam": 33,
+          "variant": "standard",
+          "number": 21,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24862"
+        },
+        {
+          "exam": 33,
+          "variant": "standard",
+          "number": 21,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24862"
+        },
+        {
+          "exam": 33,
+          "variant": "standard",
+          "number": 21,
+          "choice": 3,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24862"
+        },
+        {
+          "exam": 33,
+          "variant": "standard",
+          "number": 21,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24862"
+        },
+        {
+          "exam": 36,
+          "variant": "standard",
+          "number": 23,
+          "choice": 1,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/33492"
+        },
+        {
+          "exam": 36,
+          "variant": "standard",
+          "number": 23,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/33492"
+        },
+        {
+          "exam": 36,
+          "variant": "standard",
+          "number": 23,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/33492"
+        },
+        {
+          "exam": 36,
+          "variant": "standard",
+          "number": 23,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/33492"
+        },
+        {
+          "exam": 44,
+          "variant": "standard",
+          "number": 27,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/57892"
+        },
+        {
+          "exam": 44,
+          "variant": "standard",
+          "number": 27,
+          "choice": 2,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/57892"
+        },
+        {
+          "exam": 44,
+          "variant": "standard",
+          "number": 27,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/57892"
+        },
+        {
+          "exam": 44,
+          "variant": "standard",
+          "number": 27,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/57892"
+        }
+      ]
+    },
+    {
+      "knowledgeId": "anatomy-k011",
+      "label": "関節形態と運動範囲",
+      "description": "蝶番・車軸・鞍・球関節と、それぞれの運動方向・自由度の対応を区別する知識。",
+      "occurrenceCount": 11,
+      "examCount": 3,
+      "references": [
+        {
+          "exam": 39,
+          "variant": "standard",
+          "number": 22,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/41717"
+        },
+        {
+          "exam": 39,
+          "variant": "standard",
+          "number": 22,
+          "choice": 3,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/41717"
+        },
+        {
+          "exam": 39,
+          "variant": "standard",
+          "number": 22,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/41717"
+        },
+        {
+          "exam": 42,
+          "variant": "new",
+          "number": 26,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/52044"
+        },
+        {
+          "exam": 42,
+          "variant": "new",
+          "number": 26,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/52044"
+        },
+        {
+          "exam": 42,
+          "variant": "new",
+          "number": 26,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/52044"
+        },
+        {
+          "exam": 42,
+          "variant": "new",
+          "number": 26,
+          "choice": 4,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/52044"
+        },
+        {
+          "exam": 47,
+          "variant": "standard",
+          "number": 26,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/70221"
+        },
+        {
+          "exam": 47,
+          "variant": "standard",
+          "number": 26,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/70221"
+        },
+        {
+          "exam": 47,
+          "variant": "standard",
+          "number": 26,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/70221"
+        },
+        {
+          "exam": 47,
+          "variant": "standard",
+          "number": 26,
+          "choice": 4,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/70221"
+        }
+      ]
+    },
+    {
+      "knowledgeId": "anatomy-k012",
+      "label": "中枢神経系の範囲",
+      "description": "脳・脊髄が中枢神経系を構成し、脳神経や自律神経などは中枢神経系ではないという知識。",
+      "occurrenceCount": 19,
+      "examCount": 5,
+      "references": [
+        {
+          "exam": 27,
+          "variant": "standard",
+          "number": 22,
+          "choice": 1,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18494"
+        },
+        {
+          "exam": 27,
+          "variant": "standard",
+          "number": 22,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18494"
+        },
+        {
+          "exam": 27,
+          "variant": "standard",
+          "number": 22,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18494"
+        },
+        {
+          "exam": 31,
+          "variant": "standard",
+          "number": 22,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18694"
+        },
+        {
+          "exam": 31,
+          "variant": "standard",
+          "number": 22,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18694"
+        },
+        {
+          "exam": 31,
+          "variant": "standard",
+          "number": 22,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18694"
+        },
+        {
+          "exam": 31,
+          "variant": "standard",
+          "number": 22,
+          "choice": 4,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18694"
+        },
+        {
+          "exam": 37,
+          "variant": "standard",
+          "number": 22,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/34184"
+        },
+        {
+          "exam": 37,
+          "variant": "standard",
+          "number": 22,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/34184"
+        },
+        {
+          "exam": 37,
+          "variant": "standard",
+          "number": 22,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/34184"
+        },
+        {
+          "exam": 37,
+          "variant": "standard",
+          "number": 22,
+          "choice": 4,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/34184"
+        },
+        {
+          "exam": 42,
+          "variant": "new",
+          "number": 28,
+          "choice": 1,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/52046"
+        },
+        {
+          "exam": 42,
+          "variant": "new",
+          "number": 28,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/52046"
+        },
+        {
+          "exam": 42,
+          "variant": "new",
+          "number": 28,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/52046"
+        },
+        {
+          "exam": 42,
+          "variant": "new",
+          "number": 28,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/52046"
+        },
+        {
+          "exam": 46,
+          "variant": "standard",
+          "number": 29,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/67604"
+        },
+        {
+          "exam": 46,
+          "variant": "standard",
+          "number": 29,
+          "choice": 2,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/67604"
+        },
+        {
+          "exam": 46,
+          "variant": "standard",
+          "number": 29,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/67604"
+        },
+        {
+          "exam": 46,
+          "variant": "standard",
+          "number": 29,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/67604"
+        }
+      ]
+    },
+    {
+      "knowledgeId": "anatomy-k013",
+      "label": "運動神経と骨格筋",
+      "description": "運動神経が中枢の指令を骨格筋へ伝え、知覚神経・自律神経とは役割が異なるという知識。",
+      "occurrenceCount": 21,
+      "examCount": 10,
+      "references": [
+        {
+          "exam": 27,
+          "variant": "standard",
+          "number": 22,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18494"
+        },
+        {
+          "exam": 28,
+          "variant": "standard",
+          "number": 25,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18547"
+        },
+        {
+          "exam": 30,
+          "variant": "standard",
+          "number": 22,
+          "choice": 1,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18644"
+        },
+        {
+          "exam": 40,
+          "variant": "standard",
+          "number": 23,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/46252"
+        },
+        {
+          "exam": 40,
+          "variant": "standard",
+          "number": 23,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/46252"
+        },
+        {
+          "exam": 40,
+          "variant": "standard",
+          "number": 23,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/46252"
+        },
+        {
+          "exam": 43,
+          "variant": "new",
+          "number": 26,
+          "choice": 1,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/55203"
+        },
+        {
+          "exam": 43,
+          "variant": "new",
+          "number": 26,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/55203"
+        },
+        {
+          "exam": 43,
+          "variant": "new",
+          "number": 26,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/55203"
+        },
+        {
+          "exam": 43,
+          "variant": "new",
+          "number": 26,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/55203"
+        },
+        {
+          "exam": 45,
+          "variant": "standard",
+          "number": 27,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/63164"
+        },
+        {
+          "exam": 45,
+          "variant": "standard",
+          "number": 27,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/63164"
+        },
+        {
+          "exam": 49,
+          "variant": "standard",
+          "number": 26,
+          "choice": 1,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/75562"
+        },
+        {
+          "exam": 49,
+          "variant": "standard",
+          "number": 26,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/75562"
+        },
+        {
+          "exam": 49,
+          "variant": "standard",
+          "number": 26,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/75562"
+        },
+        {
+          "exam": 49,
+          "variant": "standard",
+          "number": 26,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/75562"
+        },
+        {
+          "exam": 50,
+          "variant": "standard",
+          "number": 27,
+          "choice": 2,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/79924"
+        },
+        {
+          "exam": 51,
+          "variant": "standard",
+          "number": 28,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/83948"
+        },
+        {
+          "exam": 51,
+          "variant": "standard",
+          "number": 28,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/83948"
+        },
+        {
+          "exam": 54,
+          "variant": "standard",
+          "number": 27,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/96776"
+        },
+        {
+          "exam": 54,
+          "variant": "standard",
+          "number": 27,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/96776"
+        }
+      ]
+    },
+    {
+      "knowledgeId": "anatomy-k014",
+      "label": "交感神経の作用",
+      "description": "交感神経優位では瞳孔散大・心拍増加・気管支拡張・副腎アドレナリン分泌促進などが起こり、消化活動は抑制方向になるという知識。",
+      "occurrenceCount": 37,
+      "examCount": 13,
+      "references": [
+        {
+          "exam": 33,
+          "variant": "standard",
+          "number": 22,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24863"
+        },
+        {
+          "exam": 33,
+          "variant": "standard",
+          "number": 22,
+          "choice": 4,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24863"
+        },
+        {
+          "exam": 34,
+          "variant": "standard",
+          "number": 23,
+          "choice": 2,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24914"
+        },
+        {
+          "exam": 34,
+          "variant": "standard",
+          "number": 23,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24914"
+        },
+        {
+          "exam": 34,
+          "variant": "standard",
+          "number": 23,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24914"
+        },
+        {
+          "exam": 35,
+          "variant": "standard",
+          "number": 22,
+          "choice": 1,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/30820"
+        },
+        {
+          "exam": 35,
+          "variant": "standard",
+          "number": 22,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/30820"
+        },
+        {
+          "exam": 35,
+          "variant": "standard",
+          "number": 22,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/30820"
+        },
+        {
+          "exam": 36,
+          "variant": "standard",
+          "number": 24,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/33493"
+        },
+        {
+          "exam": 36,
+          "variant": "standard",
+          "number": 24,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/33493"
+        },
+        {
+          "exam": 37,
+          "variant": "standard",
+          "number": 23,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/34185"
+        },
+        {
+          "exam": 37,
+          "variant": "standard",
+          "number": 23,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/34185"
+        },
+        {
+          "exam": 37,
+          "variant": "standard",
+          "number": 23,
+          "choice": 3,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/34185"
+        },
+        {
+          "exam": 37,
+          "variant": "standard",
+          "number": 23,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/34185"
+        },
+        {
+          "exam": 38,
+          "variant": "standard",
+          "number": 23,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/37935"
+        },
+        {
+          "exam": 38,
+          "variant": "standard",
+          "number": 23,
+          "choice": 3,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/37935"
+        },
+        {
+          "exam": 38,
+          "variant": "standard",
+          "number": 23,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/37935"
+        },
+        {
+          "exam": 42,
+          "variant": "new",
+          "number": 29,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/52047"
+        },
+        {
+          "exam": 42,
+          "variant": "new",
+          "number": 29,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/52047"
+        },
+        {
+          "exam": 42,
+          "variant": "new",
+          "number": 29,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/52047"
+        },
+        {
+          "exam": 42,
+          "variant": "new",
+          "number": 29,
+          "choice": 4,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/52047"
+        },
+        {
+          "exam": 43,
+          "variant": "new",
+          "number": 27,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/55204"
+        },
+        {
+          "exam": 43,
+          "variant": "new",
+          "number": 27,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/55204"
+        },
+        {
+          "exam": 43,
+          "variant": "new",
+          "number": 27,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/55204"
+        },
+        {
+          "exam": 43,
+          "variant": "new",
+          "number": 27,
+          "choice": 4,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/55204"
+        },
+        {
+          "exam": 45,
+          "variant": "standard",
+          "number": 27,
+          "choice": 3,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/63164"
+        },
+        {
+          "exam": 47,
+          "variant": "standard",
+          "number": 28,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/70223"
+        },
+        {
+          "exam": 47,
+          "variant": "standard",
+          "number": 28,
+          "choice": 2,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/70223"
+        },
+        {
+          "exam": 47,
+          "variant": "standard",
+          "number": 28,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/70223"
+        },
+        {
+          "exam": 47,
+          "variant": "standard",
+          "number": 28,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/70223"
+        },
+        {
+          "exam": 51,
+          "variant": "standard",
+          "number": 28,
+          "choice": 3,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/83948"
+        },
+        {
+          "exam": 52,
+          "variant": "standard",
+          "number": 29,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/90155"
+        },
+        {
+          "exam": 52,
+          "variant": "standard",
+          "number": 29,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/90155"
+        },
+        {
+          "exam": 54,
+          "variant": "standard",
+          "number": 28,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/96777"
+        },
+        {
+          "exam": 54,
+          "variant": "standard",
+          "number": 28,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/96777"
+        },
+        {
+          "exam": 54,
+          "variant": "standard",
+          "number": 28,
+          "choice": 3,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/96777"
+        },
+        {
+          "exam": 54,
+          "variant": "standard",
+          "number": 28,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/96777"
+        }
+      ]
+    },
+    {
+      "knowledgeId": "anatomy-k015",
+      "label": "副交感神経の作用",
+      "description": "副交感神経優位では瞳孔縮小・心拍減少・気管支収縮・消化活動促進などが起こるという知識。",
+      "occurrenceCount": 5,
+      "examCount": 4,
+      "references": [
+        {
+          "exam": 45,
+          "variant": "standard",
+          "number": 27,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/63164"
+        },
+        {
+          "exam": 48,
+          "variant": "standard",
+          "number": 28,
+          "choice": 3,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/72558"
+        },
+        {
+          "exam": 51,
+          "variant": "standard",
+          "number": 28,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/83948"
+        },
+        {
+          "exam": 52,
+          "variant": "standard",
+          "number": 29,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/90155"
+        },
+        {
+          "exam": 52,
+          "variant": "standard",
+          "number": 29,
+          "choice": 4,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/90155"
+        }
+      ]
+    },
+    {
+      "knowledgeId": "anatomy-k016",
+      "label": "網膜と視覚伝導",
+      "description": "光を感じる杆体・錐体などの感覚細胞が網膜にあり、視覚情報が視神経を通って脳へ伝わるという知識。",
+      "occurrenceCount": 18,
+      "examCount": 6,
+      "references": [
+        {
+          "exam": 35,
+          "variant": "standard",
+          "number": 23,
+          "choice": 1,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/30821"
+        },
+        {
+          "exam": 41,
+          "variant": "new",
+          "number": 29,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/49520"
+        },
+        {
+          "exam": 41,
+          "variant": "new",
+          "number": 29,
+          "choice": 2,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/49520"
+        },
+        {
+          "exam": 41,
+          "variant": "new",
+          "number": 29,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/49520"
+        },
+        {
+          "exam": 41,
+          "variant": "new",
+          "number": 29,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/49520"
+        },
+        {
+          "exam": 41,
+          "variant": "old",
+          "number": 24,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/49465"
+        },
+        {
+          "exam": 41,
+          "variant": "old",
+          "number": 24,
+          "choice": 2,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/49465"
+        },
+        {
+          "exam": 41,
+          "variant": "old",
+          "number": 24,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/49465"
+        },
+        {
+          "exam": 47,
+          "variant": "standard",
+          "number": 29,
+          "choice": 2,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/70224"
+        },
+        {
+          "exam": 47,
+          "variant": "standard",
+          "number": 29,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/70224"
+        },
+        {
+          "exam": 49,
+          "variant": "standard",
+          "number": 27,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/75563"
+        },
+        {
+          "exam": 49,
+          "variant": "standard",
+          "number": 27,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/75563"
+        },
+        {
+          "exam": 49,
+          "variant": "standard",
+          "number": 27,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/75563"
+        },
+        {
+          "exam": 49,
+          "variant": "standard",
+          "number": 27,
+          "choice": 4,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/75563"
+        },
+        {
+          "exam": 54,
+          "variant": "standard",
+          "number": 29,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/96778"
+        },
+        {
+          "exam": 54,
+          "variant": "standard",
+          "number": 29,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/96778"
+        },
+        {
+          "exam": 54,
+          "variant": "standard",
+          "number": 29,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/96778"
+        },
+        {
+          "exam": 54,
+          "variant": "standard",
+          "number": 29,
+          "choice": 4,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/96778"
+        }
+      ]
+    },
+    {
+      "knowledgeId": "anatomy-k017",
+      "label": "虹彩と瞳孔の調節",
+      "description": "虹彩が瞳孔径を変えて眼内へ入る光量を調節し、瞳孔は虹彩中央にあるという知識。",
+      "occurrenceCount": 15,
+      "examCount": 7,
+      "references": [
+        {
+          "exam": 34,
+          "variant": "standard",
+          "number": 23,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24914"
+        },
+        {
+          "exam": 35,
+          "variant": "standard",
+          "number": 22,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/30820"
+        },
+        {
+          "exam": 36,
+          "variant": "standard",
+          "number": 24,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/33493"
+        },
+        {
+          "exam": 38,
+          "variant": "standard",
+          "number": 23,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/37935"
+        },
+        {
+          "exam": 38,
+          "variant": "standard",
+          "number": 24,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/37936"
+        },
+        {
+          "exam": 38,
+          "variant": "standard",
+          "number": 24,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/37936"
+        },
+        {
+          "exam": 38,
+          "variant": "standard",
+          "number": 24,
+          "choice": 3,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/37936"
+        },
+        {
+          "exam": 38,
+          "variant": "standard",
+          "number": 24,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/37936"
+        },
+        {
+          "exam": 47,
+          "variant": "standard",
+          "number": 29,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/70224"
+        },
+        {
+          "exam": 47,
+          "variant": "standard",
+          "number": 29,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/70224"
+        },
+        {
+          "exam": 48,
+          "variant": "standard",
+          "number": 29,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/72559"
+        },
+        {
+          "exam": 48,
+          "variant": "standard",
+          "number": 29,
+          "choice": 2,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/72559"
+        },
+        {
+          "exam": 48,
+          "variant": "standard",
+          "number": 29,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/72559"
+        },
+        {
+          "exam": 48,
+          "variant": "standard",
+          "number": 29,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/72559"
+        },
+        {
+          "exam": 50,
+          "variant": "standard",
+          "number": 26,
+          "choice": 2,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/79923"
+        }
+      ]
+    },
+    {
+      "knowledgeId": "anatomy-k018",
+      "label": "涙器の構造",
+      "description": "涙丘・涙点・鼻涙管など、涙の排出に関わる眼周囲の構造を区別する知識。",
+      "occurrenceCount": 5,
+      "examCount": 2,
+      "references": [
+        {
+          "exam": 50,
+          "variant": "standard",
+          "number": 26,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/79923"
+        },
+        {
+          "exam": 52,
+          "variant": "standard",
+          "number": 26,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/90152"
+        },
+        {
+          "exam": 52,
+          "variant": "standard",
+          "number": 26,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/90152"
+        },
+        {
+          "exam": 52,
+          "variant": "standard",
+          "number": 26,
+          "choice": 3,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/90152"
+        },
+        {
+          "exam": 52,
+          "variant": "standard",
+          "number": 26,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/90152"
+        }
+      ]
+    },
+    {
+      "knowledgeId": "anatomy-k019",
+      "label": "聴覚器の構造",
+      "description": "鼓膜・耳小骨・蝸牛など、聴覚に関わる外耳・中耳・内耳の構造を区別する知識。",
+      "occurrenceCount": 14,
+      "examCount": 6,
+      "references": [
+        {
+          "exam": 28,
+          "variant": "standard",
+          "number": 23,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18545"
+        },
+        {
+          "exam": 28,
+          "variant": "standard",
+          "number": 23,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18545"
+        },
+        {
+          "exam": 28,
+          "variant": "standard",
+          "number": 23,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18545"
+        },
+        {
+          "exam": 28,
+          "variant": "standard",
+          "number": 23,
+          "choice": 4,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18545"
+        },
+        {
+          "exam": 35,
+          "variant": "standard",
+          "number": 23,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/30821"
+        },
+        {
+          "exam": 43,
+          "variant": "new",
+          "number": 28,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/55205"
+        },
+        {
+          "exam": 43,
+          "variant": "new",
+          "number": 28,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/55205"
+        },
+        {
+          "exam": 44,
+          "variant": "standard",
+          "number": 29,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/57894"
+        },
+        {
+          "exam": 44,
+          "variant": "standard",
+          "number": 29,
+          "choice": 2,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/57894"
+        },
+        {
+          "exam": 46,
+          "variant": "standard",
+          "number": 30,
+          "choice": 1,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/67605"
+        },
+        {
+          "exam": 46,
+          "variant": "standard",
+          "number": 30,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/67605"
+        },
+        {
+          "exam": 46,
+          "variant": "standard",
+          "number": 30,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/67605"
+        },
+        {
+          "exam": 46,
+          "variant": "standard",
+          "number": 30,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/67605"
+        },
+        {
+          "exam": 51,
+          "variant": "standard",
+          "number": 29,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/83949"
+        }
+      ]
+    },
+    {
+      "knowledgeId": "anatomy-k020",
+      "label": "平衡器官の構造",
+      "description": "前庭・半規管など、平衡感覚を担う内耳の器官を区別する知識。",
+      "occurrenceCount": 13,
+      "examCount": 6,
+      "references": [
+        {
+          "exam": 33,
+          "variant": "standard",
+          "number": 23,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24864"
+        },
+        {
+          "exam": 35,
+          "variant": "standard",
+          "number": 23,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/30821"
+        },
+        {
+          "exam": 35,
+          "variant": "standard",
+          "number": 23,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/30821"
+        },
+        {
+          "exam": 43,
+          "variant": "new",
+          "number": 28,
+          "choice": 3,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/55205"
+        },
+        {
+          "exam": 44,
+          "variant": "standard",
+          "number": 29,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/57894"
+        },
+        {
+          "exam": 44,
+          "variant": "standard",
+          "number": 29,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/57894"
+        },
+        {
+          "exam": 45,
+          "variant": "standard",
+          "number": 28,
+          "choice": 1,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/63165"
+        },
+        {
+          "exam": 45,
+          "variant": "standard",
+          "number": 28,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/63165"
+        },
+        {
+          "exam": 45,
+          "variant": "standard",
+          "number": 28,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/63165"
+        },
+        {
+          "exam": 45,
+          "variant": "standard",
+          "number": 28,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/63165"
+        },
+        {
+          "exam": 51,
+          "variant": "standard",
+          "number": 29,
+          "choice": 2,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/83949"
+        },
+        {
+          "exam": 51,
+          "variant": "standard",
+          "number": 29,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/83949"
+        },
+        {
+          "exam": 51,
+          "variant": "standard",
+          "number": 29,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/83949"
+        }
+      ]
+    },
+    {
+      "knowledgeId": "anatomy-k021",
+      "label": "中耳と耳管",
+      "description": "中耳が耳管を介して咽頭とつながるという知識。",
+      "occurrenceCount": 5,
+      "examCount": 2,
+      "references": [
+        {
+          "exam": 43,
+          "variant": "new",
+          "number": 28,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/55205"
+        },
+        {
+          "exam": 50,
+          "variant": "standard",
+          "number": 29,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/79926"
+        },
+        {
+          "exam": 50,
+          "variant": "standard",
+          "number": 29,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/79926"
+        },
+        {
+          "exam": 50,
+          "variant": "standard",
+          "number": 29,
+          "choice": 3,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/79926"
+        },
+        {
+          "exam": 50,
+          "variant": "standard",
+          "number": 29,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/79926"
+        }
+      ]
+    },
+    {
+      "knowledgeId": "anatomy-k023",
+      "label": "赤血球の機能と構造",
+      "description": "赤血球がヘモグロビンを含み酸素を運搬し、健康な成人では核を持たないという知識。",
+      "occurrenceCount": 19,
+      "examCount": 9,
+      "references": [
+        {
+          "exam": 27,
+          "variant": "standard",
+          "number": 21,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18493"
+        },
+        {
+          "exam": 31,
+          "variant": "standard",
+          "number": 24,
+          "choice": 3,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18696"
+        },
+        {
+          "exam": 34,
+          "variant": "standard",
+          "number": 21,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24912"
+        },
+        {
+          "exam": 40,
+          "variant": "standard",
+          "number": 22,
+          "choice": 1,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/46251"
+        },
+        {
+          "exam": 40,
+          "variant": "standard",
+          "number": 22,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/46251"
+        },
+        {
+          "exam": 40,
+          "variant": "standard",
+          "number": 22,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/46251"
+        },
+        {
+          "exam": 43,
+          "variant": "new",
+          "number": 29,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/55206"
+        },
+        {
+          "exam": 43,
+          "variant": "new",
+          "number": 29,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/55206"
+        },
+        {
+          "exam": 45,
+          "variant": "standard",
+          "number": 29,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/63166"
+        },
+        {
+          "exam": 45,
+          "variant": "standard",
+          "number": 29,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/63166"
+        },
+        {
+          "exam": 45,
+          "variant": "standard",
+          "number": 29,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/63166"
+        },
+        {
+          "exam": 45,
+          "variant": "standard",
+          "number": 29,
+          "choice": 4,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/63166"
+        },
+        {
+          "exam": 49,
+          "variant": "standard",
+          "number": 28,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/75564"
+        },
+        {
+          "exam": 49,
+          "variant": "standard",
+          "number": 28,
+          "choice": 2,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/75564"
+        },
+        {
+          "exam": 49,
+          "variant": "standard",
+          "number": 28,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/75564"
+        },
+        {
+          "exam": 49,
+          "variant": "standard",
+          "number": 28,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/75564"
+        },
+        {
+          "exam": 50,
+          "variant": "standard",
+          "number": 30,
+          "choice": 1,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/79927"
+        },
+        {
+          "exam": 50,
+          "variant": "standard",
+          "number": 30,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/79927"
+        },
+        {
+          "exam": 53,
+          "variant": "standard",
+          "number": 29,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/93099"
+        }
+      ]
+    },
+    {
+      "knowledgeId": "anatomy-k024",
+      "label": "血小板と血液凝固",
+      "description": "血小板が血液凝固に関与するという知識。",
+      "occurrenceCount": 18,
+      "examCount": 8,
+      "references": [
+        {
+          "exam": 27,
+          "variant": "standard",
+          "number": 21,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18493"
+        },
+        {
+          "exam": 27,
+          "variant": "standard",
+          "number": 21,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18493"
+        },
+        {
+          "exam": 32,
+          "variant": "standard",
+          "number": 21,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24812"
+        },
+        {
+          "exam": 32,
+          "variant": "standard",
+          "number": 21,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24812"
+        },
+        {
+          "exam": 32,
+          "variant": "standard",
+          "number": 21,
+          "choice": 3,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24812"
+        },
+        {
+          "exam": 32,
+          "variant": "standard",
+          "number": 21,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24812"
+        },
+        {
+          "exam": 34,
+          "variant": "standard",
+          "number": 21,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24912"
+        },
+        {
+          "exam": 36,
+          "variant": "standard",
+          "number": 22,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/33491"
+        },
+        {
+          "exam": 36,
+          "variant": "standard",
+          "number": 22,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/33491"
+        },
+        {
+          "exam": 36,
+          "variant": "standard",
+          "number": 22,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/33491"
+        },
+        {
+          "exam": 36,
+          "variant": "standard",
+          "number": 22,
+          "choice": 4,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/33491"
+        },
+        {
+          "exam": 40,
+          "variant": "standard",
+          "number": 22,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/46251"
+        },
+        {
+          "exam": 43,
+          "variant": "new",
+          "number": 29,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/55206"
+        },
+        {
+          "exam": 44,
+          "variant": "standard",
+          "number": 30,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/57895"
+        },
+        {
+          "exam": 44,
+          "variant": "standard",
+          "number": 30,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/57895"
+        },
+        {
+          "exam": 44,
+          "variant": "standard",
+          "number": 30,
+          "choice": 3,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/57895"
+        },
+        {
+          "exam": 44,
+          "variant": "standard",
+          "number": 30,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/57895"
+        },
+        {
+          "exam": 50,
+          "variant": "standard",
+          "number": 30,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/79927"
+        }
+      ]
+    },
+    {
+      "knowledgeId": "anatomy-k025",
+      "label": "リンパ球と免疫",
+      "description": "リンパ球が主に免疫反応を担うという知識。",
+      "occurrenceCount": 6,
+      "examCount": 5,
+      "references": [
+        {
+          "exam": 34,
+          "variant": "standard",
+          "number": 21,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24912"
+        },
+        {
+          "exam": 34,
+          "variant": "standard",
+          "number": 21,
+          "choice": 4,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24912"
+        },
+        {
+          "exam": 42,
+          "variant": "new",
+          "number": 30,
+          "choice": 3,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/52048"
+        },
+        {
+          "exam": 43,
+          "variant": "new",
+          "number": 29,
+          "choice": 3,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/55206"
+        },
+        {
+          "exam": 50,
+          "variant": "standard",
+          "number": 30,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/79927"
+        },
+        {
+          "exam": 53,
+          "variant": "standard",
+          "number": 29,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/93099"
+        }
+      ]
+    },
+    {
+      "knowledgeId": "anatomy-k026",
+      "label": "単球とマクロファージ",
+      "description": "単球が組織でマクロファージへ分化するという知識。",
+      "occurrenceCount": 2,
+      "examCount": 2,
+      "references": [
+        {
+          "exam": 42,
+          "variant": "new",
+          "number": 30,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/52048"
+        },
+        {
+          "exam": 53,
+          "variant": "standard",
+          "number": 29,
+          "choice": 3,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/93099"
+        }
+      ]
+    },
+    {
+      "knowledgeId": "anatomy-k027",
+      "label": "好中球と食作用",
+      "description": "好中球が主に食作用に関与するという知識。",
+      "occurrenceCount": 2,
+      "examCount": 2,
+      "references": [
+        {
+          "exam": 42,
+          "variant": "new",
+          "number": 30,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/52048"
+        },
+        {
+          "exam": 53,
+          "variant": "standard",
+          "number": 29,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/93099"
+        }
+      ]
+    },
+    {
+      "knowledgeId": "anatomy-k028",
+      "label": "好塩基球と即時型アレルギー",
+      "description": "好塩基球が即時型アレルギー反応に関与するという知識。",
+      "occurrenceCount": 1,
+      "examCount": 1,
+      "references": [
+        {
+          "exam": 42,
+          "variant": "new",
+          "number": 30,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/52048"
+        }
+      ]
+    },
+    {
+      "knowledgeId": "anatomy-k029",
+      "label": "肺循環",
+      "description": "右心室から肺動脈を経て肺へ向かい、肺静脈で心臓へ戻る小循環の経路を区別する知識。",
+      "occurrenceCount": 22,
+      "examCount": 8,
+      "references": [
+        {
+          "exam": 29,
+          "variant": "standard",
+          "number": 25,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18597"
+        },
+        {
+          "exam": 29,
+          "variant": "standard",
+          "number": 25,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18597"
+        },
+        {
+          "exam": 30,
+          "variant": "standard",
+          "number": 23,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18645"
+        },
+        {
+          "exam": 30,
+          "variant": "standard",
+          "number": 23,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18645"
+        },
+        {
+          "exam": 30,
+          "variant": "standard",
+          "number": 23,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18645"
+        },
+        {
+          "exam": 33,
+          "variant": "standard",
+          "number": 24,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24865"
+        },
+        {
+          "exam": 33,
+          "variant": "standard",
+          "number": 24,
+          "choice": 4,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24865"
+        },
+        {
+          "exam": 40,
+          "variant": "standard",
+          "number": 24,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/46253"
+        },
+        {
+          "exam": 41,
+          "variant": "new",
+          "number": 30,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/49521"
+        },
+        {
+          "exam": 41,
+          "variant": "new",
+          "number": 30,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/49521"
+        },
+        {
+          "exam": 41,
+          "variant": "new",
+          "number": 30,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/49521"
+        },
+        {
+          "exam": 41,
+          "variant": "new",
+          "number": 30,
+          "choice": 4,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/49521"
+        },
+        {
+          "exam": 41,
+          "variant": "old",
+          "number": 25,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/49466"
+        },
+        {
+          "exam": 41,
+          "variant": "old",
+          "number": 25,
+          "choice": 4,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/49466"
+        },
+        {
+          "exam": 43,
+          "variant": "new",
+          "number": 30,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/55207"
+        },
+        {
+          "exam": 43,
+          "variant": "new",
+          "number": 30,
+          "choice": 2,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/55207"
+        },
+        {
+          "exam": 43,
+          "variant": "new",
+          "number": 30,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/55207"
+        },
+        {
+          "exam": 43,
+          "variant": "new",
+          "number": 30,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/55207"
+        },
+        {
+          "exam": 47,
+          "variant": "standard",
+          "number": 30,
+          "choice": 1,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/70225"
+        },
+        {
+          "exam": 47,
+          "variant": "standard",
+          "number": 30,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/70225"
+        },
+        {
+          "exam": 47,
+          "variant": "standard",
+          "number": 30,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/70225"
+        },
+        {
+          "exam": 47,
+          "variant": "standard",
+          "number": 30,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/70225"
+        }
+      ]
+    },
+    {
+      "knowledgeId": "anatomy-k030",
+      "label": "リンパ液の静脈還流",
+      "description": "リンパ管が集合して最終的に静脈系へ合流するという知識。",
+      "occurrenceCount": 11,
+      "examCount": 5,
+      "references": [
+        {
+          "exam": 34,
+          "variant": "standard",
+          "number": 24,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24915"
+        },
+        {
+          "exam": 36,
+          "variant": "standard",
+          "number": 25,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/33494"
+        },
+        {
+          "exam": 37,
+          "variant": "standard",
+          "number": 24,
+          "choice": 2,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/34186"
+        },
+        {
+          "exam": 48,
+          "variant": "standard",
+          "number": 30,
+          "choice": 1,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/72560"
+        },
+        {
+          "exam": 48,
+          "variant": "standard",
+          "number": 30,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/72560"
+        },
+        {
+          "exam": 48,
+          "variant": "standard",
+          "number": 30,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/72560"
+        },
+        {
+          "exam": 48,
+          "variant": "standard",
+          "number": 30,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/72560"
+        },
+        {
+          "exam": 52,
+          "variant": "standard",
+          "number": 30,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/90156"
+        },
+        {
+          "exam": 52,
+          "variant": "standard",
+          "number": 30,
+          "choice": 2,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/90156"
+        },
+        {
+          "exam": 52,
+          "variant": "standard",
+          "number": 30,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/90156"
+        },
+        {
+          "exam": 52,
+          "variant": "standard",
+          "number": 30,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/90156"
+        }
+      ]
+    },
+    {
+      "knowledgeId": "anatomy-k031",
+      "label": "循環器の基礎関係",
+      "description": "収縮期血圧、血管弁の所在、肝門脈の二つの毛細血管床など、循環器の基本関係を区別する知識。",
+      "occurrenceCount": 24,
+      "examCount": 9,
+      "references": [
+        {
+          "exam": 29,
+          "variant": "standard",
+          "number": 25,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18597"
+        },
+        {
+          "exam": 29,
+          "variant": "standard",
+          "number": 25,
+          "choice": 2,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18597"
+        },
+        {
+          "exam": 30,
+          "variant": "standard",
+          "number": 22,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18644"
+        },
+        {
+          "exam": 30,
+          "variant": "standard",
+          "number": 22,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18644"
+        },
+        {
+          "exam": 30,
+          "variant": "standard",
+          "number": 23,
+          "choice": 1,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18645"
+        },
+        {
+          "exam": 33,
+          "variant": "standard",
+          "number": 24,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24865"
+        },
+        {
+          "exam": 33,
+          "variant": "standard",
+          "number": 24,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24865"
+        },
+        {
+          "exam": 34,
+          "variant": "standard",
+          "number": 24,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24915"
+        },
+        {
+          "exam": 34,
+          "variant": "standard",
+          "number": 24,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24915"
+        },
+        {
+          "exam": 36,
+          "variant": "standard",
+          "number": 25,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/33494"
+        },
+        {
+          "exam": 36,
+          "variant": "standard",
+          "number": 25,
+          "choice": 2,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/33494"
+        },
+        {
+          "exam": 36,
+          "variant": "standard",
+          "number": 25,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/33494"
+        },
+        {
+          "exam": 37,
+          "variant": "standard",
+          "number": 24,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/34186"
+        },
+        {
+          "exam": 37,
+          "variant": "standard",
+          "number": 24,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/34186"
+        },
+        {
+          "exam": 37,
+          "variant": "standard",
+          "number": 24,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/34186"
+        },
+        {
+          "exam": 40,
+          "variant": "standard",
+          "number": 24,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/46253"
+        },
+        {
+          "exam": 40,
+          "variant": "standard",
+          "number": 24,
+          "choice": 3,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/46253"
+        },
+        {
+          "exam": 40,
+          "variant": "standard",
+          "number": 24,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/46253"
+        },
+        {
+          "exam": 41,
+          "variant": "old",
+          "number": 25,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/49466"
+        },
+        {
+          "exam": 41,
+          "variant": "old",
+          "number": 25,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/49466"
+        },
+        {
+          "exam": 53,
+          "variant": "standard",
+          "number": 30,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/93100"
+        },
+        {
+          "exam": 53,
+          "variant": "standard",
+          "number": 30,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/93100"
+        },
+        {
+          "exam": 53,
+          "variant": "standard",
+          "number": 30,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/93100"
+        },
+        {
+          "exam": 53,
+          "variant": "standard",
+          "number": 30,
+          "choice": 4,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/93100"
+        }
+      ]
+    },
+    {
+      "knowledgeId": "anatomy-k032",
+      "label": "呼吸運動の筋",
+      "description": "横隔膜・内外肋間筋などが呼吸運動に関与し、咬筋は呼吸筋ではないという知識。",
+      "occurrenceCount": 5,
+      "examCount": 2,
+      "references": [
+        {
+          "exam": 31,
+          "variant": "standard",
+          "number": 24,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18696"
+        },
+        {
+          "exam": 45,
+          "variant": "standard",
+          "number": 30,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/63167"
+        },
+        {
+          "exam": 45,
+          "variant": "standard",
+          "number": 30,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/63167"
+        },
+        {
+          "exam": 45,
+          "variant": "standard",
+          "number": 30,
+          "choice": 3,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/63167"
+        },
+        {
+          "exam": 45,
+          "variant": "standard",
+          "number": 30,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/63167"
+        }
+      ]
+    },
+    {
+      "knowledgeId": "anatomy-k033",
+      "label": "気道と肺胞",
+      "description": "鼻腔・喉頭・気管支などが気道を構成し、肺胞で血液と空気のガス交換が行われ、食道は気道ではないという知識。",
+      "occurrenceCount": 16,
+      "examCount": 5,
+      "references": [
+        {
+          "exam": 27,
+          "variant": "standard",
+          "number": 23,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18495"
+        },
+        {
+          "exam": 27,
+          "variant": "standard",
+          "number": 23,
+          "choice": 3,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18495"
+        },
+        {
+          "exam": 27,
+          "variant": "standard",
+          "number": 23,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18495"
+        },
+        {
+          "exam": 32,
+          "variant": "standard",
+          "number": 23,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24814"
+        },
+        {
+          "exam": 39,
+          "variant": "standard",
+          "number": 25,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/41720"
+        },
+        {
+          "exam": 39,
+          "variant": "standard",
+          "number": 25,
+          "choice": 2,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/41720"
+        },
+        {
+          "exam": 39,
+          "variant": "standard",
+          "number": 25,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/41720"
+        },
+        {
+          "exam": 39,
+          "variant": "standard",
+          "number": 25,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/41720"
+        },
+        {
+          "exam": 49,
+          "variant": "standard",
+          "number": 29,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/75565"
+        },
+        {
+          "exam": 49,
+          "variant": "standard",
+          "number": 29,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/75565"
+        },
+        {
+          "exam": 49,
+          "variant": "standard",
+          "number": 29,
+          "choice": 3,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/75565"
+        },
+        {
+          "exam": 49,
+          "variant": "standard",
+          "number": 29,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/75565"
+        },
+        {
+          "exam": 51,
+          "variant": "standard",
+          "number": 30,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/83950"
+        },
+        {
+          "exam": 51,
+          "variant": "standard",
+          "number": 30,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/83950"
+        },
+        {
+          "exam": 51,
+          "variant": "standard",
+          "number": 30,
+          "choice": 3,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/83950"
+        },
+        {
+          "exam": 51,
+          "variant": "standard",
+          "number": 30,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/83950"
+        }
+      ]
+    },
+    {
+      "knowledgeId": "anatomy-k034",
+      "label": "小腸の蠕動運動",
+      "description": "小腸が内容物を肛門側へ送る運動として蠕動運動を行うという知識。",
+      "occurrenceCount": 4,
+      "examCount": 1,
+      "references": [
+        {
+          "exam": 49,
+          "variant": "standard",
+          "number": 30,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/75566"
+        },
+        {
+          "exam": 49,
+          "variant": "standard",
+          "number": 30,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/75566"
+        },
+        {
+          "exam": 49,
+          "variant": "standard",
+          "number": 30,
+          "choice": 3,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/75566"
+        },
+        {
+          "exam": 49,
+          "variant": "standard",
+          "number": 30,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/75566"
+        }
+      ]
+    },
+    {
+      "knowledgeId": "anatomy-k035",
+      "label": "消化器の構造と分泌",
+      "description": "大唾液腺、胃の入口・出口、小腸の区分、膵臓と膵液など、消化器の構造・分泌を区別する知識。",
+      "occurrenceCount": 31,
+      "examCount": 12,
+      "references": [
+        {
+          "exam": 27,
+          "variant": "standard",
+          "number": 24,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18496"
+        },
+        {
+          "exam": 27,
+          "variant": "standard",
+          "number": 24,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18496"
+        },
+        {
+          "exam": 27,
+          "variant": "standard",
+          "number": 24,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18496"
+        },
+        {
+          "exam": 27,
+          "variant": "standard",
+          "number": 24,
+          "choice": 4,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18496"
+        },
+        {
+          "exam": 27,
+          "variant": "standard",
+          "number": 25,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18497"
+        },
+        {
+          "exam": 27,
+          "variant": "standard",
+          "number": 25,
+          "choice": 2,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18497"
+        },
+        {
+          "exam": 27,
+          "variant": "standard",
+          "number": 25,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18497"
+        },
+        {
+          "exam": 27,
+          "variant": "standard",
+          "number": 25,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18497"
+        },
+        {
+          "exam": 28,
+          "variant": "standard",
+          "number": 24,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18546"
+        },
+        {
+          "exam": 28,
+          "variant": "standard",
+          "number": 24,
+          "choice": 2,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18546"
+        },
+        {
+          "exam": 28,
+          "variant": "standard",
+          "number": 24,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18546"
+        },
+        {
+          "exam": 28,
+          "variant": "standard",
+          "number": 24,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18546"
+        },
+        {
+          "exam": 29,
+          "variant": "standard",
+          "number": 24,
+          "choice": 1,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18596"
+        },
+        {
+          "exam": 30,
+          "variant": "standard",
+          "number": 22,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18644"
+        },
+        {
+          "exam": 30,
+          "variant": "standard",
+          "number": 24,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18646"
+        },
+        {
+          "exam": 31,
+          "variant": "standard",
+          "number": 25,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18697"
+        },
+        {
+          "exam": 32,
+          "variant": "standard",
+          "number": 23,
+          "choice": 2,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24814"
+        },
+        {
+          "exam": 32,
+          "variant": "standard",
+          "number": 23,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24814"
+        },
+        {
+          "exam": 32,
+          "variant": "standard",
+          "number": 23,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24814"
+        },
+        {
+          "exam": 33,
+          "variant": "standard",
+          "number": 25,
+          "choice": 1,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24866"
+        },
+        {
+          "exam": 33,
+          "variant": "standard",
+          "number": 25,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24866"
+        },
+        {
+          "exam": 33,
+          "variant": "standard",
+          "number": 25,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24866"
+        },
+        {
+          "exam": 33,
+          "variant": "standard",
+          "number": 25,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24866"
+        },
+        {
+          "exam": 34,
+          "variant": "standard",
+          "number": 25,
+          "choice": 3,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24916"
+        },
+        {
+          "exam": 37,
+          "variant": "standard",
+          "number": 21,
+          "choice": 3,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/34183"
+        },
+        {
+          "exam": 38,
+          "variant": "standard",
+          "number": 25,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/37937"
+        },
+        {
+          "exam": 40,
+          "variant": "standard",
+          "number": 25,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/46254"
+        },
+        {
+          "exam": 54,
+          "variant": "standard",
+          "number": 30,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/96779"
+        },
+        {
+          "exam": 54,
+          "variant": "standard",
+          "number": 30,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/96779"
+        },
+        {
+          "exam": 54,
+          "variant": "standard",
+          "number": 30,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/96779"
+        },
+        {
+          "exam": 54,
+          "variant": "standard",
+          "number": 30,
+          "choice": 4,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/96779"
+        }
+      ]
+    },
+    {
+      "knowledgeId": "anatomy-k036",
+      "label": "心筋の性質",
+      "description": "心筋が横紋を持つ不随意筋で、自律神経の影響を受けるという知識。",
+      "occurrenceCount": 8,
+      "examCount": 5,
+      "references": [
+        {
+          "exam": 36,
+          "variant": "standard",
+          "number": 24,
+          "choice": 4,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/33493"
+        },
+        {
+          "exam": 48,
+          "variant": "standard",
+          "number": 28,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/72558"
+        },
+        {
+          "exam": 50,
+          "variant": "standard",
+          "number": 27,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/79924"
+        },
+        {
+          "exam": 51,
+          "variant": "standard",
+          "number": 27,
+          "choice": 1,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/83947"
+        },
+        {
+          "exam": 51,
+          "variant": "standard",
+          "number": 27,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/83947"
+        },
+        {
+          "exam": 51,
+          "variant": "standard",
+          "number": 27,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/83947"
+        },
+        {
+          "exam": 51,
+          "variant": "standard",
+          "number": 27,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/83947"
+        },
+        {
+          "exam": 54,
+          "variant": "standard",
+          "number": 27,
+          "choice": 1,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/96776"
+        }
+      ]
+    },
+    {
+      "knowledgeId": "anatomy-k037",
+      "label": "平滑筋と自律神経",
+      "description": "血管・気管支などの平滑筋や立毛筋が自律神経の作用を受けるという知識。",
+      "occurrenceCount": 5,
+      "examCount": 3,
+      "references": [
+        {
+          "exam": 48,
+          "variant": "standard",
+          "number": 28,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/72558"
+        },
+        {
+          "exam": 48,
+          "variant": "standard",
+          "number": 28,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/72558"
+        },
+        {
+          "exam": 50,
+          "variant": "standard",
+          "number": 27,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/79924"
+        },
+        {
+          "exam": 50,
+          "variant": "standard",
+          "number": 27,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/79924"
+        },
+        {
+          "exam": 54,
+          "variant": "standard",
+          "number": 27,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/96776"
+        }
+      ]
+    },
+    {
+      "knowledgeId": "anatomy-k038",
+      "label": "睫毛の構造と特徴",
+      "description": "上眼瞼・下眼瞼の睫毛の本数・長さの違いと、睫毛内側に開口するマイボーム腺を区別する知識。",
+      "occurrenceCount": 5,
+      "examCount": 2,
+      "references": [
+        {
+          "exam": 50,
+          "variant": "standard",
+          "number": 26,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/79923"
+        },
+        {
+          "exam": 51,
+          "variant": "standard",
+          "number": 26,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/83946"
+        },
+        {
+          "exam": 51,
+          "variant": "standard",
+          "number": 26,
+          "choice": 2,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/83946"
+        },
+        {
+          "exam": 51,
+          "variant": "standard",
+          "number": 26,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/83946"
+        },
+        {
+          "exam": 51,
+          "variant": "standard",
+          "number": 26,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/83946"
+        }
+      ]
+    },
+    {
+      "knowledgeId": "anatomy-k039",
+      "label": "脳幹の中枢",
+      "description": "呼吸や循環機能の中枢が脳幹にあるという知識。",
+      "occurrenceCount": 12,
+      "examCount": 3,
+      "references": [
+        {
+          "exam": 44,
+          "variant": "standard",
+          "number": 28,
+          "choice": 1,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/57893"
+        },
+        {
+          "exam": 44,
+          "variant": "standard",
+          "number": 28,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/57893"
+        },
+        {
+          "exam": 44,
+          "variant": "standard",
+          "number": 28,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/57893"
+        },
+        {
+          "exam": 44,
+          "variant": "standard",
+          "number": 28,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/57893"
+        },
+        {
+          "exam": 50,
+          "variant": "standard",
+          "number": 28,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/79925"
+        },
+        {
+          "exam": 50,
+          "variant": "standard",
+          "number": 28,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/79925"
+        },
+        {
+          "exam": 50,
+          "variant": "standard",
+          "number": 28,
+          "choice": 3,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/79925"
+        },
+        {
+          "exam": 50,
+          "variant": "standard",
+          "number": 28,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/79925"
+        },
+        {
+          "exam": 53,
+          "variant": "standard",
+          "number": 28,
+          "choice": 1,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/93098"
+        },
+        {
+          "exam": 53,
+          "variant": "standard",
+          "number": 28,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/93098"
+        },
+        {
+          "exam": 53,
+          "variant": "standard",
+          "number": 28,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/93098"
+        },
+        {
+          "exam": 53,
+          "variant": "standard",
+          "number": 28,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/93098"
+        }
+      ]
+    },
+    {
+      "knowledgeId": "anatomy-k040",
+      "label": "眼表と瞳孔周辺",
+      "description": "眼球結膜・強膜・瞳孔など、眼表の見え方と眼球各部の位置関係を区別する知識。",
+      "occurrenceCount": 3,
+      "examCount": 2,
+      "references": [
+        {
+          "exam": 41,
+          "variant": "old",
+          "number": 21,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/49462"
+        },
+        {
+          "exam": 41,
+          "variant": "old",
+          "number": 24,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/49465"
+        },
+        {
+          "exam": 50,
+          "variant": "standard",
+          "number": 26,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/79923"
+        }
+      ]
+    },
+    {
+      "knowledgeId": "anatomy-k041",
+      "label": "下顎骨の可動性",
+      "description": "頭蓋骨のうち、縫合で固定されず大きく動かせる骨が下顎骨であるという知識。",
+      "occurrenceCount": 4,
+      "examCount": 1,
+      "references": [
+        {
+          "exam": 53,
+          "variant": "standard",
+          "number": 26,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/93096"
+        },
+        {
+          "exam": 53,
+          "variant": "standard",
+          "number": 26,
+          "choice": 2,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/93096"
+        },
+        {
+          "exam": 53,
+          "variant": "standard",
+          "number": 26,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/93096"
+        },
+        {
+          "exam": 53,
+          "variant": "standard",
+          "number": 26,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/93096"
+        }
+      ]
+    },
+    {
+      "knowledgeId": "anatomy-k042",
+      "label": "血液の成分と全身運搬",
+      "description": "血漿・血球・凝固因子の区別と、血液が酸素・物質を運搬する役割に関する知識。",
+      "occurrenceCount": 5,
+      "examCount": 2,
+      "references": [
+        {
+          "exam": 27,
+          "variant": "standard",
+          "number": 21,
+          "choice": 2,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18493"
+        },
+        {
+          "exam": 29,
+          "variant": "standard",
+          "number": 22,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18594"
+        },
+        {
+          "exam": 29,
+          "variant": "standard",
+          "number": 22,
+          "choice": 2,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18594"
+        },
+        {
+          "exam": 29,
+          "variant": "standard",
+          "number": 22,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18594"
+        },
+        {
+          "exam": 29,
+          "variant": "standard",
+          "number": 22,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18594"
+        }
+      ]
+    },
+    {
+      "knowledgeId": "anatomy-k043",
+      "label": "体組成と体液",
+      "description": "成人の体重を構成する水分・脂肪・タンパク質・ミネラルの割合に関する知識。",
+      "occurrenceCount": 4,
+      "examCount": 1,
+      "references": [
+        {
+          "exam": 28,
+          "variant": "standard",
+          "number": 21,
+          "choice": 1,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18543"
+        },
+        {
+          "exam": 28,
+          "variant": "standard",
+          "number": 21,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18543"
+        },
+        {
+          "exam": 28,
+          "variant": "standard",
+          "number": 21,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18543"
+        },
+        {
+          "exam": 28,
+          "variant": "standard",
+          "number": 21,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18543"
+        }
+      ]
+    },
+    {
+      "knowledgeId": "anatomy-k044",
+      "label": "自律神経系の総論",
+      "description": "自律神経系の区分、内分泌系との協調、循環や内臓機能の調節に関する知識。",
+      "occurrenceCount": 2,
+      "examCount": 1,
+      "references": [
+        {
+          "exam": 33,
+          "variant": "standard",
+          "number": 22,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24863"
+        },
+        {
+          "exam": 33,
+          "variant": "standard",
+          "number": 22,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24863"
+        }
+      ]
+    },
+    {
+      "knowledgeId": "anatomy-k045",
+      "label": "呼吸と酸素運搬",
+      "description": "肺呼吸・ガス交換、一酸化炭素中毒、ヘモグロビンによる酸素運搬に関する知識。",
+      "occurrenceCount": 3,
+      "examCount": 2,
+      "references": [
+        {
+          "exam": 27,
+          "variant": "standard",
+          "number": 23,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18495"
+        },
+        {
+          "exam": 31,
+          "variant": "standard",
+          "number": 24,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18696"
+        },
+        {
+          "exam": 31,
+          "variant": "standard",
+          "number": 24,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18696"
+        }
+      ]
+    },
+    {
+      "knowledgeId": "anatomy-k047",
+      "label": "内分泌腺とホルモン",
+      "description": "内分泌腺と分泌ホルモンの対応、および血糖・代謝・心機能などへの作用に関する知識。",
+      "occurrenceCount": 23,
+      "examCount": 7,
+      "references": [
+        {
+          "exam": 28,
+          "variant": "standard",
+          "number": 25,
+          "choice": 1,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18547"
+        },
+        {
+          "exam": 28,
+          "variant": "standard",
+          "number": 25,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18547"
+        },
+        {
+          "exam": 28,
+          "variant": "standard",
+          "number": 25,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18547"
+        },
+        {
+          "exam": 30,
+          "variant": "standard",
+          "number": 24,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18646"
+        },
+        {
+          "exam": 30,
+          "variant": "standard",
+          "number": 24,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18646"
+        },
+        {
+          "exam": 30,
+          "variant": "standard",
+          "number": 24,
+          "choice": 4,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18646"
+        },
+        {
+          "exam": 32,
+          "variant": "standard",
+          "number": 25,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24816"
+        },
+        {
+          "exam": 32,
+          "variant": "standard",
+          "number": 25,
+          "choice": 2,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24816"
+        },
+        {
+          "exam": 32,
+          "variant": "standard",
+          "number": 25,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24816"
+        },
+        {
+          "exam": 32,
+          "variant": "standard",
+          "number": 25,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24816"
+        },
+        {
+          "exam": 34,
+          "variant": "standard",
+          "number": 25,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24916"
+        },
+        {
+          "exam": 34,
+          "variant": "standard",
+          "number": 25,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24916"
+        },
+        {
+          "exam": 34,
+          "variant": "standard",
+          "number": 25,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24916"
+        },
+        {
+          "exam": 37,
+          "variant": "standard",
+          "number": 25,
+          "choice": 1,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/34187"
+        },
+        {
+          "exam": 37,
+          "variant": "standard",
+          "number": 25,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/34187"
+        },
+        {
+          "exam": 37,
+          "variant": "standard",
+          "number": 25,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/34187"
+        },
+        {
+          "exam": 37,
+          "variant": "standard",
+          "number": 25,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/34187"
+        },
+        {
+          "exam": 38,
+          "variant": "standard",
+          "number": 25,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/37937"
+        },
+        {
+          "exam": 38,
+          "variant": "standard",
+          "number": 25,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/37937"
+        },
+        {
+          "exam": 38,
+          "variant": "standard",
+          "number": 25,
+          "choice": 4,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/37937"
+        },
+        {
+          "exam": 40,
+          "variant": "standard",
+          "number": 25,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/46254"
+        },
+        {
+          "exam": 40,
+          "variant": "standard",
+          "number": 25,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/46254"
+        },
+        {
+          "exam": 40,
+          "variant": "standard",
+          "number": 25,
+          "choice": 4,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/46254"
+        }
+      ]
+    },
+    {
+      "knowledgeId": "anatomy-k048",
+      "label": "泌尿器と尿排泄",
+      "description": "腎臓・尿管・膀胱・尿道の区分と、尿中への物質排泄に関する知識。",
+      "occurrenceCount": 17,
+      "examCount": 5,
+      "references": [
+        {
+          "exam": 29,
+          "variant": "standard",
+          "number": 24,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18596"
+        },
+        {
+          "exam": 29,
+          "variant": "standard",
+          "number": 24,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18596"
+        },
+        {
+          "exam": 29,
+          "variant": "standard",
+          "number": 24,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18596"
+        },
+        {
+          "exam": 30,
+          "variant": "standard",
+          "number": 25,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18647"
+        },
+        {
+          "exam": 30,
+          "variant": "standard",
+          "number": 25,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18647"
+        },
+        {
+          "exam": 30,
+          "variant": "standard",
+          "number": 25,
+          "choice": 3,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18647"
+        },
+        {
+          "exam": 30,
+          "variant": "standard",
+          "number": 25,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18647"
+        },
+        {
+          "exam": 31,
+          "variant": "standard",
+          "number": 25,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18697"
+        },
+        {
+          "exam": 31,
+          "variant": "standard",
+          "number": 25,
+          "choice": 3,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18697"
+        },
+        {
+          "exam": 31,
+          "variant": "standard",
+          "number": 25,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18697"
+        },
+        {
+          "exam": 32,
+          "variant": "standard",
+          "number": 24,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24815"
+        },
+        {
+          "exam": 32,
+          "variant": "standard",
+          "number": 24,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24815"
+        },
+        {
+          "exam": 32,
+          "variant": "standard",
+          "number": 24,
+          "choice": 3,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24815"
+        },
+        {
+          "exam": 32,
+          "variant": "standard",
+          "number": 24,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24815"
+        },
+        {
+          "exam": 37,
+          "variant": "standard",
+          "number": 21,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/34183"
+        },
+        {
+          "exam": 37,
+          "variant": "standard",
+          "number": 21,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/34183"
+        },
+        {
+          "exam": 37,
+          "variant": "standard",
+          "number": 21,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/34183"
+        }
+      ]
+    },
+    {
+      "knowledgeId": "anatomy-k049",
+      "label": "脳の左右半球と感覚伝導",
+      "description": "大脳・小脳などの左右半球、および感覚器から中枢へ情報を伝える神経に関する知識。",
+      "occurrenceCount": 8,
+      "examCount": 1,
+      "references": [
+        {
+          "exam": 39,
+          "variant": "standard",
+          "number": 23,
+          "choice": 1,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/41718"
+        },
+        {
+          "exam": 39,
+          "variant": "standard",
+          "number": 23,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/41718"
+        },
+        {
+          "exam": 39,
+          "variant": "standard",
+          "number": 23,
+          "choice": 3,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/41718"
+        },
+        {
+          "exam": 39,
+          "variant": "standard",
+          "number": 23,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/41718"
+        },
+        {
+          "exam": 39,
+          "variant": "standard",
+          "number": 24,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/41719"
+        },
+        {
+          "exam": 39,
+          "variant": "standard",
+          "number": 24,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/41719"
+        },
+        {
+          "exam": 39,
+          "variant": "standard",
+          "number": 24,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/41719"
+        },
+        {
+          "exam": 39,
+          "variant": "standard",
+          "number": 24,
+          "choice": 4,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/41719"
+        }
+      ]
+    },
+    {
+      "knowledgeId": "anatomy-k050",
+      "label": "循環・生理機能の基準と保健",
+      "description": "血圧・脈拍・呼吸数などの生理機能基準値と、立位・冷却・圧迫などが循環に及ぼす影響に関する知識。",
+      "occurrenceCount": 9,
+      "examCount": 2,
+      "references": [
+        {
+          "exam": 34,
+          "variant": "standard",
+          "number": 24,
+          "choice": 2,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24915"
+        },
+        {
+          "exam": 35,
+          "variant": "standard",
+          "number": 24,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/30822"
+        },
+        {
+          "exam": 35,
+          "variant": "standard",
+          "number": 24,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/30822"
+        },
+        {
+          "exam": 35,
+          "variant": "standard",
+          "number": 24,
+          "choice": 3,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/30822"
+        },
+        {
+          "exam": 35,
+          "variant": "standard",
+          "number": 24,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/30822"
+        },
+        {
+          "exam": 35,
+          "variant": "standard",
+          "number": 25,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/30823"
+        },
+        {
+          "exam": 35,
+          "variant": "standard",
+          "number": 25,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/30823"
+        },
+        {
+          "exam": 35,
+          "variant": "standard",
+          "number": 25,
+          "choice": 3,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/30823"
+        },
+        {
+          "exam": 35,
+          "variant": "standard",
+          "number": 25,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/30823"
+        }
+      ]
+    },
+    {
+      "knowledgeId": "anatomy-k051",
+      "label": "マイボーム腺と涙液膜",
+      "description": "マイボーム腺の位置・分泌物と、涙液膜の安定における役割に関する知識。",
+      "occurrenceCount": 4,
+      "examCount": 1,
+      "references": [
+        {
+          "exam": 40,
+          "variant": "standard",
+          "number": 21,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/46250"
+        },
+        {
+          "exam": 40,
+          "variant": "standard",
+          "number": 21,
+          "choice": 2,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/46250"
+        },
+        {
+          "exam": 40,
+          "variant": "standard",
+          "number": 21,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/46250"
+        },
+        {
+          "exam": 40,
+          "variant": "standard",
+          "number": 21,
+          "choice": 4,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/46250"
+        }
+      ]
+    },
+    {
+      "knowledgeId": "anatomy-k052",
+      "label": "人体の構造・機能の総合確認",
+      "description": "既存の個別知識項目に分離できない人体の構造・機能の基礎事項。追加回の分析時に細分化候補として扱う。",
+      "occurrenceCount": 5,
+      "examCount": 2,
+      "references": [
+        {
+          "exam": 28,
+          "variant": "standard",
+          "number": 22,
+          "choice": 1,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18544"
+        },
+        {
+          "exam": 28,
+          "variant": "standard",
+          "number": 22,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/18544"
+        },
+        {
+          "exam": 33,
+          "variant": "standard",
+          "number": 23,
+          "choice": 2,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24864"
+        },
+        {
+          "exam": 33,
+          "variant": "standard",
+          "number": 23,
+          "choice": 3,
+          "polarity": "incorrect",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24864"
+        },
+        {
+          "exam": 33,
+          "variant": "standard",
+          "number": 23,
+          "choice": 4,
+          "polarity": "correct",
+          "sourceUrl": "https://riyoushi.kakomonn.com/questions/24864"
+        }
+      ]
+    }
+  ]
+}
+
