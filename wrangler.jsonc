@@ -2,13 +2,22 @@
   "name": "kokushi",
   "compatibility_date": "2026-11-26",
   "assets": {
-    "directory": "./public"
+    "directory": "./public",
+    "binding": "ASSETS"
   },
   "workers_dev": false,
   "routes": [
     {
       "pattern": "kokushi.kanazawa-u.work",
       "custom_domain": true
+    }
+  ],
+  "main": "src/worker.js",
+  "d1_databases": [
+    {
+      "binding": "RANKINGS",
+      "database_name": "kokushi-rankings",
+      "database_id": "c0b81450-ceea-42fa-b3d7-df1ca9eb098c"
     }
   ]
 }
