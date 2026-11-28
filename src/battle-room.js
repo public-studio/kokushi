@@ -22,13 +22,28 @@ else{state.invites=state.invites.filter(x=>x!==v);if(op==='accept'){if(!state.on
 const invite=state.invites.find(involves),match=matchFor(id),names=['HIRO','AKI','YUU','TOMO',...Object.values(state.online).map(v=>v.name)];
 return {name,players:[...new Set(names)].filter(n=>n!==name).map(n=>({name:n,online:Object.entries(state.online).some(([k,v])=>k!==id&&v.name===n&&!busy(k))})),incoming:invite?.to===id?invite.fromName:null,outgoing:invite?.from===id?invite.toName:null,room:match?.room||null,error};
 }
-export { lobbyAction };
+function autoAction(state,player,cmd,t,makeRoom){
+ const id=player.id;state.ready??={};state.matches??=[];
+ for(const [key,v] of Object.entries(state.ready))if(t-v.seen>6500)delete state.ready[key];
+ state.matches=state.matches.filter(v=>v.until>t);
+ let match=state.matches.find(v=>v.ids.includes(id));
+ if(cmd.action==='done'){delete state.ready[id];if(match&&match.room===cmd.room)state.matches=state.matches.filter(v=>v!==match);return {room:null};}
+ if(match)return {room:match.room,opponent:match.names[1-match.ids.indexOf(id)]};
+ state.ready[id]={name:player.name,seen:t};
+ const other=Object.entries(state.ready).find(([k,v])=>k!==id&&v.name!==player.name);
+ if(!other)return {room:null};
+ const [otherId,v]=other;match={ids:[otherId,id],names:[v.name,player.name],room:makeRoom(),until:t+95000};
+ state.matches.push(match);delete state.ready[otherId];delete state.ready[id];
+ return {room:match.room,opponent:v.name};
+}
+export { lobbyAction, autoAction };
 
 export class BattleRoom extends DurableObject {
 constructor(ctx,env){super(ctx,env);this.sockets=[];this.game=null;this.timer=null;this.created=Date.now();}
 send(ws,data){try{ws.send(JSON.stringify(data))}catch{}}
 broadcast(data){for(const s of this.sockets)if(s)this.send(s.ws,data)}
 cleanup(){if(this.timer){clearInterval(this.timer);this.timer=null;}for(const s of this.sockets)if(s){try{s.ws.close(1000,'room ended')}catch{}}this.sockets=[];this.game=null;}
+async autoLobby(player,cmd){const sql=this.ctx.storage.sql;sql.exec("CREATE TABLE IF NOT EXISTS lobby_state (id INTEGER PRIMARY KEY, data TEXT NOT NULL)");const rows=sql.exec("SELECT data FROM lobby_state WHERE id=1").toArray();const state=rows.length?JSON.parse(rows[0].data):{};const result=autoAction(state,player,cmd,Date.now(),()=>crypto.randomUUID().replace(/-/g,'').slice(0,10));sql.exec("INSERT INTO lobby_state(id,data) VALUES(1,?) ON CONFLICT(id) DO UPDATE SET data=excluded.data",JSON.stringify(state));return result;}
 async lobby(player,cmd){const sql=this.ctx.storage.sql;sql.exec("CREATE TABLE IF NOT EXISTS lobby_state (id INTEGER PRIMARY KEY, data TEXT NOT NULL)");const rows=sql.exec("SELECT data FROM lobby_state WHERE id=1").toArray();const state=rows.length?JSON.parse(rows[0].data):{};const result=lobbyAction(state,player,cmd,Date.now(),()=>crypto.randomUUID().replace(/-/g,'').slice(0,10));sql.exec("INSERT INTO lobby_state(id,data) VALUES(1,?) ON CONFLICT(id) DO UPDATE SET data=excluded.data",JSON.stringify(state));return result;}
 async fetch(request){
 if(request.headers.get('Upgrade')?.toLowerCase()!=='websocket')return new Response('WebSocket required',{status:426});
