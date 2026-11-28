@@ -161,7 +161,7 @@ let autoEntry=new URL(location.href).searchParams.get('auto')==='1';
 async function lobbyAPI(action,room){const res=await fetch('/api/battle/lobby',{method:'POST',headers:{Authorization:'Bearer '+sharedIdentity.token,'Content-Type':'application/json'},body:JSON.stringify({action,room}),cache:'no-store',keepalive:action==='done'||action==='idle'});if(!res.ok)throw Error('通信に失敗しました');return res.json();}
 function statusMessage(text){$('lobbyStatus').textContent=text;$('lobbyStatus').hidden=!text;}
 async function shareInvite(){
- const url=new URL('/apps/time-attack.html',location.origin).href;const data={title:'国試ラッシュ',text:'一緒に国試ラッシュで対戦しよう！',url};
+ const url=new URL('/apps/rush',location.origin).href;const data={title:'国試ラッシュ',text:'一緒に国試ラッシュで対戦しよう！',url};
  if(navigator.share){try{await navigator.share(data);return}catch(e){if(e?.name==='AbortError')return;}}
  try{await navigator.clipboard.writeText(data.text+'\n'+url);statusMessage('招待リンクをコピーしました');}catch{window.prompt('招待リンクをコピー',data.text+' '+url);}
 }
