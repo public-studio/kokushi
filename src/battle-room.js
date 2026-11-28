@@ -27,6 +27,7 @@ function autoAction(state,player,cmd,t,makeRoom){
  for(const [key,v] of Object.entries(state.ready))if(t-v.seen>6500)delete state.ready[key];
  state.matches=state.matches.filter(v=>v.until>t);
  let match=state.matches.find(v=>v.ids.includes(id));
+ if(cmd.action==='idle'){delete state.ready[id];return {room:null};}
  if(cmd.action==='done'){delete state.ready[id];if(match&&match.room===cmd.room)state.matches=state.matches.filter(v=>v!==match);return {room:null};}
  if(match)return {room:match.room,opponent:match.names[1-match.ids.indexOf(id)]};
  state.ready[id]={name:player.name,seen:t};
@@ -50,6 +51,7 @@ if(request.headers.get('Upgrade')?.toLowerCase()!=='websocket')return new Respon
 if(this.game||this.sockets.filter(Boolean).length>=2)return new Response('Room full',{status:409});
 const u=new URL(request.url),name=u.searchParams.get('name')||'P',handicap=Number(u.searchParams.get('handicap')||1);
 if(!/^[A-Z0-9]{1,4}$/.test(name)||![1,1.3,1.6,1.9,2.1].includes(handicap))return new Response('Invalid player',{status:400});
+if(this.sockets.some(s=>s?.name===name))return new Response('Player already connected',{status:409});
 const [client,ws]=Object.values(new WebSocketPair());ws.accept();let i=this.sockets.findIndex(v=>!v);if(i<0)i=this.sockets.length;this.sockets[i]={ws,name,handicap};this.send(ws,{type:'joined',i});
 const close=()=>{if(this.sockets[i]?.ws!==ws)return;this.sockets[i]=null;if(this.game&&!this.game.finished){this.game.finish('DISCONNECT',1-i);this.publish();}if(!this.sockets.some(Boolean))this.cleanup();};
 ws.addEventListener('close',close);ws.addEventListener('error',close);
