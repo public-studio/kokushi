@@ -19,5 +19,5 @@ else this.send(ws,{type:'waiting'});
 if(!this.timer){this.created=Date.now();this.timer=setInterval(()=>{if(this.game){this.game.tick(Date.now());this.publish();}else if(Date.now()-this.created>120000){this.broadcast({type:'expired'});this.cleanup();}},100);}
 return new Response(null,{status:101,webSocket:client});
 }
-publish(){if(!this.game)return;const t=Date.now();const events=this.game.events.splice(0);for(const e of events)this.broadcast(e);for(let i=0;i<2;i++)if(this.sockets[i])this.send(this.sockets[i].ws,this.game.snapshot(i,t));if(this.game.finished&&this.timer){clearInterval(this.timer);this.timer=null;setTimeout(()=>this.cleanup(),5000);}}
+publish(){if(!this.game)return;const t=Date.now();const events=this.game.events.splice(0);for(const e of events)this.broadcast(e);for(let i=0;i<2;i++)if(this.sockets[i])this.send(this.sockets[i].ws,this.game.snapshot(i,t));if(this.game.finished&&this.timer){clearInterval(this.timer);this.timer=null;const finishedGame=this.game;setTimeout(()=>{if(this.game===finishedGame)this.cleanup()},5000);}}
 }
