@@ -29,18 +29,19 @@ function autoAction(state,player,cmd,t,makeRoom){
  let match=state.matches.find(v=>v.ids.includes(id));
  if(cmd.action==='idle'){delete state.ready[id];return {room:null};}
  if(cmd.action==='done'){delete state.ready[id];if(match&&match.room===cmd.room)state.matches=state.matches.filter(v=>v!==match);return {room:null};}
+ if(cmd.room){if(match?.room===cmd.room){match.until=t+20000;return {room:match.room};}return {room:null};}
  if(match)return {room:match.room,opponent:match.names[1-match.ids.indexOf(id)]};
  state.ready[id]={name:player.name,seen:t};
  const other=Object.entries(state.ready).find(([k,v])=>k!==id&&v.name!==player.name);
  if(!other)return {room:null};
- const [otherId,v]=other;match={ids:[otherId,id],names:[v.name,player.name],room:makeRoom(),until:t+95000};
+ const [otherId,v]=other;match={ids:[otherId,id],names:[v.name,player.name],room:makeRoom(),until:t+20000};
  state.matches.push(match);delete state.ready[otherId];delete state.ready[id];
  return {room:match.room,opponent:v.name};
 }
 export { lobbyAction, autoAction };
 
 export class BattleRoom extends DurableObject {
-constructor(ctx,env){super(ctx,env);this.sockets=[];this.game=null;this.timer=null;this.created=Date.now();}
+constructor(ctx,env){super(ctx,env);this.sockets=[];this.game=null;this.timer=null;this.created=Date.now();this.round=1;this.wins=[0,0];this.draws=0;this.nextStart=0;this.seriesId=crypto.randomUUID();this.soloAt=0;}
 send(ws,data){try{ws.send(JSON.stringify(data))}catch{}}
 broadcast(data){for(const s of this.sockets)if(s)this.send(s.ws,data)}
 cleanup(){if(this.timer){clearInterval(this.timer);this.timer=null;}for(const s of this.sockets)if(s){try{s.ws.close(1000,'room ended')}catch{}}this.sockets=[];this.game=null;}
@@ -52,14 +53,16 @@ if(this.game||this.sockets.filter(Boolean).length>=2)return new Response('Room f
 const u=new URL(request.url),name=u.searchParams.get('name')||'P',handicap=Number(u.searchParams.get('handicap')||1);
 if(!/^[A-Z0-9]{1,4}$/.test(name)||![1,1.3,1.6,1.9,2.1].includes(handicap))return new Response('Invalid player',{status:400});
 if(this.sockets.some(s=>s?.name===name))return new Response('Player already connected',{status:409});
-const [client,ws]=Object.values(new WebSocketPair());ws.accept();let i=this.sockets.findIndex(v=>!v);if(i<0)i=this.sockets.length;this.sockets[i]={ws,name,handicap};this.send(ws,{type:'joined',i});
-const close=()=>{if(this.sockets[i]?.ws!==ws)return;this.sockets[i]=null;if(this.game&&!this.game.finished){this.game.finish('DISCONNECT',1-i);this.publish();}if(!this.sockets.some(Boolean))this.cleanup();};
+const [client,ws]=Object.values(new WebSocketPair());ws.accept();let i=this.sockets.findIndex(v=>!v);if(i<0)i=this.sockets.length;this.sockets[i]={ws,name,handicap,lastSeen:Date.now()};this.send(ws,{type:'joined',i});
+const close=()=>{if(this.sockets[i]?.ws!==ws)return;this.disconnect(i,Date.now());};
 ws.addEventListener('close',close);ws.addEventListener('error',close);
-ws.addEventListener('message',e=>{if(typeof e.data!=='string'||e.data.length>512||this.sockets[i]?.ws!==ws)return;let m;try{m=JSON.parse(e.data)}catch{return}if(!m||typeof m!=='object')return;if(m.type==='ping'){this.send(ws,{type:'pong',echo:m.echo,now:Date.now()});return;}if(this.game&&!this.game.finished){this.game.input(i,m,Date.now());this.publish();}});
+ws.addEventListener('message',e=>{if(typeof e.data!=='string'||e.data.length>512||this.sockets[i]?.ws!==ws)return;let m;try{m=JSON.parse(e.data)}catch{return}if(!m||typeof m!=='object')return;this.sockets[i].lastSeen=Date.now();if(m.type==='ping'){this.send(ws,{type:'pong',echo:m.echo,now:Date.now()});return;}if(this.game&&!this.game.finished&&m.round===this.round){this.game.input(i,m,Date.now());this.publish();}});
 if(this.sockets.filter(Boolean).length===2){this.game=new BattleGame(this.sockets.map(x=>x.name),this.sockets.map(x=>x.handicap),Date.now()+3000);this.publish();}
 else this.send(ws,{type:'waiting'});
-if(!this.timer){this.created=Date.now();this.timer=setInterval(()=>{if(this.game){this.game.tick(Date.now());this.publish();}else if(Date.now()-this.created>120000){this.broadcast({type:'expired'});this.cleanup();}},100);}
+if(!this.timer){this.created=Date.now();this.timer=setInterval(()=>{this.step(Date.now());},100);}
 return new Response(null,{status:101,webSocket:client});
 }
-publish(){if(!this.game)return;const t=Date.now();const events=this.game.events.splice(0);for(const e of events)this.broadcast(e);for(let i=0;i<2;i++)if(this.sockets[i])this.send(this.sockets[i].ws,this.game.snapshot(i,t));if(this.game.finished&&this.timer){clearInterval(this.timer);this.timer=null;const finishedGame=this.game;setTimeout(()=>{if(this.game===finishedGame)this.cleanup()},5000);}}
+disconnect(i,t){if(!this.sockets[i])return;const old=this.sockets[i];this.sockets[i]=null;try{old.ws.close(1000,'closed')}catch{}if(!this.sockets.some(Boolean)){this.cleanup();return;}if(this.game&&!this.game.finished&&t>=this.game.start){this.game.finish('DISCONNECT',1-i,t);this.publish();}this.soloAt=this.nextStart||t+3000;this.broadcast({type:'solo',start:this.soloAt,now:t});}
+step(t){for(let i=0;i<2;i++)if(this.sockets[i]&&t-this.sockets[i].lastSeen>12000)this.disconnect(i,t);if(this.soloAt){if(t>=this.soloAt+1000)this.cleanup();return;}if(this.game){if(!this.game.finished){this.game.tick(t);this.publish();}else if(this.nextStart&&t>=this.nextStart-3000&&this.sockets.filter(Boolean).length===2){this.round++;this.game=new BattleGame(this.sockets.map(x=>x.name),this.sockets.map(x=>x.handicap),this.nextStart);this.nextStart=0;this.publish();}}else if(t-this.created>120000){this.broadcast({type:'expired'});this.cleanup();}}
+publish(){if(!this.game)return;const t=Date.now();if(this.game.finished&&!this.nextStart){if(this.game.winner===null)this.draws++;else this.wins[this.game.winner]++;this.nextStart=Math.max(t,this.game.finishedAt)+8000;}const events=this.game.events.splice(0);for(const e of events)this.broadcast(e);for(let i=0;i<2;i++)if(this.sockets[i])this.send(this.sockets[i].ws,{...this.game.snapshot(i,t),round:this.round,wins:[...this.wins],draws:this.draws,nextStart:this.nextStart,seriesId:this.seriesId});}
 }
