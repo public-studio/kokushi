@@ -1,0 +1,1 @@
+UPDATE rush_runs SET rush_eligible=CASE WHEN max_combo >= (3*answered+4)/5 OR points+150*answered > 350*((3*answered+4)/5-1) THEN 1 WHEN points+150*answered < 250*((3*answered+4)/5) THEN 0 ELSE NULL END WHERE rush_eligible IS NULL;
